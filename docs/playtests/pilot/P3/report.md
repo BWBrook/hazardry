@@ -26,7 +26,7 @@ The session finished in six beats over two acts. There were 38 Custodian replies
 | **Stakes before commitment** | No roll showed stakes for the first time. Where options lacked consequences, the Custodian paused for commitment, which happened four times (G003, G012, G016, G034). Where options carried full stakes, the declaration was the commitment. |
 | **NPC traits** | Maud, Thorne, Gant, Ansel and the Provost each had a declared want, manner and line, and acted by them. Thorne never used his own hands; Gant was gruff and then decent; the Provost would not lie before witnesses. |
 | **Bold temperament** | Nell spent 4 Fate at once to free Ansel and paid four tolls in Fate. She chose Insanity over Fate twice, took a Break deliberately, and never abandoned the witness. |
-| **Distinctive procedures** | Exercised: Rite (three times), Unspeakable, the Insanity steps 2 and 3, the step-3 toll in Fate and in Insanity, a Break with its crisis drawn by `roll.py table` and a lasting effect, the grounding purge, the lantern clock including a refuel, two combats, advancement and a milestone. Not exercised: Incantation, Fate tests, Occult Scholar, the backlash table. |
+| **Distinctive procedures** | Exercised: Rite (three times), Unspeakable, the Insanity step-2 threshold (its FRT penalty stayed pending; no qualifying test came), the step-3 toll in Fate and in Insanity, a Break with its crisis drawn by `roll.py table` and a lasting effect, the grounding purge, the lantern clock including a refuel, two combats, advancement and a milestone. Not exercised: Incantation, Fate tests, Occult Scholar, the backlash table. |
 
 ## Pressure, which is the question round 3 was set to answer
 

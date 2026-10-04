@@ -1,0 +1,456 @@
+{
+  "schema_version": 1,
+  "interpretation": "Descriptive logged observations; no population claim or automatic rules decision.",
+  "definitions": {
+    "midpoint": "The end of the session's first act: the first beat recorded with --act-end. Beats are recorded as their scenes end, so the first half runs to and includes that beat record, by event sequence. Unavailable without an act break.",
+    "beat_denominator": "Count explicit beat events, not rolls or the largest beat number; omit sessions without beats from both rate numerator and denominator.",
+    "completed": "Explicit session_start and session_end with an uninterrupted event sequence and no partial legacy history; incomplete sessions are separate.",
+    "pc_rolls": "Each finalized PC roll, including opposed sides and Deflection; exclude raw_roll records and npc: actors.",
+    "luck_spending": "Use before/after changes in luck events only; roll.luck_spent is not an additional expenditure.",
+    "red_line": "Pressure >=4 until a pressure event lowers or resets it; affected rolls require pressure_at_start >=4. Each window reports its affected rolls and the scenes it touched: the scene it opened in and each later scene it stayed open through. Open windows are right-censored, including at session end.",
+    "red_line_threshold": "Provisional interpretation of 'few': more than 3 affected PC rolls observed in one window."
+  },
+  "session_counts": {
+    "total": 1,
+    "completed": 1,
+    "incomplete": 0
+  },
+  "completed_evidence": {
+    "by_skin_and_party_size": [
+      {
+        "skin": "twilight_of_the_northlands",
+        "party_size": 3,
+        "sessions": 1,
+        "recorded_beats": 9,
+        "perilous_beats": 4,
+        "crises": 1,
+        "rate_eligible_sessions": 1,
+        "sessions_without_beats": 0,
+        "rate_eligible_crises": 1,
+        "crises_per_20_recorded_beats": 2.2222222222222223,
+        "character_sessions": 3,
+        "midpoint_available_character_sessions": 3,
+        "initially_low_character_sessions": 0,
+        "initially_above_one_with_midpoint": 3,
+        "newly_low_by_midpoint": 0,
+        "pc_rolls": 24,
+        "red_line_windows": 1,
+        "red_line_windows_above_threshold": 0,
+        "ongoing_censored_windows": 0
+      }
+    ]
+  },
+  "incomplete_observations": {
+    "by_skin_and_party_size": []
+  },
+  "sessions": [
+    {
+      "source": "/Users/bwbrook/games/sinew-and-steel/playtests/campaigns/p4_twilight/state/logs/session_001.jsonl",
+      "session": 1,
+      "skin": "twilight_of_the_northlands",
+      "party_size": 3,
+      "completed": true,
+      "incomplete_reasons": [],
+      "event_count": 130,
+      "recorded_beats": 9,
+      "perilous_beats": 4,
+      "last_recorded_beat": 9,
+      "midpoint_beat": 5,
+      "acts": [
+        {
+          "act": 1,
+          "beats": 5,
+          "perilous_beats": 3,
+          "pc_rolls": 16,
+          "pressure_gained": 2,
+          "crises": 0,
+          "ended": true
+        },
+        {
+          "act": 2,
+          "beats": 4,
+          "perilous_beats": 1,
+          "pc_rolls": 8,
+          "pressure_gained": 5,
+          "crises": 1,
+          "ended": true
+        }
+      ],
+      "completed_acts": 2,
+      "crises": 1,
+      "crisis_targets": {
+        "hild_ironwater": 1
+      },
+      "threshold_crises": 1,
+      "forced_crises": 0,
+      "pressure_gained": 7,
+      "pressure_gains_by_category": {
+        "action_cost": 2,
+        "ambient": 4,
+        "failure": 1
+      },
+      "pressure_gains_by_source": {
+        "A night of vigil on the tainted ground at Tallow Barrow": 1,
+        "Failed Invocation: +2 Dread, one +1 ignored by Stout-Heart, net +1": 1,
+        "Hild sets foot on the tainted Hollowmere causeway": 1,
+        "Speaks the Calling of the Roll at the barrow door: the eight names in order, the Captain's last, the book open and the lantern in sight": 2,
+        "The company sets foot on tainted ground crossing the drowned causeway": 1,
+        "Time passing under threat: Watch sign 3, the grey ones reach the Road": 1
+      },
+      "crises_per_20_recorded_beats": 2.2222222222222223,
+      "characters": {
+        "corwen_ashby": {
+          "initial_luck": 11,
+          "initially_low": false,
+          "minimum_luck_first_half": 11,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 2,
+          "luck_recovered": 1,
+          "luck_spent_by_source": {
+            "Guides the fen leg: tests each tussock with the bow-butt and matches the drowned causeway against the old milestones on the map, single file on Hild's rope": 1,
+            "Studies the channel from the bank, matching the old milestones on the map to the ripples over the broken causeway stones": 1
+          },
+          "luck_recovered_by_source": {
+            "Song of Rest: recovers 1 Hope": 1
+          },
+          "pc_rolls": 10,
+          "acting_rolls": 8,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 8,
+              "share": 0.8
+            },
+            "defender": {
+              "count": 2,
+              "share": 0.2
+            }
+          },
+          "roll_share_by_attribute": {
+            "HRT": {
+              "count": 3,
+              "share": 0.3
+            },
+            "NIM": {
+              "count": 3,
+              "share": 0.3
+            },
+            "STR": {
+              "count": 2,
+              "share": 0.2
+            },
+            "WIS": {
+              "count": 2,
+              "share": 0.2
+            }
+          },
+          "roll_share_by_method": {
+            "Backs to the dry-stone wall and looses the longbow at the watchman pressing the wagon-front": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Guides the fen leg: tests each tussock with the bow-butt and matches the drowned causeway against the old milestones on the map, single file on Hild's rope": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Point-blank shot from behind the wall at the gap in the grey one's mail": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Scouts ahead low and quiet along the old Warden stones and the rise's edges for sound ground and hazards, bow nocked, company held back on the rope": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Steps onto the barrow-flags, bow slung, hands open, and gives the countersign 'The Road remembers' with the stone in sight, asking truce while the roll is called": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Studies the channel from the bank, matching the old milestones on the map to the ripples over the broken causeway stones": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Takes Gerrin aside by the hearth and gives his word as a Warden that none here will hurt him, if he shows what he carries and helps carry it back to the cairn": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Walks point as look-out along the fen-edge Road, bow ready, watching the dark": {
+              "count": 1,
+              "share": 0.125
+            }
+          }
+        },
+        "hild_ironwater": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 9,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 3,
+          "luck_recovered": 1,
+          "luck_spent_by_source": {
+            "Stout-Heart: ignores one +1 Dread of the failed Seating as it lands": 1,
+            "nudge": 1,
+            "pressure:party:step3:Each risky test a character attempts costs 1 personal Luck token before rolling or adds 1 Pressure": 1
+          },
+          "luck_recovered_by_source": {
+            "milestone:p4-ms1": 1
+          },
+          "pc_rolls": 4,
+          "acting_rolls": 4,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 4,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "NIM": {
+              "count": 1,
+              "share": 0.25
+            },
+            "STR": {
+              "count": 2,
+              "share": 0.5
+            },
+            "WIS": {
+              "count": 1,
+              "share": 0.25
+            }
+          },
+          "roll_share_by_method": {
+            "Charges the length of the Road to Corwen's wall and swings the heavy axe at the grey one pressing him": {
+              "count": 1,
+              "share": 0.25
+            },
+            "Runs the causeway with shield up to meet Pip and take her hand before the Watchmen reach her": {
+              "count": 1,
+              "share": 0.25
+            },
+            "Rushes up the wagon's flank and swings the heavy axe at the watchman threatening Merewen": {
+              "count": 1,
+              "share": 0.25
+            },
+            "Speaks the Ironwater seating-line and sets the oath-stone in the cairn socket (Seat the Ward-Stone, Invocation)": {
+              "count": 1,
+              "share": 0.25
+            }
+          }
+        },
+        "merewen_starhollow": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 9,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 2,
+          "luck_recovered": 2,
+          "luck_spent_by_source": {
+            "Kindles Hearth-Fire (Oath) within the ring of old Warden stones on the rise (success cost)": 1,
+            "Starlit Memory: is the Captain bound by an oath he cannot break himself?": 1
+          },
+          "luck_recovered_by_source": {
+            "Song of Rest: recovers 1 Hope": 1,
+            "milestone:p4-ms1": 1
+          },
+          "pc_rolls": 10,
+          "acting_rolls": 9,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 9,
+              "share": 0.9
+            },
+            "defender": {
+              "count": 1,
+              "share": 0.1
+            }
+          },
+          "roll_share_by_attribute": {
+            "HRT": {
+              "count": 4,
+              "share": 0.4
+            },
+            "STR": {
+              "count": 3,
+              "share": 0.3
+            },
+            "WIS": {
+              "count": 3,
+              "share": 0.3
+            }
+          },
+          "roll_share_by_method": {
+            "Casts Silence the Footfall (Cant) over the company as the wagon rolls north along the fen-edge": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Closes along the road and thrusts the ash-spear at the wounded grey one at the wall": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Kindles Hearth-Fire (Oath) within the ring of old Warden stones on the rise": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Leads the Song of Rest around the Hearth-Fire: a slow song of the eight names": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Lunges past Hild's shield with the ash-spear at the wounded watchman": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Sings Pip's name in the cradle-air of the Wend from the last ford-stone, as a rope to follow, not a spell": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Sits across from Gerrin by Wenna's hearth, offers her spoken oath to walk him to the cairn, with Hild's protection at the gate and Corwen's Warden-word at her shoulder": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Speaks for the company at the water's edge: thanks him for the child, declines an oath she cannot be sure to keep, and asks what of his walks among them and who woke him": {
+              "count": 1,
+              "share": 0.1111111111111111
+            },
+            "Speaks the Calling of the Roll at the barrow door: the eight names in order, the Captain's last, the book open and the lantern in sight": {
+              "count": 1,
+              "share": 0.1111111111111111
+            }
+          }
+        }
+      },
+      "pc_rolls": 24,
+      "npc_rolls_excluded": 9,
+      "roll_share_by_attribute": {
+        "HRT": {
+          "count": 7,
+          "share": 0.2916666666666667
+        },
+        "NIM": {
+          "count": 4,
+          "share": 0.16666666666666666
+        },
+        "STR": {
+          "count": 7,
+          "share": 0.2916666666666667
+        },
+        "WIS": {
+          "count": 6,
+          "share": 0.25
+        }
+      },
+      "roll_share_by_method": {
+        "Backs to the dry-stone wall and looses the longbow at the watchman pressing the wagon-front": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Casts Silence the Footfall (Cant) over the company as the wagon rolls north along the fen-edge": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Charges the length of the Road to Corwen's wall and swings the heavy axe at the grey one pressing him": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Closes along the road and thrusts the ash-spear at the wounded grey one at the wall": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Guides the fen leg: tests each tussock with the bow-butt and matches the drowned causeway against the old milestones on the map, single file on Hild's rope": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Kindles Hearth-Fire (Oath) within the ring of old Warden stones on the rise": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Leads the Song of Rest around the Hearth-Fire: a slow song of the eight names": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Lunges past Hild's shield with the ash-spear at the wounded watchman": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Point-blank shot from behind the wall at the gap in the grey one's mail": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Runs the causeway with shield up to meet Pip and take her hand before the Watchmen reach her": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Rushes up the wagon's flank and swings the heavy axe at the watchman threatening Merewen": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Scouts ahead low and quiet along the old Warden stones and the rise's edges for sound ground and hazards, bow nocked, company held back on the rope": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Sings Pip's name in the cradle-air of the Wend from the last ford-stone, as a rope to follow, not a spell": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Sits across from Gerrin by Wenna's hearth, offers her spoken oath to walk him to the cairn, with Hild's protection at the gate and Corwen's Warden-word at her shoulder": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Speaks for the company at the water's edge: thanks him for the child, declines an oath she cannot be sure to keep, and asks what of his walks among them and who woke him": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Speaks the Calling of the Roll at the barrow door: the eight names in order, the Captain's last, the book open and the lantern in sight": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Speaks the Ironwater seating-line and sets the oath-stone in the cairn socket (Seat the Ward-Stone, Invocation)": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Steps onto the barrow-flags, bow slung, hands open, and gives the countersign 'The Road remembers' with the stone in sight, asking truce while the roll is called": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Studies the channel from the bank, matching the old milestones on the map to the ripples over the broken causeway stones": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Takes Gerrin aside by the hearth and gives his word as a Warden that none here will hurt him, if he shows what he carries and helps carry it back to the cairn": {
+          "count": 1,
+          "share": 0.047619047619047616
+        },
+        "Walks point as look-out along the fen-edge Road, bow ready, watching the dark": {
+          "count": 1,
+          "share": 0.047619047619047616
+        }
+      },
+      "red_line": {
+        "scope": "party",
+        "roll_threshold": 3,
+        "affected_pc_rolls": 0,
+        "missing_pressure_snapshot_rolls": 0,
+        "unassigned_high_pressure_rolls": 0,
+        "windows": [
+          {
+            "track": "party",
+            "actor": null,
+            "start_sequence": 122,
+            "start_beat": 8,
+            "start_reason": "threshold_crossing",
+            "left_censored": false,
+            "end_sequence": 125,
+            "end_beat": 8,
+            "end_reason": "crisis_reset",
+            "affected_pc_rolls": 0,
+            "scenes": 1,
+            "rolls_by_actor": {},
+            "right_censored": false,
+            "exceeds_roll_threshold": false
+          }
+        ],
+        "ongoing_censored_windows": 0,
+        "windows_above_threshold": 0
+      }
+    }
+  ]
+}

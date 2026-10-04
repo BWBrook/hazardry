@@ -1,10 +1,11 @@
 # Pilot protocol: simulated play
 
-Revision 5, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
-instruction. Revision 2 governed P1 and P5, revision 3 governed P2 and P6, and
-revision 4 governed P3 and P7. Revision 5 applies the third round's lessons
-(`pilot/review-3.md`) and Barry's decision that a skin's Pressure triggers add to
-the core triggers. It governs P4 and P8 onwards.
+Revision 6, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
+instruction. Revision 2 governed P1 and P5, revision 3 P2 and P6, revision 4 P3
+and P7, and revision 5 P4 and P8. Revision 6 applies the fourth round's lessons
+(`pilot/review-4.md`): keep choices with the players, keep fuller records, and
+give scenarios honest, telegraphed dangers. It governs the second tranche,
+P9–P13.
 
 ## Purpose
 
@@ -29,6 +30,13 @@ It is not balance evidence. The engine stays settled until the programme reports
 | P6 | Candlelight Dungeons | 4 | Custodian's own; Delvekit off | Astra |
 | P7 | Iron & Ruin | 1 | Custodian's own | Astra |
 | P8 | Free Traders of the Drift Marches | 3 | Custodian's own | Astra |
+| P9 | Briar Benedictine | Custodian's choice | Custodian's own mystery | Fable |
+| P10 | Service Duct Blues | Custodian's choice | Custodian's own | Fable |
+| P11 | none (the base game) | Custodian's choice | Custodian's own; Condition Tracks and Wealth & Attention (Almanac 7) | Fable |
+| P12 | Time Odyssey | Custodian's choice | Custodian's own | Astra |
+| P13 | Candlelight Dungeons | Custodian's choice | Custodian's own; Delvekit sidecar on | Astra |
+
+The second tranche runs in rounds: P9 and P12, then P10 and P13, then P11.
 
 Fable's subagents run on Claude Sonnet and Astra's on Sol. Each manifest pins the
 exact model ID and settings for every role.
@@ -119,8 +127,14 @@ campaign at PATH through the harness in this repository.
   appear in the reply that shows the dice.
 - Never offer an option that depends on something only your private notes
   know; options may follow leads the characters have found.
-- Make the roll with `--defer`, then show the dice and meaningful legal
-  post-roll choices to the players who can act on them.
+- Never offer an option whose advertised outcome your private notes rule out.
+- Give players correct numbers before any choice. Damage uses the attacker's own
+  margin; a skin's effective margin applies only to the thresholds it names.
+- Make the roll with `--defer`, then show the dice, the kept result and the
+  margin, and the meaningful legal post-roll choices, to the players who can act
+  on them. Offer any affordable legal spend that changes the declared outcome or
+  a meaningful degree of success, however costly, with its exact price; cost is
+  the player's decision.
   Wait for those decisions before settling; never issue the roll again. If no
   eligible player has a meaningful post-roll choice, explain why and settle
   without discretionary spending in the same reply. Include abilities and
@@ -130,9 +144,19 @@ campaign at PATH through the harness in this repository.
   Adjudicate compatible actions in fictional or initiative order, and ask only
   for a decision needed to settle a truly incompatible pair. Never override one
   declaration to make another succeed, and keep deferred Luck and ability
-  choices open.
+  choices open. When declarations need different actors for one roll or role,
+  ask the players to choose; compatible help needs no new confirmation. Never
+  choose the roller silently, by odds or by an unagreed vote.
+- One spokesperson means one roll: settle who speaks before rolling. Another
+  character does not retry a failed test in the same scene unless the situation
+  or the leverage has really changed.
+- An action withdrawn before commitment causes none of that action's
+  consequences. Withdrawing it does not undo what was already done or fictional
+  time already spent.
 - Record each scene as a beat as it ends, and mark act breaks with `--act-end`.
-  A cut to another place or time starts a new beat.
+  A cut to another place or time starts a new beat; keep Almanac 9's scene
+  definition. Do not start a beat merely because another test is called, or to
+  refresh a power or reach a milestone.
 - Save every public body with `tools/checkpoint.py`, and add the turn's public
   narration to the session log with `tools/session_log.py`.
 - Keep each public reply to about 400 words. Cut description before stakes or
@@ -188,6 +212,11 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
      scenario declares what advances the clock, what happens when it fills, what
      can interrupt or delay it, and which core or skin Pressure triggers the
      threat can set off.
+   - It gives concrete, telegraphed Pressure-bearing dangers and consequential
+     choices; alternatives carry honest fictional costs where appropriate. A
+     scene may have unavoidable exposure where its fiction warrants it, but it
+     is not a quota. If players avert the costs, record how; never manufacture a
+     charge to satisfy coverage.
    - Its named NPCs each have a want, a manner and a line they will not cross.
    - The scenario gives the skin's distinctive procedures a chance to occur; it
      never forces them.
@@ -210,6 +239,8 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
      queued until that player's next turn, in chronological order. Each player
      must receive all completed public dialogue before making a new decision.
    - When the reply asks one player for a decision, only that player answers.
+   - Every public body goes to every player, including the closing one; `TO:
+     none` means no decision is asked, not that the narration is withheld.
 3. The orchestrator passes the answers to the Custodian, labelled by character.
 4. The Custodian adjudicates through the harness, records what changed, saves the
    checkpoint and replies again. The orchestrator saves the reply's public block
@@ -273,7 +304,9 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
 **Kept for the auditor** in the ignored run folder:
 - the initial and final campaign state, the JSONL logs and the receipts;
 - the frozen scenario and the exact packets delivered, with their hashes;
-- each public reply as its own file, with the checkpoint comparisons;
+- each public reply as its own file, with the checkpoint comparisons and a copy
+  of each checkpoint version;
+- each player's exact incoming messages;
 - a command record;
 - where the platform stores agent transcripts, a tool trace and token usage for
   every role.
@@ -295,6 +328,7 @@ refreshing.
 
 ## After the pilot
 
-Fable and Astra compare the eight reports and propose changes for Barry before the
+Fable and Astra compare the reports and propose changes for Barry before the
 40-run programme: to this protocol, to the briefs, and any harness fixes. No rule
-changes follow from the pilot alone.
+changes follow from the pilot alone. Targeted probes for procedures that ordinary
+play leaves unexercised are run and labelled separately.

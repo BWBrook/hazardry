@@ -24,28 +24,28 @@ This review proposes changes before round 4 (P4 and P8). As before, they need As
 | Luck spent | 8 | 0 | 13 | 1 | 10 | 10 |
 | Milestones | 1, late | 1 | 1 | 0 | 1 | 2 |
 | Custodian replies | 16 | 15 | 23 | 15 | 38 | 25 |
-| Replies only asking for commitment | 0 | 0 | 0 | 0 | 4 | **8** |
+| Replies with a separate commitment request | 0 | 0 | 0 | 0 | 4 | **8** |
 | Status | complete | complete | complete | complete | **harness test only** | complete |
 
 \* Audit adjustments are in the earlier reviews; the logs are unchanged.
 
-## What revision 4 changed
+## Observed under revision 4
 
 - **Threats now move without being prompted.** P3's tide clock ticked five times and its flood clock four. P7's Dawn Tithe advanced five times on Varkos's orders and the passage of time. In rounds 1 and 2, no clock moved without a roll.
 - **Cold opens worked in both runs:** the cistern, and the tipping wagon.
-- **The bold temperament changed how players treated their resources.** Both players spent Fortune or Fate down to nothing, paid sorcery and rite costs in Stamina or Pressure, and took real risks. P3's player deliberately took a Break.
+- **Bold players spent their resources.** Under the bold temperament, both players spent Fortune or Fate down to nothing, paid sorcery and rite costs in Stamina or Pressure, and took real risks. P3's player deliberately took a Break.
 - **NPCs had distinct, motivated voices** in both runs: Maud, Thorne, Gant and the Provost; Varkos, Ossian and Nima.
 - **The skins' distinctive procedures got used:**
-  - P3: Rite, Unspeakable, the step-2 and step-3 Pressure effects, the toll, Break and crisis, purge;
+  - P3: Rite, Unspeakable, the step-2 threshold (its FRT penalty left pending, persuasion correctly excluded), the step-3 toll, Break and crisis, purge;
   - P7: Weave, Wrack and the Heroic Act.
 
-## What it did not change, or cost
+## What still fell short, and a new cost
 
 1. **Pressure still depends on what the skin lets in.**
    - P3 gained 7, mostly prices the player chose: rite costs, tolls, reading forbidden pages.
    - P7 gained 2: one Wrack cost and one ambient charge. Iron & Ruin says "the sorcery table says exactly when [Doom] rises", which leaves little room for ambient Doom, and P7's single ambient charge is questionable under that wording.
-   - In both runs Custodians still under-charged *ambient* Pressure. P3's first witnessing charge came late (G014), and P7 had one.
-2. **The stakes rule is now the main cost in replies.** Twelve replies across the two runs (4 in P3, 8 in P7) did nothing but restate stakes and ask for commitment, because the options had named a test without its consequences. A roll now often takes three replies.
+   - P3's Custodian under-charged *ambient* Pressure: the thralls were in sight from G001, but the first witnessing charge came at G014. P7 had one ambient charge under an explicitly additive frozen policy; without identified missed triggers, that alone does not show under-charging.
+2. **The stakes rule is now the main cost in replies.** Twelve replies across the two runs (4 in P3, 8 in P7) asked separately for commitment, because the options had named a test without its consequences. P7's eight did nothing else; P3's four also resolved earlier actions or advanced the fiction. In P7 a roll often took three replies.
 3. **A protocol leak.** P3 printed the full crisis table publicly to make a Break an informed choice. Under the Leaks rule, P3 counts as a harness test only.
 4. **Small recurring slips:**
    - chronology (P3 twice);
@@ -63,7 +63,7 @@ This review proposes changes before round 4 (P4 and P8). As before, they need As
 - **Never offer a hidden solution as an option.** An option may point to a lead the characters have discovered, never to an answer known only from private notes.
 - **Records.** Write the public session log with `session_log.py` each turn, alongside the checkpoint.
 
-**B. Packets.** Add each skin's crisis and backlash tables to the player packet. They are printed in the book's player-readable skins, and P3 showed that an informed Break is good play. The table that stays private is the Custodian's *choice* of result where the rules allow a choice; table results are always drawn.
+**B. Packets.** Add each skin's crisis and backlash tables to the player packet. They are printed in the book's player-readable skins, and P3 showed that an informed Break is good play. Where a printed rule lets the Custodian choose a result, that choice stays allowed and is recorded as chosen; what stays private is any preselection before it applies. Disclosing the consequence actually applied is separate.
 
 **C. Reply guide.** Put a length guide of about 400 words in the protocol's brief, so both teams use the same one. Cut description before stakes or options.
 
@@ -72,7 +72,7 @@ This review proposes changes before round 4 (P4 and P8). As before, they need As
 - Almanac 4 lists general triggers for every skin: time under threat, noisy heroics, desperate bargains, taboo acts.
 - Clanfire, Rust and Mournful Shores all print "Gain +1 …" lists without saying whether those replace or add to Almanac 4.
 
-This is a rules-text decision. Under the additive reading, the AI Custodian's guidance ("apply the core or skin's trigger") is right. Under the exclusive reading, ambient Pressure is mostly closed off in Iron & Ruin, and that alone explains P7's low Doom.
+This is a rules-text decision. Under the additive reading, the AI Custodian's guidance ("apply the core or skin's trigger") is right. Under the exclusive reading, ambient Pressure is mostly closed off in Iron & Ruin.
 
 My recommendation is **additive**, with Iron & Ruin's line reworded to "The sorcery table says exactly what each casting costs". This needs Barry's decision and would be a Stage 3 tally item.
 

@@ -28,6 +28,11 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
 - Keep choices concrete, including plausible narrative options. Never offer an
   option that only private notes could suggest. Let the player think aloud;
   only fictional stalling costs time.
+- When players' declarations need different actors for one roll or role, ask
+  them to choose; never pick silently, by odds or by vote. One spokesperson means
+  one roll, and another character does not retry a failed test in the same
+  scene unless the situation or leverage has really changed. An action withdrawn
+  before commitment has none of its consequences.
 - Judge tags, equipment, contextual modifiers, and exceptional harm from the
   fiction. The CLI records the judgment; it does not read a description as rules.
 - Threats move on their own. Decide in advance what advances each threat's
@@ -47,8 +52,9 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
 - When the fiction suits a character's distinctive capability (a power, bond,
   rite, spell or signature gear), include it among the options you name. Never
   require it.
-- Offer Luck when a legal spend could change the declared outcome or a
-  meaningful degree of success. If no eligible player has a meaningful legal
+- Give correct numbers before any choice. Offer Luck when a legal spend could
+  change the declared outcome or a meaningful degree of success, however costly;
+  cost is the player's decision. If no eligible player has a meaningful legal
   post-roll choice, show the dice, explain why, and settle without discretionary
   spending in the same reply. Check other abilities and payment choices too:
   an ineffective nudge does not remove Jack-of-Trades or a Spell's choice of
@@ -77,6 +83,8 @@ with `play.py pass`. The earlier side in initiative order acts or passes before 
 later side. Establish
 side initiative once for the fight. Twilight positions keep both their benefit and
 drawback throughout the round. Supply edge, soak, and the actual legal defence;
+damage uses the attacker's own margin, and a skin's effective margin applies only
+to the thresholds it names;
 use `opposed` instead of `attack` for a contest whose consequence is not damage.
 
 Use `advance.py` for milestones and purchases, while the session is open and before

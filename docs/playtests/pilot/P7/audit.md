@@ -66,7 +66,7 @@ Auditor: Fable (`claude-opus-5-5`). Protocol revision 4; rules at `849a8e0`. I d
 **Judgement calls: the perilous flags on beats 4 and 8.**
 - **Beat 4** (Ossian opens the hatch and the fugitives descend before the guards arrive) and **beat 8** (Sera covers the last captive's withdrawal) had no roll.
 - In both, the stated danger, guards arriving and reserves breaking in, could have cost the goal. Under the handbook's wording (the actual fictional stakes, not dice), both flags are defensible.
-- Every beat perilous is generous. It brought the second milestone a beat or two earlier than a stricter count would have.
+- Every beat perilous is generous. Without beat 4's flag, the second milestone would have come after beat 7 rather than beat 6. Beat 8 came after that award and did not affect it.
 
 **Correct: the sample of ordinary rulings.**
 - **G020, Sera's slash.** AGI with Disadvantage: 15 and 7, kept 15, a miss by 4. The worker's 3 against 10 gives margin 7. Ten tokens could not make her margin exceed 7, so no offer was made. Correct.
@@ -104,4 +104,4 @@ Its findings for the joint review:
 - **Skin triggers.** Are a skin's Pressure triggers exclusive (Iron & Ruin's "exactly when it rises") or added to Almanac 4's general ones?
 - **Weave success** when the attack is dodged needs a one-line rules note.
 
-P7 also confirms what P3 showed. Under revision 4, with a bold temperament and declared clocks, the threat clock moves steadily (five ticks) and the player spends Luck freely. Even so, Pressure stayed modest at Doom 2, because Iron & Ruin, read strictly, ties Doom to sorcery.
+P7 also matches what P3 showed. Under revision 4, with a bold temperament and declared clocks, the threat clock moved steadily (five ticks) and the player spent Luck freely. Pressure stayed modest at Doom 2. The strict reading of Iron & Ruin cannot explain that, because this Custodian's frozen policy was explicitly additive; the run shows only that few Doom triggers were met or charged.

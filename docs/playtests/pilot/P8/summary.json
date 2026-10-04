@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "interpretation": "Descriptive logged observations; no population claim or automatic rules decision.",
+  "definitions": {
+    "midpoint": "The end of the session's first act: the first beat recorded with --act-end. Beats are recorded as their scenes end, so the first half runs to and includes that beat record, by event sequence. Unavailable without an act break.",
+    "beat_denominator": "Count explicit beat events, not rolls or the largest beat number; omit sessions without beats from both rate numerator and denominator.",
+    "completed": "Explicit session_start and session_end with an uninterrupted event sequence and no partial legacy history; incomplete sessions are separate.",
+    "pc_rolls": "Each finalized PC roll, including opposed sides and Deflection; exclude raw_roll records and npc: actors.",
+    "luck_spending": "Use before/after changes in luck events only; roll.luck_spent is not an additional expenditure.",
+    "red_line": "Pressure >=4 until a pressure event lowers or resets it; affected rolls require pressure_at_start >=4. Each window reports its affected rolls and the scenes it touched: the scene it opened in and each later scene it stayed open through. Open windows are right-censored, including at session end.",
+    "red_line_threshold": "Provisional interpretation of 'few': more than 3 affected PC rolls observed in one window."
+  },
+  "session_counts": {
+    "total": 1,
+    "completed": 1,
+    "incomplete": 0
+  },
+  "completed_evidence": {
+    "by_skin_and_party_size": [
+      {
+        "skin": "free_traders_of_the_drift_marches",
+        "party_size": 3,
+        "sessions": 1,
+        "recorded_beats": 6,
+        "perilous_beats": 5,
+        "crises": 0,
+        "rate_eligible_sessions": 1,
+        "sessions_without_beats": 0,
+        "rate_eligible_crises": 0,
+        "crises_per_20_recorded_beats": 0.0,
+        "character_sessions": 3,
+        "midpoint_available_character_sessions": 3,
+        "initially_low_character_sessions": 0,
+        "initially_above_one_with_midpoint": 3,
+        "newly_low_by_midpoint": 0,
+        "pc_rolls": 7,
+        "red_line_windows": 0,
+        "red_line_windows_above_threshold": 0,
+        "ongoing_censored_windows": 0
+      }
+    ]
+  },
+  "incomplete_observations": {
+    "by_skin_and_party_size": []
+  },
+  "sessions": [
+    {
+      "source": "/Users/bwbrook/games/sinew-and-steel/playtests/campaigns/p8_drift/state/logs/session_001.jsonl",
+      "session": 1,
+      "skin": "free_traders_of_the_drift_marches",
+      "party_size": 3,
+      "completed": true,
+      "incomplete_reasons": [],
+      "event_count": 42,
+      "recorded_beats": 6,
+      "perilous_beats": 5,
+      "last_recorded_beat": 6,
+      "midpoint_beat": 4,
+      "acts": [
+        {
+          "act": 1,
+          "beats": 4,
+          "perilous_beats": 3,
+          "pc_rolls": 4,
+          "pressure_gained": 0,
+          "crises": 0,
+          "ended": true
+        },
+        {
+          "act": 2,
+          "beats": 2,
+          "perilous_beats": 2,
+          "pc_rolls": 3,
+          "pressure_gained": 0,
+          "crises": 0,
+          "ended": true
+        }
+      ],
+      "completed_acts": 2,
+      "crises": 0,
+      "crisis_targets": {},
+      "threshold_crises": 0,
+      "forced_crises": 0,
+      "pressure_gained": 0,
+      "pressure_gains_by_category": {},
+      "pressure_gains_by_source": {},
+      "crises_per_20_recorded_beats": 0.0,
+      "characters": {
+        "kest_vale": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 10,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 1,
+          "luck_recovered": 0,
+          "luck_spent_by_source": {
+            "Chart Wayward Sun through debris-swept jump window with Scout Surveyor": 1
+          },
+          "luck_recovered_by_source": {},
+          "pc_rolls": 2,
+          "acting_rolls": 2,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 2,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "DEX": {
+              "count": 1,
+              "share": 0.5
+            },
+            "EDU": {
+              "count": 1,
+              "share": 0.5
+            }
+          },
+          "roll_share_by_method": {
+            "Chart Wayward Sun through debris-swept jump window with Scout Surveyor": {
+              "count": 1,
+              "share": 0.5
+            },
+            "Match Nacre tumble and ease Wayward Sun airlock to Ilya": {
+              "count": 1,
+              "share": 0.5
+            }
+          }
+        },
+        "mira_quill": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 10,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 0,
+          "luck_recovered": 0,
+          "luck_spent_by_source": {},
+          "luck_recovered_by_source": {},
+          "pc_rolls": 3,
+          "acting_rolls": 3,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 3,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "SOC": {
+              "count": 3,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_method": {
+            "Ask Marshal Brant for supervised recovery while keeping Ilya isolated and reporting seal diagnostic": {
+              "count": 1,
+              "share": 0.3333333333333333
+            },
+            "Broker one-time clinic delivery of sealed anti-fever case with Sela Orin": {
+              "count": 1,
+              "share": 0.3333333333333333
+            },
+            "Track intermittent Mercy Reach quarantine relay and coordinate Brant permit transmission": {
+              "count": 1,
+              "share": 0.3333333333333333
+            }
+          }
+        },
+        "rook_fen": {
+          "initial_luck": 11,
+          "initially_low": false,
+          "minimum_luck_first_half": 9,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 2,
+          "luck_recovered": 2,
+          "luck_spent_by_source": {
+            "Salvage Rat: secure Ilya to EVA return line without test": 1,
+            "nudge": 1
+          },
+          "luck_recovered_by_source": {
+            "milestone:p8-m1": 2
+          },
+          "pc_rolls": 2,
+          "acting_rolls": 2,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 2,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "EDU": {
+              "count": 2,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_method": {
+            "Rook certifies engineering-board cross-check against Kest ship-sensor comparison while Mira streams seal log to Brant": {
+              "count": 1,
+              "share": 0.5
+            },
+            "Rook diagnoses case seal and temperature with engineering toolkit using Kest telemetry feed": {
+              "count": 1,
+              "share": 0.5
+            }
+          }
+        }
+      },
+      "pc_rolls": 7,
+      "npc_rolls_excluded": 0,
+      "roll_share_by_attribute": {
+        "DEX": {
+          "count": 1,
+          "share": 0.14285714285714285
+        },
+        "EDU": {
+          "count": 3,
+          "share": 0.42857142857142855
+        },
+        "SOC": {
+          "count": 3,
+          "share": 0.42857142857142855
+        }
+      },
+      "roll_share_by_method": {
+        "Ask Marshal Brant for supervised recovery while keeping Ilya isolated and reporting seal diagnostic": {
+          "count": 1,
+          "share": 0.14285714285714285
+        },
+        "Broker one-time clinic delivery of sealed anti-fever case with Sela Orin": {
+          "count": 1,
+          "share": 0.14285714285714285
+        },
+        "Chart Wayward Sun through debris-swept jump window with Scout Surveyor": {
+          "count": 1,
+          "share": 0.14285714285714285
+        },
+        "Match Nacre tumble and ease Wayward Sun airlock to Ilya": {
+          "count": 1,
+          "share": 0.14285714285714285
+        },
+        "Rook certifies engineering-board cross-check against Kest ship-sensor comparison while Mira streams seal log to Brant": {
+          "count": 1,
+          "share": 0.14285714285714285
+        },
+        "Rook diagnoses case seal and temperature with engineering toolkit using Kest telemetry feed": {
+          "count": 1,
+          "share": 0.14285714285714285
+        },
+        "Track intermittent Mercy Reach quarantine relay and coordinate Brant permit transmission": {
+          "count": 1,
+          "share": 0.14285714285714285
+        }
+      },
+      "red_line": {
+        "scope": "party",
+        "roll_threshold": 3,
+        "affected_pc_rolls": 0,
+        "missing_pressure_snapshot_rolls": 0,
+        "unassigned_high_pressure_rolls": 0,
+        "windows": [],
+        "ongoing_censored_windows": 0,
+        "windows_above_threshold": 0
+      }
+    }
+  ]
+}
