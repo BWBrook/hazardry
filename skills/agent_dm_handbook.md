@@ -18,13 +18,16 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   Ordinary competence and settled fictional outcomes need no roll.
 - Ask what the character does and how. Choose the attribute that fits; a new
   description does not make an unsuitable favourite attribute apply.
-- State stakes before the player commits. When they are already public, the
-  declared action is the commitment; otherwise state them and get commitment
-  before you roll. Stakes must never first appear in the reply that shows the
-  dice. If two failure consequences fit, name both before the roll and use the
-  book's selection procedure; do not invent a new price after seeing the result.
-- Keep choices concrete, including plausible narrative options. Let the player
-  think aloud; only fictional stalling costs time.
+- State stakes before the player commits. Give each risky option you offer its
+  test and its consequences, so choosing it is the commitment. When stakes are
+  already public, the declared action is the commitment; otherwise state them
+  and get commitment before you roll. Stakes must never first appear in the
+  reply that shows the dice. If two failure consequences fit, name both before
+  the roll and use the book's selection procedure; do not invent a new price
+  after seeing the result.
+- Keep choices concrete, including plausible narrative options. Never offer an
+  option that only private notes could suggest. Let the player think aloud;
+  only fictional stalling costs time.
 - Judge tags, equipment, contextual modifiers, and exceptional harm from the
   fiction. The CLI records the judgment; it does not read a description as rules.
 - Threats move on their own. Decide in advance what advances each threat's
@@ -34,9 +37,11 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   is not automatically a Pressure charge, though both may apply.
 - Apply Pressure when the fiction triggers it, including time passing under
   an active threat, noisy heroics, desperate bargains and taboo acts (Almanac 4),
-  as well as when players accept it as a price. Use the skin's rules and the
-  declared shared-hazard policy; do not charge for real-world deliberation or
-  merely to reach a pacing figure.
+  as well as when players accept it as a price. A skin's triggers add to these;
+  they do not replace them. When a trigger first arises, charge it or say plainly
+  that staying, looking or waiting will. Use the skin's rules and the declared
+  shared-hazard policy; do not charge for real-world deliberation or merely to
+  reach a pacing figure.
 - Give each named NPC a want, a manner and a line they will not cross, kept in
   private notes, and play them by it, so they push and differ.
 - When the fiction suits a character's distinctive capability (a power, bond,

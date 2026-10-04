@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "interpretation": "Descriptive logged observations; no population claim or automatic rules decision.",
+  "definitions": {
+    "midpoint": "The end of the session's first act: the first beat recorded with --act-end. Beats are recorded as their scenes end, so the first half runs to and includes that beat record, by event sequence. Unavailable without an act break.",
+    "beat_denominator": "Count explicit beat events, not rolls or the largest beat number; omit sessions without beats from both rate numerator and denominator.",
+    "completed": "Explicit session_start and session_end with an uninterrupted event sequence and no partial legacy history; incomplete sessions are separate.",
+    "pc_rolls": "Each finalized PC roll, including opposed sides and Deflection; exclude raw_roll records and npc: actors.",
+    "luck_spending": "Use before/after changes in luck events only; roll.luck_spent is not an additional expenditure.",
+    "red_line": "Pressure >=4 until a pressure event lowers or resets it; affected rolls require pressure_at_start >=4. Each window reports its affected rolls and the scenes it touched: the scene it opened in and each later scene it stayed open through. Open windows are right-censored, including at session end.",
+    "red_line_threshold": "Provisional interpretation of 'few': more than 3 affected PC rolls observed in one window."
+  },
+  "session_counts": {
+    "total": 1,
+    "completed": 1,
+    "incomplete": 0
+  },
+  "completed_evidence": {
+    "by_skin_and_party_size": [
+      {
+        "skin": "whispers_in_the_fog",
+        "party_size": 1,
+        "sessions": 1,
+        "recorded_beats": 6,
+        "perilous_beats": 3,
+        "crises": 1,
+        "rate_eligible_sessions": 1,
+        "sessions_without_beats": 0,
+        "rate_eligible_crises": 1,
+        "crises_per_20_recorded_beats": 3.3333333333333335,
+        "character_sessions": 1,
+        "midpoint_available_character_sessions": 1,
+        "initially_low_character_sessions": 0,
+        "initially_above_one_with_midpoint": 1,
+        "newly_low_by_midpoint": 1,
+        "pc_rolls": 26,
+        "red_line_windows": 1,
+        "red_line_windows_above_threshold": 0,
+        "ongoing_censored_windows": 0
+      }
+    ]
+  },
+  "incomplete_observations": {
+    "by_skin_and_party_size": []
+  },
+  "sessions": [
+    {
+      "source": "playtests/campaigns/p3_mournful/state/logs/session_001.jsonl",
+      "session": 1,
+      "skin": "whispers_in_the_fog",
+      "party_size": 1,
+      "completed": true,
+      "incomplete_reasons": [],
+      "event_count": 134,
+      "recorded_beats": 6,
+      "perilous_beats": 3,
+      "last_recorded_beat": 6,
+      "midpoint_beat": 3,
+      "acts": [
+        {
+          "act": 1,
+          "beats": 3,
+          "perilous_beats": 2,
+          "pc_rolls": 23,
+          "pressure_gained": 7,
+          "crises": 1,
+          "ended": true
+        },
+        {
+          "act": 2,
+          "beats": 3,
+          "perilous_beats": 1,
+          "pc_rolls": 3,
+          "pressure_gained": 0,
+          "crises": 0,
+          "ended": true
+        }
+      ],
+      "completed_acts": 2,
+      "crises": 1,
+      "crisis_targets": {
+        "nell_carrow": 1
+      },
+      "threshold_crises": 1,
+      "forced_crises": 0,
+      "pressure_gained": 7,
+      "pressure_gains_by_category": {
+        "action_cost": 5,
+        "ambient": 1,
+        "failure": 1
+      },
+      "pressure_gains_by_source": {
+        "Sign of Warding (Rite): chalk a line across the fourth stair's rim between Silas and Ansel": 1,
+        "Sign of Warding (Rite): chalk a second line across the wet ledge between herself and Brann": 1,
+        "The Ebb Unspoken (Unspeakable): from the Tide-stone, sing the Low Water Psalm backward, lantern raised, ears open, Ansel singing beside her": 2,
+        "Unstop her ears and listen to every line of the Dean's reading of the Cut Leaves, committing the verse to memory to learn it whole and its reversal": 1,
+        "Witnessing a new class of horror: Silas's drowned face, lit a foot from hers (tide-thrall, first sight; policy: one witnessing gain per scene)": 1,
+        "pressure:nell_carrow:step3:Each risky test a character attempts costs 1 personal Luck token before rolling or adds 1 Pressure": 1
+      },
+      "crises_per_20_recorded_beats": 3.3333333333333335,
+      "characters": {
+        "nell_carrow": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 0,
+          "reached_one_or_less_by_midpoint": true,
+          "newly_reached_one_or_less_by_midpoint": true,
+          "luck_spent": 10,
+          "luck_recovered": 11,
+          "luck_spent_by_source": {
+            "Sign of Warding (Rite): chalk a line across the gallery stair-head and murmur the Psalter's Warding (success cost)": 1,
+            "nudge": 5,
+            "pressure:nell_carrow:step3:Each risky test a character attempts costs 1 personal Luck token before rolling or adds 1 Pressure": 4
+          },
+          "luck_recovered_by_source": {
+            "advancement:raise": 1,
+            "milestone:third-ebb-unmade": 10
+          },
+          "pc_rolls": 26,
+          "acting_rolls": 23,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 23,
+              "share": 0.8846153846153846
+            },
+            "defender": {
+              "count": 3,
+              "share": 0.11538461538461539
+            }
+          },
+          "roll_share_by_attribute": {
+            "AGI": {
+              "count": 10,
+              "share": 0.38461538461538464
+            },
+            "FRT": {
+              "count": 7,
+              "share": 0.2692307692307692
+            },
+            "SCH": {
+              "count": 6,
+              "share": 0.23076923076923078
+            },
+            "VIG": {
+              "count": 3,
+              "share": 0.11538461538461539
+            }
+          },
+          "roll_share_by_method": {
+            "Brace on the Low Sluice wheel and wedge the pocket-knife into the ratchet to jam it": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Drop from the gallery rail to the service ledge and run low along the wet stones to Ansel with the lantern raised": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Follow the circle along the burning ledge to the low arch, coat over her mouth, lantern low": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Grip Ansel by the shoulders and swear on the Psalter to come back for Maud, so he walks with her": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Kneel in the water, plunge an arm after Ansel's collar and jab the lantern's flame into Silas's face": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Lower the lantern, hands in sight, and ask Maud to tell her what the water wants, listening as long as it takes": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Open the Harrow drawer with the brass key, read the combination, work the safe, and take the roster, ledger, letters and tin": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Plant boots, haul Ansel with both hands, and drive shoulder and lantern into Silas's face to break his grip": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Run the bare causeway and the wharf with the lantern and the brass key, shouting for Gant": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Seize Ansel's free hand and urge him, low and hard, to break Silas's grip himself while the lantern blinds Silas": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Sign of Warding (Rite): chalk a line across the fourth stair's rim between Silas and Ansel": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Sign of Warding (Rite): chalk a line across the gallery stair-head and murmur the Psalter's Warding": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Sign of Warding (Rite): chalk a second line across the wet ledge between herself and Brann": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Step between the Provost and the Dean, take the Dean's notebook, and read the statement aloud with the ledger's eleven envelopes and the Provost's own signature on the 1921 paper": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Take Ansel's wrist and run the ledge to the iron stair, lantern low, shoulder to the smoke": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "The Ebb Unspoken (Unspeakable): from the Tide-stone, sing the Low Water Psalm backward, lantern raised, ears open, Ansel singing beside her": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Thrust the lantern's flame into Silas's face and shove Ansel behind her": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Uncork the oil flask, hurl it onto the ledge between her and Brann, and strike a match to ignite it": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Unstop her ears and listen to every line of the Dean's reading of the Cut Leaves, committing the verse to memory to learn it whole and its reversal": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Wade in beside Ansel, lantern thrust at Silas, and work the swollen kelp-cord knot at his wrists with her fingernails": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Wade to the stone, hold out her hand, give Ansel his father's last gloss and ask him to hear the verse sung backward and say his name back to her, not to the stone": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Walk up the wharf with scorched hands open and appeal to Gant as one living man to another, naming Tom and the verdict": {
+              "count": 1,
+              "share": 0.043478260869565216
+            },
+            "Whisper to Ansel under Maud's last words: ask for the rest of Papa's words and that he walk with her when Maud nods": {
+              "count": 1,
+              "share": 0.043478260869565216
+            }
+          }
+        }
+      },
+      "pc_rolls": 26,
+      "npc_rolls_excluded": 7,
+      "roll_share_by_attribute": {
+        "AGI": {
+          "count": 10,
+          "share": 0.38461538461538464
+        },
+        "FRT": {
+          "count": 7,
+          "share": 0.2692307692307692
+        },
+        "SCH": {
+          "count": 6,
+          "share": 0.23076923076923078
+        },
+        "VIG": {
+          "count": 3,
+          "share": 0.11538461538461539
+        }
+      },
+      "roll_share_by_method": {
+        "Brace on the Low Sluice wheel and wedge the pocket-knife into the ratchet to jam it": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Drop from the gallery rail to the service ledge and run low along the wet stones to Ansel with the lantern raised": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Follow the circle along the burning ledge to the low arch, coat over her mouth, lantern low": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Grip Ansel by the shoulders and swear on the Psalter to come back for Maud, so he walks with her": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Kneel in the water, plunge an arm after Ansel's collar and jab the lantern's flame into Silas's face": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Lower the lantern, hands in sight, and ask Maud to tell her what the water wants, listening as long as it takes": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Open the Harrow drawer with the brass key, read the combination, work the safe, and take the roster, ledger, letters and tin": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Plant boots, haul Ansel with both hands, and drive shoulder and lantern into Silas's face to break his grip": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Run the bare causeway and the wharf with the lantern and the brass key, shouting for Gant": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Seize Ansel's free hand and urge him, low and hard, to break Silas's grip himself while the lantern blinds Silas": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Sign of Warding (Rite): chalk a line across the fourth stair's rim between Silas and Ansel": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Sign of Warding (Rite): chalk a line across the gallery stair-head and murmur the Psalter's Warding": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Sign of Warding (Rite): chalk a second line across the wet ledge between herself and Brann": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Step between the Provost and the Dean, take the Dean's notebook, and read the statement aloud with the ledger's eleven envelopes and the Provost's own signature on the 1921 paper": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Take Ansel's wrist and run the ledge to the iron stair, lantern low, shoulder to the smoke": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "The Ebb Unspoken (Unspeakable): from the Tide-stone, sing the Low Water Psalm backward, lantern raised, ears open, Ansel singing beside her": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Thrust the lantern's flame into Silas's face and shove Ansel behind her": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Uncork the oil flask, hurl it onto the ledge between her and Brann, and strike a match to ignite it": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Unstop her ears and listen to every line of the Dean's reading of the Cut Leaves, committing the verse to memory to learn it whole and its reversal": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Wade in beside Ansel, lantern thrust at Silas, and work the swollen kelp-cord knot at his wrists with her fingernails": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Wade to the stone, hold out her hand, give Ansel his father's last gloss and ask him to hear the verse sung backward and say his name back to her, not to the stone": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Walk up the wharf with scorched hands open and appeal to Gant as one living man to another, naming Tom and the verdict": {
+          "count": 1,
+          "share": 0.043478260869565216
+        },
+        "Whisper to Ansel under Maud's last words: ask for the rest of Papa's words and that he walk with her when Maud nods": {
+          "count": 1,
+          "share": 0.043478260869565216
+        }
+      },
+      "red_line": {
+        "scope": "character",
+        "roll_threshold": 3,
+        "affected_pc_rolls": 0,
+        "missing_pressure_snapshot_rolls": 0,
+        "unassigned_high_pressure_rolls": 0,
+        "windows": [
+          {
+            "track": "nell_carrow",
+            "actor": "nell_carrow",
+            "start_sequence": 99,
+            "start_beat": 2,
+            "start_reason": "threshold_crossing",
+            "left_censored": false,
+            "end_sequence": 104,
+            "end_beat": 2,
+            "end_reason": "crisis_reset",
+            "affected_pc_rolls": 0,
+            "scenes": 1,
+            "rolls_by_actor": {},
+            "right_censored": false,
+            "exceeds_roll_threshold": false
+          }
+        ],
+        "ongoing_censored_windows": 0,
+        "windows_above_threshold": 0
+      }
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 # Pilot protocol: simulated play
 
-Revision 4, 3 October 2026. Drafted by Fable and amended by Astra under Barry's
-instruction. Revision 2 governed P1 and P5, and revision 3 governed P2 and P6.
-Revision 4 applies the second round's lessons (`pilot/review-2.md`) and Barry's
-direction to induce more risk, tension, pace and Pressure. It governs P3 and P7
-onwards.
+Revision 5, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
+instruction. Revision 2 governed P1 and P5, revision 3 governed P2 and P6, and
+revision 4 governed P3 and P7. Revision 5 applies the third round's lessons
+(`pilot/review-3.md`) and Barry's decision that a skin's Pressure triggers add to
+the core triggers. It governs P4 and P8 onwards.
 
 ## Purpose
 
@@ -63,7 +63,8 @@ subagents share the filesystem and tools. Each manifest states which applies.
 - the Quickstart, The Adventurer and the Adventurer's Manual;
 - the player-facing sections of the skin (its attributes, Luck, knacks or tags,
   equipment and abilities) and its Pressure track with the step effects and
-  triggers, but not its crisis tables or Custodian advice;
+  triggers, its crisis and backlash tables where it prints them, but not its
+  Custodian advice;
 - the character's public export (`resume_pack.py --public --character NAME
   --json`), completed with reviewed descriptions of its equipment, abilities,
   spells and the resources it controls;
@@ -72,8 +73,8 @@ subagents share the filesystem and tools. Each manifest states which applies.
 - for P1–P2, the Emberfall player handout;
 - the public narration, as play goes on.
 
-Players never receive hidden notes, private state, crisis tables or the other
-agents' instructions.
+Players never receive hidden notes, private state or the other agents'
+instructions.
 
 ## Role briefs
 
@@ -93,10 +94,13 @@ campaign at PATH through the harness in this repository.
   an act need not open with a forced fight.
 - Threats move on their own. When enough fictional time passes for the active
   threat to advance, or the opposition makes its move, advance its clock as
-  declared in the scenario, whether or not anyone rolls. Apply Pressure when the
-  core or skin's fictional trigger occurs. A clock tick is not automatically a
-  Pressure charge, though both may apply. Never charge for real-world
-  deliberation or to reach a target rate.
+  declared in the scenario, whether or not anyone rolls. A clock tick is not
+  automatically a Pressure charge, though both may apply.
+- Apply Pressure when a fictional trigger occurs. A skin's triggers add to the
+  core triggers in Almanac 4; they do not replace them. When a trigger first
+  arises, charge it, or say plainly that it will be charged if the characters
+  stay, look or wait. Never charge for real-world deliberation or to reach a
+  target rate.
 - Give each named NPC a want, a manner and a line they will not cross, kept in
   your private notes, and play them by it.
 - Put everything the players should see between a line `=== PUBLIC ===` and a
@@ -107,10 +111,15 @@ campaign at PATH through the harness in this repository.
   to the orchestrator only. Keep private notes in the campaign files.
 - The orchestrator relays and keeps records. It gives no rulings; the rules and
   your judgement decide.
-- State the stakes before the player commits. When they are already public, in
-  your options or earlier, the player's declared action is the commitment.
-  Otherwise state the test and its consequences, and get commitment before you
-  roll. Stakes must never first appear in the reply that shows the dice. Make the roll with `--defer`, then show the dice and meaningful legal
+- State the stakes before the player commits. When you offer options, give each
+  risky one its test and its consequences on success and failure, so that
+  choosing it is the commitment. When the stakes are already public, the
+  player's declared action is the commitment. Otherwise state the test and its
+  consequences, and get commitment before you roll. Stakes must never first
+  appear in the reply that shows the dice.
+- Never offer an option that depends on something only your private notes
+  know; options may follow leads the characters have found.
+- Make the roll with `--defer`, then show the dice and meaningful legal
   post-roll choices to the players who can act on them.
   Wait for those decisions before settling; never issue the roll again. If no
   eligible player has a meaningful post-roll choice, explain why and settle
@@ -124,7 +133,10 @@ campaign at PATH through the harness in this repository.
   choices open.
 - Record each scene as a beat as it ends, and mark act breaks with `--act-end`.
   A cut to another place or time starts a new beat.
-- Save every public body with `tools/checkpoint.py`.
+- Save every public body with `tools/checkpoint.py`, and add the turn's public
+  narration to the session log with `tools/session_log.py`.
+- Keep each public reply to about 400 words. Cut description before stakes or
+  options.
 - Follow the table discipline and session evidence in the handbook, and the
   pacing card. After the second act, award any milestones still due, write the
   recap and close the session."
