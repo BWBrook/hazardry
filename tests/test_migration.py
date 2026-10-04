@@ -255,6 +255,7 @@ class MigrationTests(unittest.TestCase):
         edits = [lambda p: p["crises"].__setitem__(0, {}),
                  lambda p: p["crises"].clear(),
                  lambda p: p["crises"][0].update(table_result=[True]),
+                 lambda p: p["crises"][0].update(table_result=[]),
                  lambda p: p["effects"][0].update(description=7),
                  lambda p: p["effects"].clear()]
         for edit in edits:

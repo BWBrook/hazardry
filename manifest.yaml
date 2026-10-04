@@ -9,6 +9,7 @@ skins:
     name: Core (no skin)
     file: skins/core.md
     play_only: true
+    crisis_table_required: false
     pressure_track: Pressure
     pressure_scope: party
     pressure_steps:

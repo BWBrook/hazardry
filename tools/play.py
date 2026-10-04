@@ -97,7 +97,7 @@ def parser() -> tuple[argparse.ArgumentParser, argparse.ArgumentParser]:
     p.add_argument("--source", required=True, help="Cause, or the adjudicated crisis consequence")
     p.add_argument("--category", choices=["action_cost", "failure", "ambient"], default="ambient")
     p.add_argument("--target", help="Crisis target, required when no individual tipped the track")
-    p.add_argument("--table-result", type=int, action="append", help="Chosen/rolled d6 outcome (repeatable)")
+    p.add_argument("--table-result", type=int, action="append", help="Chosen/rolled d6 outcome (repeatable); optional only where the skin prints no crisis table")
     p.add_argument("--effect", action="append", default=[], help="Lasting crisis effect DESCRIPTION=DURATION")
 
     p = sub.add_parser("effect-end", help="Record expiry of a crisis-created effect")
@@ -226,11 +226,9 @@ def dispatch(args, campaign: dict, skin: dict, tracker: dict, sheets: dict) -> t
                 raise ValueError("a shared hazard needs an explicit --target for its crisis")
             # The Custodian supplies table outcomes so recursive 'roll twice'
             # consequences can be adjudicated before committing the reset.
-            if not args.table_result:
-                raise ValueError("supply --table-result and the adjudicated --source before resetting")
             effects = [{"description": key, "duration": value} for key, value in pairs(args.effect).items()]
             events = _pressure.crisis(tracker["pressure"], skin, actors, target=target,
-                table_result=args.table_result, description=args.source, effects=effects, actor=actor,
+                table_result=args.table_result, description=args.source or "", effects=effects, actor=actor,
                 forced=args.forced)
         else:
             amount = args.gain if args.gain is not None else args.purge

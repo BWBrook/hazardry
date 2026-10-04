@@ -163,8 +163,19 @@ def modifiers(pressure: dict, skin: dict, actor: str, attribute: str | None,
     return result
 
 
+def table_faces(skin: dict, table_result: list[int] | None) -> list[int]:
+    """A crisis records its d6 table faces. A skin that prints no crisis table
+    (the core) may record none; a campaign's own frozen table still records its."""
+    faces = list(table_result or [])
+    if not faces and skin.get("crisis_table_required", True):
+        raise ValueError("supply --table-result: this skin's crisis needs its d6 table result")
+    if any(type(r) is not int or not 1 <= r <= 6 for r in faces):
+        raise ValueError("crisis table results must be d6 faces")
+    return faces
+
+
 def crisis(pressure: dict, skin: dict, actors: list[str], *, target: str,
-           table_result: list[int], description: str, effects: list[dict] | None = None,
+           table_result: list[int] | None, description: str, effects: list[dict] | None = None,
            actor: str | None = None, forced: bool = False) -> list[dict]:
     """Record a crisis and reset its track. A skin rule may force one below 5
     (a failed Arcanum or Unspeakable rite); at 5 it is the same single crisis."""
@@ -175,8 +186,7 @@ def crisis(pressure: dict, skin: dict, actors: list[str], *, target: str,
         raise ValueError("crisis target must be an affected campaign character")
     if not description.strip():
         raise ValueError("record the crisis consequence before resetting")
-    if not table_result or any(type(r) is not int or not 1 <= r <= 6 for r in table_result):
-        raise ValueError("crisis table results must be d6 faces")
+    table_result = table_faces(skin, table_result)
     effects = deepcopy(effects or [])
     index = len(pressure["crises"]) + 1
     for i, effect in enumerate(effects):

@@ -424,6 +424,46 @@ class PlayRuntimeTests(unittest.TestCase):
             crisis = next(event for event in receipt["events"] if event["type"] == "crisis")
             self.assertEqual((crisis["target"], crisis["forced"]), ("vex", True))
 
+    def test_a_core_crisis_may_record_no_table_result(self):
+        # The core prints no crisis table; a campaign may still freeze its own d6 table.
+        skin, sheets, tracker = fixture("core", ("ada", "eli"))
+        pressure, actors = tracker["pressure"], list(sheets)
+        with self.assertRaisesRegex(ValueError, "no pending crisis"):
+            _pressure.crisis(deepcopy(pressure), skin, actors, target="ada", table_result=None, description="x")
+        _pressure.change(pressure, skin, actors, amount=5, source="hazard", category="ambient", actor="ada")
+        with self.assertRaisesRegex(ValueError, "target"):
+            _pressure.crisis(deepcopy(pressure), skin, actors, target="zed", table_result=None, description="x")
+        with self.assertRaisesRegex(ValueError, "consequence"):
+            _pressure.crisis(deepcopy(pressure), skin, actors, target="ada", table_result=None, description=" ")
+        with self.assertRaisesRegex(ValueError, "d6 faces"):
+            _pressure.crisis(deepcopy(pressure), skin, actors, target="ada", table_result=[7], description="x")
+        custom, _ = _pressure.crisis(deepcopy(pressure), skin, actors, target="ada", table_result=[4],
+                                     description="Ambush, from the campaign's frozen table")
+        self.assertEqual(custom["table_result"], [4])
+        record, reset = _pressure.crisis(pressure, skin, actors, target="ada", table_result=None,
+            description="The supporting wall gives way",
+            effects=[{"description": "Disadvantage on REF", "duration": "until rescued"}])
+        track = pressure["tracks"]["party"]
+        self.assertEqual((record["table_result"], reset["after"], track["current"], track["cycle"]), ([], 0, 0, 1))
+        self.assertTrue(pressure["effects"][0]["active"])
+        _play.ensure_ready(tracker)
+        # A skin with a printed table still needs its result.
+        skin, sheets, tracker = fixture()
+        _pressure.change(tracker["pressure"], skin, list(sheets), amount=5, source="jump", category="failure", actor="mara")
+        with self.assertRaisesRegex(ValueError, "needs its d6 table result"):
+            _pressure.crisis(tracker["pressure"], skin, list(sheets), target="mara", table_result=None, description="x")
+        with tempfile.TemporaryDirectory() as folder:
+            directory = campaign_with(folder, "core", ["ada"])
+            cli(self, directory, "--character", "ada", "pressure", "--gain", "5", "--source", "Hazard escalates")
+            crisis = ("--event-id", "crisis", "--character", "ada", "pressure", "--crisis", "--target", "ada",
+                      "--source", "Chosen core crisis: the supporting wall gives way")
+            receipt = cli(self, directory, *crisis)
+            self.assertEqual(next(e for e in receipt["events"] if e["type"] == "crisis")["table_result"], [])
+            self.assertTrue(cli(self, directory, *crisis)["replayed"])
+            self.assertIn("different command", cli(self, directory, *crisis, "--table-result", "2", expected=1))
+            cli(self, directory, "beat", "--label", "after the crisis")
+            self.assertEqual(validate_campaign.validate_campaign(str(directory), _sslib.load_manifest()).errors, [])
+
     def test_a_crisis_test_rolls_while_its_crisis_is_pending_and_pays_no_toll(self):
         # Service Duct Blues result 4: "test SYS or lose a key system until repaired".
         skin, sheets, tracker = fixture("service_duct_blues", ("kit", "sol"))

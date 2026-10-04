@@ -152,7 +152,8 @@ def validate_reviewed_pressure(pressure: dict, skin: dict, actors: list[str]) ->
                 or record["target"] not in actors or record["tipper"] not in [None, *actors]
                 or (pressure["scope"] == "character" and record["target"] != record["track"])
                 or not isinstance(record["description"], str) or not record["description"].strip()
-                or not isinstance(record["table_result"], list) or not record["table_result"]
+                or not isinstance(record["table_result"], list)
+                or (not record["table_result"] and skin.get("crisis_table_required", True))
                 or any(type(face) is not int or not 1 <= face <= 6 for face in record["table_result"])
                 or not isinstance(record["effects"], list)):
             raise ValueError("reviewed Pressure crisis history has invalid consequence metadata")
