@@ -1,12 +1,13 @@
 # Pilot protocol: simulated play
 
-Revision 7, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
+Revision 8, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
 instruction. Revision 2 governed P1 and P5, revision 3 P2 and P6, revision 4 P3
-and P7, revision 5 P4 and P8, and revision 6 P9 and P12. Revision 7 applies the
-fifth round's lessons (`pilot/review-5.md`): settle actor collisions quickly,
-offer abilities completely, keep private notes private, flag peril by its
-stakes, and test skin-distinctive fuse mappings as a labelled experiment. It
-governs P10, P13 and P11.
+and P7, revision 5 P4 and P8, revision 6 P9 and P12, and revision 7 P10 and P13.
+Revision 8 applies the sixth round's lessons (`pilot/review-6.md`): worked
+examples for scenes and peril, explicit help rulings, hazards described without
+closing allowed approaches, one writer per record, a fixed closing procedure,
+and an explicit Custodian access boundary. It governs P11; the labelled probes
+follow it too.
 
 ## Purpose
 
@@ -65,6 +66,10 @@ On most platforms this is an instruction, not an enforced restriction, because
 subagents share the filesystem and tools. Each manifest states which applies.
 - Where players are only instructed, the pilot can show leakage or compliance; it
   cannot prove isolation.
+- The Custodian may read its own campaign's state and memory, the frozen
+  scenario, the canonical rules and its assigned run evidence. It must not read
+  other pilots' records, audits or reviews, other roles' histories, or any
+  external or personal memory store.
 - The audit checks for tool use where it can.
 - A clean public transcript is not by itself evidence of secrecy.
 
@@ -135,8 +140,17 @@ campaign at PATH through the harness in this repository.
 - Never offer an option that depends on something only your private notes
   know; options may follow leads the characters have found.
 - Never offer an option whose advertised outcome your private notes rule out.
+- Describe hazards by what the characters observe. Distinguish observed danger
+  from established impossibility, and never rule out in public an approach your
+  private notes allow in the current fictional state.
 - Give players correct numbers before any choice. Damage uses the attacker's own
   margin; a skin's effective margin applies only to the thresholds it names.
+  When a companion helps, say before the roll whether the help gives Advantage,
+  and why.
+- Pass the `risky` context only when the stated failure would materially change
+  the situation.
+- Never write a player character's words or decisions; leave them to the
+  player.
 - Make the roll with `--defer`, then show the dice, the kept result and the
   margin, and the meaningful legal post-roll choices, to the players who can act
   on them. Offer any affordable legal spend that changes the declared outcome or
@@ -172,7 +186,12 @@ campaign at PATH through the harness in this repository.
 - Flag a beat perilous when failure at its consequential choice could cost
   Stamina, a life or the goal. A safeguard earned within the beat does not erase
   the peril already overcome; routine work that begins after safety is
-  established is not perilous merely because a goal remains pending.
+  established is not perilous merely because a goal remains pending. Examples:
+  a timed repair or attempt whose failure would materially threaten the goal is
+  perilous, even if it succeeds; continuous work with the same place, purpose
+  and conflict is one scene however many exploration turns it takes, and safe
+  routine completion is not another perilous scene; a real trap defeated by
+  inspection or preparation is perilous.
 - Save every public body with `tools/checkpoint.py`, and add the turn's public
   narration to the session log with `tools/session_log.py`.
 - Keep each public reply to about 400 words. Cut description before stakes or
@@ -231,7 +250,8 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
      or with the opposition's own moves, not only on a player's failure. The
      scenario declares what advances the clock, what happens when it fills, what
      can interrupt or delay it, and which core or skin Pressure triggers the
-     threat can set off.
+     threat can set off. It says whether each delay or interrupt shifts the
+     whole schedule or only the next tick.
    - It gives concrete, telegraphed Pressure-bearing dangers and consequential
      choices; alternatives carry honest fictional costs where appropriate. A
      scene may have unavoidable exposure where its fiction warrants it, but it
@@ -240,15 +260,17 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
    - Its named NPCs each have a want, a manner and a line they will not cross.
    - The scenario gives the skin's distinctive procedures a chance to occur; it
      never forces them.
-   - **Experimental fuse mapping (P10, P13; Barry-approved direction, not
-     adopted rules).** The scenario declares which core triggers feed the skin's
-     Pressure fuse, in what fictional form, and any exclusions. The mapping is
-     frozen with the scenario; player-relevant parts go in the packets; the
-     manifest and audit record the override of the additive default.
+   - **Experimental fuse mapping (P10, P13 and the labelled mapping probe only;
+     Barry-approved direction, not adopted rules).** The scenario declares which
+     core triggers feed the skin's Pressure fuse, in what fictional form, any
+     exclusions, and where exposure is unavoidable in the fiction, if anywhere.
+     The mapping is frozen with the scenario; player-relevant parts go in the
+     packets; the manifest and audit record the override of the additive
+     default. Ordinary runs, including P11, use the additive default.
    - Never pick seeds to produce an outcome. A guaranteed outcome, such as a
      failed Unspeakable rite, belongs in a separately labelled probe.
-5. Freeze a copy of the scenario, the roster and the optional modules, and start
-   the manifest.
+5. Check the scenario for internal contradictions, then freeze a copy of it,
+   the roster and the optional modules, and start the manifest.
 6. Before launching any role, inspect each packet's skin sections, public
    boundaries and own-character content, then verify the bytes actually sent by
    hash.
@@ -267,7 +289,10 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
      queued until that player's next turn, in chronological order. Each player
      must receive all completed public dialogue before making a new decision.
    - Build each relay from the record, not by hand, so that every completed
-     answer reaches every player.
+     answer reaches every player. The orchestrator alone writes the transcript
+     and relay records; the Custodian never writes them.
+   - Relay notes to the Custodian carry delivery state only when needed; the
+     Custodian does not narrate them.
    - When the reply asks one player for a decision, only that player answers.
    - Every public body goes to every player, including the closing one; `TO:
      none` means no decision is asked, not that the narration is withheld.
@@ -277,6 +302,10 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
    as its own file and checks it against the saved checkpoint before forwarding.
 5. The run ends at the beat that closes the second act. The Custodian awards
    milestones, writes the recap and closes the session.
+6. Closing: deliver the closing body to every player and collect any final
+   in-character lines. Then relay all completed peer closing lines once, as an
+   archive, and require literal receipt-only acknowledgements, with no further
+   game turn. Skip the archive if every reply was already a pure receipt.
 
 ## Stop rules and interventions
 

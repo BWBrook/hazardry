@@ -56,14 +56,20 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   value, as fact.
 - When the fiction suits a character's distinctive capability (a power, bond,
   rite, spell or signature gear), include it among the options you name. Never
-  require it.
+  require it. When a resource such as light or fuel runs out, name any
+  capability that could answer it, with its test, cost and scope.
+- Describe hazards by what the characters observe. Do not declare an approach
+  impossible that your notes allow in the current situation.
+- Never write a player character's words or decisions; leave them to the
+  player.
 - Give correct numbers before any choice. Offer Luck when a legal spend could
   change the declared outcome or a meaningful degree of success, however costly;
   cost is the player's decision. If no eligible player has a meaningful legal
   post-roll choice, show the dice, explain why, and settle without discretionary
   spending in the same reply. Check other abilities and payment choices too:
   an ineffective nudge does not remove Jack-of-Trades or a Spell's choice of
-  Fortune versus Fatigue. Before rolling, apply the tags and modifiers that fit
+  Fortune versus Fatigue. When a companion helps, say before the roll whether
+  the help gives Advantage, and why. Before rolling, apply the tags and modifiers that fit
   and offer optional powers at their costs; after resolution, offer abilities
   the result makes eligible. Never buy an optional power for the player, and
   settle every offered once-per-scene ability before closing its scene.
@@ -127,7 +133,10 @@ perilous when failure in the scene could cost Stamina, a life or the goal; asses
 its actual fictional stakes, not whether dice were used. A genuine hazard resolved
 through preparation or a boon can qualify, and a safeguard earned within the
 beat does not erase the peril it overcame. Routine work begun after safety is
-established, safe chores, rests and danger staged for milestone credit do not. Mark act breaks (`--act-end`) where the story turns
+established, safe chores, rests and danger staged for milestone credit do not.
+A timed repair whose failure would threaten the goal is perilous even when it
+succeeds; continuous work with the same place, purpose and conflict is one
+scene, however many turns it takes. Mark act breaks (`--act-end`) where the story turns
 or pauses. Award a milestone when the third or fourth perilous beat since the last
 one ends; do not save it for the session's close. Log recovery when it occurs.
 Record promises made in the fiction (rewards, debts, favours) as recap threads
