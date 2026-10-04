@@ -163,6 +163,8 @@ def parse_skin_samples(text: str, slug: str, skin: dict, source: str = "<text>")
 def validate_samples(manifest: dict, root: Path = ROOT) -> SampleValidation:
     result = SampleValidation()
     for slug, skin in manifest.get("skins", {}).items():
+        if skin.get("play_only"):
+            continue
         source = skin.get("file")
         if not source or not (root / source).is_file():
             result.errors.append(f"{slug}: missing sample source: {source}")
@@ -184,7 +186,8 @@ def main() -> int:
         for error in result.errors:
             print(f"error: {error}", file=sys.stderr)
         return 1
-    print(f"ok: {len(result.samples)} published sample characters across {len(manifest['skins'])} skins")
+    published = [slug for slug, skin in manifest["skins"].items() if not skin.get("play_only")]
+    print(f"ok: {len(result.samples)} published sample characters across {len(published)} skins")
     return 0
 
 

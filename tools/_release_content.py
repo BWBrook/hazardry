@@ -311,6 +311,8 @@ def bundle_definitions(manifest: dict, version: str) -> dict[str, Bundle]:
     skins = manifest.get("skins", {})
     skin_paths: list[Path] = []
     for slug, entry in skins.items():
+        if entry.get("play_only"):
+            continue
         rel = entry.get("file")
         if not rel:
             print(f"error: manifest missing skins.{slug}.file", file=sys.stderr)

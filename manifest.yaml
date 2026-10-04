@@ -5,6 +5,40 @@ rules:
     custodians_almanac: rules/core/custodians_almanac.md
   quickstart: rules/quickstart.md
 skins:
+  core:
+    name: Core (no skin)
+    file: skins/core.md
+    play_only: true
+    pressure_track: Pressure
+    pressure_scope: party
+    pressure_steps:
+    - step: 2
+      kind: custodian
+      label: 'Stirrings: minor Disadvantage, flicker tech'
+    - step: 3
+      kind: custodian
+      label: 'Rumble: noticeable penalty, NPC mistrust'
+    - step: 4
+      kind: luck_cost
+      label: Special abilities cost +1 Luck token
+      contexts:
+      - ability
+      amount: 1
+    - step: 4
+      kind: custodian
+      label: Environment turns hostile
+    _gen:
+      primary: MGT
+      min_steps: 2
+      max_steps: 4
+    attributes:
+      MGT: Might
+      REF: Reflex
+      INT: Intellect
+      EMP: Empathy
+      LCK: Luck
+    luck_key: LCK
+    luck_name: Luck
   clanfire:
     name: Clanfire
     file: skins/clanfire.md

@@ -230,7 +230,8 @@ class PublishedSampleValidationTests(unittest.TestCase):
         checked = validate_examples.validate_samples(self.manifest)
         self.assertEqual(checked.errors, [])
         self.assertEqual(len(checked.samples), 20)
-        self.assertEqual({sample.skin for sample in checked.samples}, set(self.manifest["skins"]))
+        published = {slug for slug, skin in self.manifest["skins"].items() if not skin.get("play_only")}
+        self.assertEqual({sample.skin for sample in checked.samples}, published)
         paid_tags = [tag for sample in checked.samples for tag in sample.bought_tags]
         self.assertCountEqual(paid_tags, ["Megafauna tracker", "Streetwise"])
         self.assertEqual(sum(len(sample.free_tags) for sample in checked.samples), 12)

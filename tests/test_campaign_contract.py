@@ -36,8 +36,10 @@ class CampaignContractTests(unittest.TestCase):
         campaign_init.write_scaffold(path, files)
         return path, files
 
-    def test_all_ten_skins_scaffold_pressure_and_resources(self):
-        self.assertEqual(len(self.manifest["skins"]), 10)
+    def test_all_skins_and_the_core_scaffold_pressure_and_resources(self):
+        published = [slug for slug, skin in self.manifest["skins"].items() if not skin.get("play_only")]
+        self.assertEqual(len(published), 10)
+        self.assertEqual([slug for slug in self.manifest["skins"] if slug not in published], ["core"])
         with tempfile.TemporaryDirectory() as temp:
             for slug, skin in self.manifest["skins"].items():
                 with self.subTest(skin=slug):
