@@ -1,13 +1,14 @@
 # Pilot protocol: simulated play
 
-Revision 8, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
+Revision 9, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
 instruction. Revision 2 governed P1 and P5, revision 3 P2 and P6, revision 4 P3
-and P7, revision 5 P4 and P8, revision 6 P9 and P12, and revision 7 P10 and P13.
-Revision 8 applies the sixth round's lessons (`pilot/review-6.md`): worked
-examples for scenes and peril, explicit help rulings, hazards described without
-closing allowed approaches, one writer per record, a fixed closing procedure,
-and an explicit Custodian access boundary. It governs P11; the labelled probes
-follow it too.
+and P7, revision 5 P4 and P8, revision 6 P9 and P12, revision 7 P10 and P13, and
+revision 8 P11. Revision 9 applies the seventh round's lessons
+(`pilot/review-7.md`): summaries that carry only public facts, a trigger check on
+every declared action, NPC lives and a frozen episode goal for peril, a fixed
+response to the Custodian's own errors, explicit consequence contingencies,
+offered options kept, gear reconciled at close, and bounded probe framing. It
+governs the labelled probes.
 
 ## Purpose
 
@@ -99,8 +100,17 @@ campaign at PATH through the harness in this repository.
 - Use `tools/play.py` and `tools/advance.py` for every roll, cost, Pressure change
   and milestone.
 - Draw crisis and backlash tables with `tools/roll.py table`. Where a printed rule
-  lets you choose a table result, say that you chose it.
+  lets you choose a table result, say that you chose it. Where the game prints no
+  crisis table and the frozen scenario declares none, choose the consequence and
+  record the crisis without a table result.
 - Never invent a die.
+- If you make a procedural error, disclose it, keep any dice drawn, and offer
+  only what the printed rules allow; never invent compensation. Continue only if
+  the campaign state permits a valid continuation: never bypass, clear by hand
+  or reroll a pending action or crisis. If no supported recovery exists, preserve
+  the evidence and say that the case is blocked.
+- Never run a play command to test its syntax; use `--help`. `--dry-run` still
+  draws and shows dice.
 - Use the seed schedule in your setup notes.
 - Open in motion: start the session, and each act, in the middle of something
   already happening, with a clear and immediate stake, like a film's pre-credit
@@ -119,10 +129,21 @@ campaign at PATH through the harness in this repository.
   arises, charge it, or say plainly that it will be charged if the characters
   stay, look or wait. Never charge for real-world deliberation or to reach a
   target rate.
+- Before resolving a declared action, check it against every frozen trigger. If
+  one applies, state the charge before the action is committed, and record it
+  when it happens. If you judge that a trigger does not apply, say why in your
+  private notes. The Briar doctrinal-Sin probe keeps its own timing: the vows and
+  doctrine are public and questions about them are answered honestly, but Sin is
+  assessed and explained after the deed, and a superior's permission does not
+  absolve it automatically. Other costs and dice stakes stay informed.
 - Give each named NPC a want, a manner and a line they will not cross, kept in
   your private notes, and play them by it. Narrate what the characters observe:
   never publish an NPC's private boundary, or a private clock's name or value,
   as fact; show signs.
+- In any summary or menu, state an NPC's position only as something they said or
+  did on screen, and say where it came from ("Pell says Vane honours the earliest
+  paper"). Never put an NPC's private line, a hidden clock's schedule or an
+  unrevealed motive in a summary, even as a likely outcome.
 - Put everything the players should see between a line `=== PUBLIC ===` and a
   line `=== END PUBLIC ===`. After the closing marker, put a `TO:` line naming
   who should answer (or `TO: none` when the session is closed). The checkpoint
@@ -136,10 +157,14 @@ campaign at PATH through the harness in this repository.
   choosing it is the commitment. When the stakes are already public, the
   player's declared action is the commitment. Otherwise state the test and its
   consequences, and get commitment before you roll. Stakes must never first
-  appear in the reply that shows the dice.
+  appear in the reply that shows the dice. Say whether a failure consequence
+  follows from the roll itself or from refusing the offer, so everyone knows
+  whether a new approach can avert it.
 - Never offer an option that depends on something only your private notes
   know; options may follow leads the characters have found.
 - Never offer an option whose advertised outcome your private notes rule out.
+- Once you have offered an option, keep it unless the fiction changes, and say
+  what changed.
 - Describe hazards by what the characters observe. Distinguish observed danger
   from established impossibility, and never rule out in public an approach your
   private notes allow in the current fictional state.
@@ -191,14 +216,16 @@ campaign at PATH through the harness in this repository.
   perilous, even if it succeeds; continuous work with the same place, purpose
   and conflict is one scene however many exploration turns it takes, and safe
   routine completion is not another perilous scene; a real trap defeated by
-  inspection or preparation is perilous.
+  inspection or preparation is perilous; a scene in which an NPC's life hangs on
+  the outcome is perilous, even with no test.
 - Save every public body with `tools/checkpoint.py`, and add the turn's public
   narration to the session log with `tools/session_log.py`.
 - Keep each public reply to about 400 words. Cut description before stakes or
   options.
 - Follow the table discipline and session evidence in the handbook, and the
-  pacing card. After the second act, award any milestones still due, write the
-  recap and close the session."
+  pacing card. After the second act, award any milestones still due, reconcile
+  consumed or abandoned gear on each sheet with `tools/update_sheet.py` and note
+  it in the public log, write the recap and close the session."
 
 **Player.** "You play CHARACTER in a session of Hazardry, using only the packet you
 were given. If setup explicitly gives a packet-file path, read that exact file
@@ -258,6 +285,9 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
      is not a quota. If players avert the costs, record how; never manufacture a
      charge to satisfy coverage.
    - Its named NPCs each have a want, a manner and a line they will not cross.
+   - It states the initial episode goal in one line, as the audit reference for
+     the goal limb of a perilous beat. Players may change the goal; record a
+     genuine change when it happens, never afterwards to justify a flag.
    - The scenario gives the skin's distinctive procedures a chance to occur; it
      never forces them.
    - **Experimental fuse mapping (P10, P13 and the labelled mapping probe only;
@@ -325,6 +355,8 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
   during play; the auditor finds them afterwards.
 - **Leaks:** if private material reaches the players, record it. The run then
   counts as a harness test only.
+- **Blocked:** if an error leaves no valid continuation, preserve the state and
+  mark the run or probe case blocked. Never repair drawn dice.
 
 ## Records
 
@@ -392,3 +424,13 @@ Fable and Astra compare the reports and propose changes for Barry before the
 40-run programme: to this protocol, to the briefs, and any harness fixes. No rule
 changes follow from the pilot alone. Targeted probes for procedures that ordinary
 play leaves unexercised are run and labelled separately.
+
+**Probes.** Each probe, or each bounded subcase of one, states before the freeze:
+- the procedures it must reach;
+- why the fiction warrants that exposure;
+- its starting conditions, exact assertions, variant, stop condition and cap,
+  which may be shorter than a session.
+
+Any prepared fixture, such as a high track or a forced failure, is labelled. No
+outcome-hunting rerolls. Probe results are labelled as probes and never pooled
+with ordinary-run counts. Each team cross-audits the other's probes.

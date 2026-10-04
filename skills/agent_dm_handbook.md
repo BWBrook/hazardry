@@ -24,10 +24,13 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   and get commitment before you roll. Stakes must never first appear in the
   reply that shows the dice. If two failure consequences fit, name both before
   the roll and use the book's selection procedure; do not invent a new price
-  after seeing the result.
+  after seeing the result. Say whether a failure consequence follows from the
+  roll itself or from refusing the offer, so a new approach knows what it can
+  avert.
 - Keep choices concrete, including plausible narrative options. Never offer an
-  option that only private notes could suggest. Let the player think aloud;
-  only fictional stalling costs time.
+  option that only private notes could suggest. Once you have offered an option,
+  keep it unless the fiction changes, and say what changed. Let the player think
+  aloud; only fictional stalling costs time.
 - When players' declarations need different actors for one roll or role, ask
   them to choose, or offer a tie-break die they all agree to; never pick
   silently, by odds or by vote. One spokesperson means
@@ -49,11 +52,16 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   they do not replace them. When a trigger first arises, charge it or say plainly
   that staying, looking or waiting will. Use the skin's rules and the declared
   shared-hazard policy; do not charge for real-world deliberation or merely to
-  reach a pacing figure.
+  reach a pacing figure. Check each declared action against the declared
+  triggers before resolving it, and state any charge before the action is
+  committed, unless the skin or a declared variant deliberately assesses it
+  after the deed.
 - Give each named NPC a want, a manner and a line they will not cross, kept in
   private notes, and play them by it, so they push and differ. Show their limits
   through signs; never state a private boundary, or a private clock's name or
-  value, as fact.
+  value, as fact. In summaries and menus, give an NPC's position only as
+  something they said or did, with its source; a narrator's summary turns
+  private notes into stated fact.
 - When the fiction suits a character's distinctive capability (a power, bond,
   rite, spell or signature gear), include it among the options you name. Never
   require it. When a resource such as light or fuel runs out, name any
@@ -136,7 +144,8 @@ beat does not erase the peril it overcame. Routine work begun after safety is
 established, safe chores, rests and danger staged for milestone credit do not.
 A timed repair whose failure would threaten the goal is perilous even when it
 succeeds; continuous work with the same place, purpose and conflict is one
-scene, however many turns it takes. Mark act breaks (`--act-end`) where the story turns
+scene, however many turns it takes. A scene in which an NPC's life hangs on the
+outcome is perilous, even with no test. Mark act breaks (`--act-end`) where the story turns
 or pauses. Award a milestone when the third or fourth perilous beat since the last
 one ends; do not save it for the session's close. Log recovery when it occurs.
 Record promises made in the fiction (rewards, debts, favours) as recap threads
@@ -150,4 +159,8 @@ a small playtest into precise balance evidence.
 For an unexpected state error, stop the dependent action, inspect the receipt and
 `validate_campaign.py` output, and repair the actual inconsistency; a stale-prompt
 error only needs a rebuild. Do not reroll, reinitialize a played campaign, or
-bypass a protected mechanical field through a generic YAML updater.
+bypass a protected mechanical field through a generic YAML updater. If the
+error is your own procedural slip, disclose it, keep any dice drawn, and offer
+only what the printed rules allow; never invent compensation. Never test a play
+command's syntax by running it: use `--help`, since `--dry-run` still draws dice.
+At a session's close, reconcile consumed or abandoned gear on the sheets.
