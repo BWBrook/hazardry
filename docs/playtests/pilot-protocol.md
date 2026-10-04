@@ -1,11 +1,12 @@
 # Pilot protocol: simulated play
 
-Revision 6, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
+Revision 7, 4 October 2026. Drafted by Fable and amended by Astra under Barry's
 instruction. Revision 2 governed P1 and P5, revision 3 P2 and P6, revision 4 P3
-and P7, and revision 5 P4 and P8. Revision 6 applies the fourth round's lessons
-(`pilot/review-4.md`): keep choices with the players, keep fuller records, and
-give scenarios honest, telegraphed dangers. It governs the second tranche,
-P9–P13.
+and P7, revision 5 P4 and P8, and revision 6 P9 and P12. Revision 7 applies the
+fifth round's lessons (`pilot/review-5.md`): settle actor collisions quickly,
+offer abilities completely, keep private notes private, flag peril by its
+stakes, and test skin-distinctive fuse mappings as a labelled experiment. It
+governs P10, P13 and P11.
 
 ## Purpose
 
@@ -104,13 +105,19 @@ campaign at PATH through the harness in this repository.
   threat to advance, or the opposition makes its move, advance its clock as
   declared in the scenario, whether or not anyone rolls. A clock tick is not
   automatically a Pressure charge, though both may apply.
+- Keep the frozen scenario's triggers and timetable. A trigger that does not
+  depend on failure fires on success too.
 - Apply Pressure when a fictional trigger occurs. A skin's triggers add to the
-  core triggers in Almanac 4; they do not replace them. When a trigger first
+  core triggers in Almanac 4; they do not replace them, unless the frozen
+  scenario declares an experimental fuse mapping (setup step 4), which then
+  governs. When a trigger first
   arises, charge it, or say plainly that it will be charged if the characters
   stay, look or wait. Never charge for real-world deliberation or to reach a
   target rate.
 - Give each named NPC a want, a manner and a line they will not cross, kept in
-  your private notes, and play them by it.
+  your private notes, and play them by it. Narrate what the characters observe:
+  never publish an NPC's private boundary, or a private clock's name or value,
+  as fact; show signs.
 - Put everything the players should see between a line `=== PUBLIC ===` and a
   line `=== END PUBLIC ===`. After the closing marker, put a `TO:` line naming
   who should answer (or `TO: none` when the session is closed). The checkpoint
@@ -137,16 +144,21 @@ campaign at PATH through the harness in this repository.
   the player's decision.
   Wait for those decisions before settling; never issue the roll again. If no
   eligible player has a meaningful post-roll choice, explain why and settle
-  without discretionary spending in the same reply. Include abilities and
-  payment choices in that check, not only Luck nudges.
+  without discretionary spending in the same reply.
+- Before rolling, check relevant tags and modifiers and offer optional powers at
+  their costs; after resolution, offer newly eligible abilities. Preserve the
+  player's choice, and settle all offered once-per-scene abilities before
+  closing the scene.
 - In combat, ask only the combatant or decision now due.
 - When players' declarations conflict, preserve each player's intent.
   Adjudicate compatible actions in fictional or initiative order, and ask only
   for a decision needed to settle a truly incompatible pair. Never override one
   declaration to make another succeed, and keep deferred Luck and ability
   choices open. When declarations need different actors for one roll or role,
-  ask the players to choose; compatible help needs no new confirmation. Never
-  choose the roller silently, by odds or by an unagreed vote.
+  ask the players to choose, and offer an opt-in tie-break die (a scheduled
+  harness draw, used only if all claimants agree); compatible help needs no new
+  confirmation. Never choose the roller silently, by odds or by an unagreed
+  vote.
 - One spokesperson means one roll: settle who speaks before rolling. Another
   character does not retry a failed test in the same scene unless the situation
   or the leverage has really changed.
@@ -157,6 +169,10 @@ campaign at PATH through the harness in this repository.
   A cut to another place or time starts a new beat; keep Almanac 9's scene
   definition. Do not start a beat merely because another test is called, or to
   refresh a power or reach a milestone.
+- Flag a beat perilous when failure at its consequential choice could cost
+  Stamina, a life or the goal. A safeguard earned within the beat does not erase
+  the peril already overcome; routine work that begins after safety is
+  established is not perilous merely because a goal remains pending.
 - Save every public body with `tools/checkpoint.py`, and add the turn's public
   narration to the session log with `tools/session_log.py`.
 - Keep each public reply to about 400 words. Cut description before stakes or
@@ -174,6 +190,8 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
 - Play cooperatively. Ask about unclear stakes or rules, and change or abandon an
   intent before committing to the roll. Once resolved, accept the result without
   seeking a reroll.
+- When a companion may want the same roll or role, say in your answer who should
+  take it, or say that you accept a tie-break.
 - When offered a Luck choice after a roll, decide how many tokens to spend, if
   any.
 - Keep replies to two to five sentences."
@@ -202,6 +220,8 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
      up from 1.
    - A retry reuses its event ID and seed, including commands that produce a
      Deflection roll.
+   - The orchestrator checks the draw index of every new dice command, tie-breaks
+     included, against the schedule.
    - Seeding makes the mechanics reproducible from the command sequence. It does
      not make the narrative deterministic.
 4. For runs without a published scenario, the Custodian writes its hidden
@@ -220,10 +240,18 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
    - Its named NPCs each have a want, a manner and a line they will not cross.
    - The scenario gives the skin's distinctive procedures a chance to occur; it
      never forces them.
+   - **Experimental fuse mapping (P10, P13; Barry-approved direction, not
+     adopted rules).** The scenario declares which core triggers feed the skin's
+     Pressure fuse, in what fictional form, and any exclusions. The mapping is
+     frozen with the scenario; player-relevant parts go in the packets; the
+     manifest and audit record the override of the additive default.
    - Never pick seeds to produce an outcome. A guaranteed outcome, such as a
      failed Unspeakable rite, belongs in a separately labelled probe.
 5. Freeze a copy of the scenario, the roster and the optional modules, and start
    the manifest.
+6. Before launching any role, inspect each packet's skin sections, public
+   boundaries and own-character content, then verify the bytes actually sent by
+   hash.
 
 ## Turn loop
 
@@ -238,6 +266,8 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
      answers verbatim, including when they are not due to answer. Delivery may be
      queued until that player's next turn, in chronological order. Each player
      must receive all completed public dialogue before making a new decision.
+   - Build each relay from the record, not by hand, so that every completed
+     answer reaches every player.
    - When the reply asks one player for a decision, only that player answers.
    - Every public body goes to every player, including the closing one; `TO:
      none` means no decision is asked, not that the narration is withheld.
@@ -305,7 +335,8 @@ once as instructed. Otherwise, and after that read, do not use tools or read fil
 - the initial and final campaign state, the JSONL logs and the receipts;
 - the frozen scenario and the exact packets delivered, with their hashes;
 - each public reply as its own file, with the checkpoint comparisons and a copy
-  of each checkpoint version;
+  of each checkpoint version; any mismatch or transport intervention is kept,
+  not overwritten;
 - each player's exact incoming messages;
 - a command record;
 - where the platform stores agent transcripts, a tool trace and token usage for

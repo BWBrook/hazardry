@@ -28,10 +28,10 @@ Auditor: Fable (`claude-opus-5-5`). Protocol revision 5; rules at `7cc705c`. I d
 - The two declarations were compatible and were resolved in fictional order.
 - The pilot test was not redundant. It was an option chosen with stated stakes, and its success put the lock within Ilya's reach.
 
-**Correct, with an agency judgement call: the scan and the cross-check (G003, G005; events 9 and 17).**
+**Correct mechanics, with a procedural agency error: the scan and the cross-check (G003, G005; events 9 and 17).**
 - Both Kest and Rook declared the scan (P002), and both declared the cross-check (P004). Each time, the Guildmaster folded their methods into one roll by Rook: EDU 10 with Engineer Expertise Advantage. Kest also has EDU 13, but no fitting Expertise.
 - One task, one test is correct, and Rook's roll was the better chance (about 0.75 against 0.65).
-- **Judgement call:** the Guildmaster chose the roller without saying so. Kest twice declared he would run the test and was not asked. Under the conflicting-declarations rule, choosing between two players' bids for one roll is the "truly incompatible pair" case, where the brief says to ask. The narration kept Kest in the fiction, so his intent was partly preserved.
+- **Wrong (procedure):** the Guildmaster chose the roller without saying so. Kest twice declared that he would run the test himself (P002, P004), so the two bids competed for one roll. That is the "truly incompatible pair" case, where the brief says to ask, and Kest was not asked. The narration kept Kest in the fiction, so his intent was partly preserved. Mira's parallel liaison work, by contrast, was compatible help and needed no confirmation.
 - The mechanics:
   - G003 kept 7 (margin 3) and 4 (margin 9), both settled with no useful nudge.
   - G005 kept 11 against EDU 10, a miss by 1, with the unkept 20 correctly ignored. It was deferred, offered at the exact 1-Fate price, and settled at margin 0 after Rook paid (event 17).
@@ -53,8 +53,8 @@ Auditor: Fable (`claude-opus-5-5`). Protocol revision 5; rules at `7cc705c`. I d
 - Act 1 was recorded as four beats: rescue, scan, transfer and permit, flagged perilous, perilous, not perilous, and perilous. All four are one continuous 17-minute operation at one buoy, with no cut in place or time.
 - The handbook (`skills/agent_dm_handbook.md`, Session evidence) treats a fight as one beat however long it runs, and starts a new beat at a cut. A continuous rescue-and-recovery is arguably one or two scenes, not four.
 - **Beat 2's perilous flag is generous.** The scan's failure stakes were a lost reading and ten minutes, not Stamina, a life or the goal.
-- Under a stricter count, the milestone after beat 4 would have come one beat later, after the jump, or not at all in this session.
-- **Consequence:** the finer split and the generous flag brought the act 1 milestone, three purchases and a Fate refill (Rook +2) earlier than a strict reading. It is the same pattern as P1's beat-splitting finding.
+- These classifications are judgements, and so are their counterfactuals. Removing only beat 2's perilous flag moves the third perilous beat from beat 4 to beat 5, the jump. Merging the buoy into one perilous scene would put the third perilous beat at the trade, just before the close. Either way the milestone would have come later. A continuous operation can contain genuine changes of open question, so four buoy beats may be too fine without being clearly wrong.
+- **Consequence:** the finer split and the generous flag brought the act 1 milestone, three purchases and a Fate refill (Rook +2) earlier than a stricter reading would have. It resembles P1's beat-splitting finding.
 
 **Correct, with a judgement call on Expertise: the jump (G006–G007, events 28–34).**
 - Two hazards were declared before roles were assigned, which the leg rule allows (`skin:100-112`).
@@ -99,6 +99,6 @@ Auditor: Fable (`claude-opus-5-5`). Protocol revision 5; rules at `7cc705c`. I d
 
 P8's mechanics are clean and reconciled. Its findings for the joint review:
 - **Scene granularity.** A continuous 17-minute operation was split into four beats, with a generous perilous flag on the scan. Together these brought the milestone forward.
-- **Choosing the roller.** The Guildmaster twice chose which of two volunteers rolled, without asking.
+- **Choosing the roller.** The Guildmaster twice chose which of two competing volunteers rolled, without asking. This is a procedural error, distinct from combining compatible help.
 - **The standoff hold.** Narrated as harsher than the frozen scenario's wording.
 - **Expertise breadth plus role routing.** Every test had Advantage and Strain never moved. This is a design observation for Barry, alongside P4's finding that AI players route around Pressure until the only way forward costs it.

@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "interpretation": "Descriptive logged observations; no population claim or automatic rules decision.",
+  "definitions": {
+    "midpoint": "The end of the session's first act: the first beat recorded with --act-end. Beats are recorded as their scenes end, so the first half runs to and includes that beat record, by event sequence. Unavailable without an act break.",
+    "beat_denominator": "Count explicit beat events, not rolls or the largest beat number; omit sessions without beats from both rate numerator and denominator.",
+    "completed": "Explicit session_start and session_end with an uninterrupted event sequence and no partial legacy history; incomplete sessions are separate.",
+    "pc_rolls": "Each finalized PC roll, including opposed sides and Deflection; exclude raw_roll records and npc: actors.",
+    "luck_spending": "Use before/after changes in luck events only; roll.luck_spent is not an additional expenditure.",
+    "red_line": "Pressure >=4 until a pressure event lowers or resets it; affected rolls require pressure_at_start >=4. Each window reports its affected rolls and the scenes it touched: the scene it opened in and each later scene it stayed open through. Open windows are right-censored, including at session end.",
+    "red_line_threshold": "Provisional interpretation of 'few': more than 3 affected PC rolls observed in one window."
+  },
+  "session_counts": {
+    "total": 1,
+    "completed": 1,
+    "incomplete": 0
+  },
+  "completed_evidence": {
+    "by_skin_and_party_size": [
+      {
+        "skin": "briar_benedictine",
+        "party_size": 2,
+        "sessions": 1,
+        "recorded_beats": 12,
+        "perilous_beats": 3,
+        "crises": 0,
+        "rate_eligible_sessions": 1,
+        "sessions_without_beats": 0,
+        "rate_eligible_crises": 0,
+        "crises_per_20_recorded_beats": 0.0,
+        "character_sessions": 2,
+        "midpoint_available_character_sessions": 2,
+        "initially_low_character_sessions": 0,
+        "initially_above_one_with_midpoint": 2,
+        "newly_low_by_midpoint": 0,
+        "pc_rolls": 18,
+        "red_line_windows": 0,
+        "red_line_windows_above_threshold": 0,
+        "ongoing_censored_windows": 0
+      }
+    ]
+  },
+  "incomplete_observations": {
+    "by_skin_and_party_size": []
+  },
+  "sessions": [
+    {
+      "source": "/Users/bwbrook/games/sinew-and-steel/playtests/campaigns/p9_briar/state/logs/session_001.jsonl",
+      "session": 1,
+      "skin": "briar_benedictine",
+      "party_size": 2,
+      "completed": true,
+      "incomplete_reasons": [],
+      "event_count": 85,
+      "recorded_beats": 12,
+      "perilous_beats": 3,
+      "last_recorded_beat": 12,
+      "midpoint_beat": 7,
+      "acts": [
+        {
+          "act": 1,
+          "beats": 7,
+          "perilous_beats": 1,
+          "pc_rolls": 13,
+          "pressure_gained": 0,
+          "crises": 0,
+          "ended": true
+        },
+        {
+          "act": 2,
+          "beats": 5,
+          "perilous_beats": 2,
+          "pc_rolls": 5,
+          "pressure_gained": 0,
+          "crises": 0,
+          "ended": true
+        }
+      ],
+      "completed_acts": 2,
+      "crises": 0,
+      "crisis_targets": {},
+      "threshold_crises": 0,
+      "forced_crises": 0,
+      "pressure_gained": 0,
+      "pressure_gains_by_category": {},
+      "pressure_gains_by_source": {},
+      "crises_per_20_recorded_beats": 0.0,
+      "characters": {
+        "brother_anselm_gray": {
+          "initial_luck": 7,
+          "initially_low": false,
+          "minimum_luck_first_half": 6,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 2,
+          "luck_recovered": 2,
+          "luck_spent_by_source": {
+            "Insight bead": 2
+          },
+          "luck_recovered_by_source": {
+            "Quiet prayer at Compline (short rest)": 1,
+            "milestone:p9-m1": 1
+          },
+          "pc_rolls": 8,
+          "acting_rolls": 8,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 8,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "FLT": {
+              "count": 2,
+              "share": 0.25
+            },
+            "MCY": {
+              "count": 6,
+              "share": 0.75
+            }
+          },
+          "roll_share_by_method": {
+            "Ask Brother Lambert gently in the infirmary what he has seen, saying nothing against anyone and keeping his confidence": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Carry Gilbert wrapped in the sack across the infirmary yard to the Abbot's chamber, Lambert guiding": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Draw Maud aside, back to the barn, and ask gently about Hob and who offered the hire": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Go to Lambert at the infirmary ladder with Gilbert's name and ask only leave to see a hurt boy, no accusation": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Kneel beside Wat, ask gently what he holds, offer him his prayer with Edric": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Lie flat on the ice and push the staff to Wat, Hawise anchoring the rope": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Stand between the men and the door as almoner and offer them the almonry's bread to stay": {
+              "count": 1,
+              "share": 0.125
+            },
+            "Walk Edric to Brother Cuthwin and ask, simply and without naming anyone, about the recent poor-pit burials and what Osmer's fee is for": {
+              "count": 1,
+              "share": 0.125
+            }
+          }
+        },
+        "sister_hawise_of_ely": {
+          "initial_luck": 9,
+          "initially_low": false,
+          "minimum_luck_first_half": 3,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 7,
+          "luck_recovered": 7,
+          "luck_spent_by_source": {
+            "Insight bead": 3,
+            "nudge": 4
+          },
+          "luck_recovered_by_source": {
+            "Quiet prayer at Compline (short rest)": 1,
+            "milestone:p9-m1": 6
+          },
+          "pc_rolls": 10,
+          "acting_rolls": 10,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 10,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "LOR": {
+              "count": 1,
+              "share": 0.1
+            },
+            "MCY": {
+              "count": 9,
+              "share": 0.9
+            }
+          },
+          "roll_share_by_method": {
+            "Bring Brother Dunstan warm wine at the postern before his watch and ask which nights Wulfric used the key and who went out with him": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Challenge Wulfric aloud in the cloister in the Abbot's name: who bade him bring a hurdle to the leat at dawn before any cry, and why he did not look the dead man in the face": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Face Osmer in the barn door in the Abbot's order that none leave before Prime": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Go out the wall at first light to Alys at the mill and ask what she saw at night on the leat road": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Kneel at Edric's head and read the wound, hands and wrists, with Wulfric and the lay-brothers watching": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Press Osmer to his face: who hired these men, where were they sent, and why a bowman came home with galled wrists and clay under his nails": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Sit Pell down with her own wine and press him civilly: what the castle diggers do on the wall, and why one was in the mill-leat": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Speak to the Abbot's chaplain at the Abbot's door, with Anselm beside her, for the Abbot's ear before Sext": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Stand on the Abbot's word at the graveside: the dig does not stop, and she will answer for it at Prime": {
+              "count": 1,
+              "share": 0.1
+            },
+            "Step between Wulfric and the body and press him to his face: who sent him with a hurdle before the cry was raised": {
+              "count": 1,
+              "share": 0.1
+            }
+          }
+        }
+      },
+      "pc_rolls": 18,
+      "npc_rolls_excluded": 6,
+      "roll_share_by_attribute": {
+        "FLT": {
+          "count": 2,
+          "share": 0.1111111111111111
+        },
+        "LOR": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "MCY": {
+          "count": 15,
+          "share": 0.8333333333333334
+        }
+      },
+      "roll_share_by_method": {
+        "Ask Brother Lambert gently in the infirmary what he has seen, saying nothing against anyone and keeping his confidence": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Bring Brother Dunstan warm wine at the postern before his watch and ask which nights Wulfric used the key and who went out with him": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Carry Gilbert wrapped in the sack across the infirmary yard to the Abbot's chamber, Lambert guiding": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Challenge Wulfric aloud in the cloister in the Abbot's name: who bade him bring a hurdle to the leat at dawn before any cry, and why he did not look the dead man in the face": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Draw Maud aside, back to the barn, and ask gently about Hob and who offered the hire": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Face Osmer in the barn door in the Abbot's order that none leave before Prime": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Go out the wall at first light to Alys at the mill and ask what she saw at night on the leat road": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Go to Lambert at the infirmary ladder with Gilbert's name and ask only leave to see a hurt boy, no accusation": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Kneel at Edric's head and read the wound, hands and wrists, with Wulfric and the lay-brothers watching": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Kneel beside Wat, ask gently what he holds, offer him his prayer with Edric": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Lie flat on the ice and push the staff to Wat, Hawise anchoring the rope": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Press Osmer to his face: who hired these men, where were they sent, and why a bowman came home with galled wrists and clay under his nails": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Sit Pell down with her own wine and press him civilly: what the castle diggers do on the wall, and why one was in the mill-leat": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Speak to the Abbot's chaplain at the Abbot's door, with Anselm beside her, for the Abbot's ear before Sext": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Stand between the men and the door as almoner and offer them the almonry's bread to stay": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Stand on the Abbot's word at the graveside: the dig does not stop, and she will answer for it at Prime": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Step between Wulfric and the body and press him to his face: who sent him with a hurdle before the cry was raised": {
+          "count": 1,
+          "share": 0.05555555555555555
+        },
+        "Walk Edric to Brother Cuthwin and ask, simply and without naming anyone, about the recent poor-pit burials and what Osmer's fee is for": {
+          "count": 1,
+          "share": 0.05555555555555555
+        }
+      },
+      "red_line": {
+        "scope": "party",
+        "roll_threshold": 3,
+        "affected_pc_rolls": 0,
+        "missing_pressure_snapshot_rolls": 0,
+        "unassigned_high_pressure_rolls": 0,
+        "windows": [],
+        "ongoing_censored_windows": 0,
+        "windows_above_threshold": 0
+      }
+    }
+  ]
+}

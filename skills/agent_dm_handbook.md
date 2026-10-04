@@ -29,17 +29,20 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   option that only private notes could suggest. Let the player think aloud;
   only fictional stalling costs time.
 - When players' declarations need different actors for one roll or role, ask
-  them to choose; never pick silently, by odds or by vote. One spokesperson means
+  them to choose, or offer a tie-break die they all agree to; never pick
+  silently, by odds or by vote. One spokesperson means
   one roll, and another character does not retry a failed test in the same
   scene unless the situation or leverage has really changed. An action withdrawn
-  before commitment has none of its consequences.
+  before commitment has none of its consequences, though what was already done
+  and fictional time already spent remain.
 - Judge tags, equipment, contextual modifiers, and exceptional harm from the
   fiction. The CLI records the judgment; it does not read a description as rules.
 - Threats move on their own. Decide in advance what advances each threat's
   clock, what happens when it fills, and what can interrupt it. When enough
   fictional time passes, or the opposition makes its move, advance the clock,
-  whether or not anyone rolls; a signposted danger does not wait forever. A tick
-  is not automatically a Pressure charge, though both may apply.
+  whether or not anyone rolls; a signposted danger does not wait forever. A
+  trigger that does not depend on failure fires on success too. A tick is not
+  automatically a Pressure charge, though both may apply.
 - Apply Pressure when the fiction triggers it, including time passing under
   an active threat, noisy heroics, desperate bargains and taboo acts (Almanac 4),
   as well as when players accept it as a price. A skin's triggers add to these;
@@ -48,7 +51,9 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   shared-hazard policy; do not charge for real-world deliberation or merely to
   reach a pacing figure.
 - Give each named NPC a want, a manner and a line they will not cross, kept in
-  private notes, and play them by it, so they push and differ.
+  private notes, and play them by it, so they push and differ. Show their limits
+  through signs; never state a private boundary, or a private clock's name or
+  value, as fact.
 - When the fiction suits a character's distinctive capability (a power, bond,
   rite, spell or signature gear), include it among the options you name. Never
   require it.
@@ -58,7 +63,10 @@ for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
   post-roll choice, show the dice, explain why, and settle without discretionary
   spending in the same reply. Check other abilities and payment choices too:
   an ineffective nudge does not remove Jack-of-Trades or a Spell's choice of
-  Fortune versus Fatigue.
+  Fortune versus Fatigue. Before rolling, apply the tags and modifiers that fit
+  and offer optional powers at their costs; after resolution, offer abilities
+  the result makes eligible. Never buy an optional power for the player, and
+  settle every offered once-per-scene ability before closing its scene.
 
 ## Mechanics and records
 
@@ -117,8 +125,9 @@ Record each scene as a beat, separately from rolls. A fight is one beat, however
 many rounds it runs; a cut to another place or time starts a new one. Mark a beat
 perilous when failure in the scene could cost Stamina, a life or the goal; assess
 its actual fictional stakes, not whether dice were used. A genuine hazard resolved
-through preparation or a boon can qualify; safe chores, rests and danger staged
-for milestone credit do not. Mark act breaks (`--act-end`) where the story turns
+through preparation or a boon can qualify, and a safeguard earned within the
+beat does not erase the peril it overcame. Routine work begun after safety is
+established, safe chores, rests and danger staged for milestone credit do not. Mark act breaks (`--act-end`) where the story turns
 or pauses. Award a milestone when the third or fourth perilous beat since the last
 one ends; do not save it for the session's close. Log recovery when it occurs.
 Record promises made in the fiction (rewards, debts, favours) as recap threads

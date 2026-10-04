@@ -1,0 +1,300 @@
+{
+  "schema_version": 1,
+  "interpretation": "Descriptive logged observations; no population claim or automatic rules decision.",
+  "definitions": {
+    "midpoint": "The end of the session's first act: the first beat recorded with --act-end. Beats are recorded as their scenes end, so the first half runs to and includes that beat record, by event sequence. Unavailable without an act break.",
+    "beat_denominator": "Count explicit beat events, not rolls or the largest beat number; omit sessions without beats from both rate numerator and denominator.",
+    "completed": "Explicit session_start and session_end with an uninterrupted event sequence and no partial legacy history; incomplete sessions are separate.",
+    "pc_rolls": "Each finalized PC roll, including opposed sides and Deflection; exclude raw_roll records and npc: actors.",
+    "luck_spending": "Use before/after changes in luck events only; roll.luck_spent is not an additional expenditure.",
+    "red_line": "Pressure >=4 until a pressure event lowers or resets it; affected rolls require pressure_at_start >=4. Each window reports its affected rolls and the scenes it touched: the scene it opened in and each later scene it stayed open through. Open windows are right-censored, including at session end.",
+    "red_line_threshold": "Provisional interpretation of 'few': more than 3 affected PC rolls observed in one window."
+  },
+  "session_counts": {
+    "total": 1,
+    "completed": 1,
+    "incomplete": 0
+  },
+  "completed_evidence": {
+    "by_skin_and_party_size": [
+      {
+        "skin": "time_odyssey",
+        "party_size": 3,
+        "sessions": 1,
+        "recorded_beats": 10,
+        "perilous_beats": 7,
+        "crises": 0,
+        "rate_eligible_sessions": 1,
+        "sessions_without_beats": 0,
+        "rate_eligible_crises": 0,
+        "crises_per_20_recorded_beats": 0.0,
+        "character_sessions": 3,
+        "midpoint_available_character_sessions": 3,
+        "initially_low_character_sessions": 0,
+        "initially_above_one_with_midpoint": 3,
+        "newly_low_by_midpoint": 0,
+        "pc_rolls": 9,
+        "red_line_windows": 1,
+        "red_line_windows_above_threshold": 1,
+        "ongoing_censored_windows": 1
+      }
+    ]
+  },
+  "incomplete_observations": {
+    "by_skin_and_party_size": []
+  },
+  "sessions": [
+    {
+      "source": "/Users/bwbrook/games/sinew-and-steel/playtests/campaigns/p12_time_r/state/logs/session_001.jsonl",
+      "session": 1,
+      "skin": "time_odyssey",
+      "party_size": 3,
+      "completed": true,
+      "incomplete_reasons": [],
+      "event_count": 59,
+      "recorded_beats": 10,
+      "perilous_beats": 7,
+      "last_recorded_beat": 10,
+      "midpoint_beat": 5,
+      "acts": [
+        {
+          "act": 1,
+          "beats": 5,
+          "perilous_beats": 3,
+          "pc_rolls": 5,
+          "pressure_gained": 4,
+          "crises": 0,
+          "ended": true
+        },
+        {
+          "act": 2,
+          "beats": 5,
+          "perilous_beats": 4,
+          "pc_rolls": 4,
+          "pressure_gained": 0,
+          "crises": 0,
+          "ended": true
+        }
+      ],
+      "completed_acts": 2,
+      "crises": 0,
+      "crisis_targets": {},
+      "threshold_crises": 0,
+      "forced_crises": 0,
+      "pressure_gained": 4,
+      "pressure_gains_by_category": {
+        "ambient": 4
+      },
+      "pressure_gains_by_source": {
+        "A gate cycle passes while the party works inside the threatened public records room": 1,
+        "Another gate cycle passes while the crew reunites under the active archive evacuation threat": 1,
+        "The crew spends a gate cycle in the active flood-shutter hazard during the rescue": 1,
+        "The party spends another gate cycle moving through the active flood evacuation": 1
+      },
+      "crises_per_20_recorded_beats": 0.0,
+      "characters": {
+        "ada_mercer": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 6,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 4,
+          "luck_recovered": 4,
+          "luck_spent_by_source": {
+            "nudge": 4
+          },
+          "luck_recovered_by_source": {
+            "milestone:p12r-m1": 4
+          },
+          "pc_rolls": 5,
+          "acting_rolls": 5,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 5,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "INT": {
+              "count": 5,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_method": {
+            "Compare E. Wren access strip with transfer entries at the public index, recording names and times in her journal": {
+              "count": 1,
+              "share": 0.2
+            },
+            "Compare Wren survey map, dated 1890A journal entry, and Miriam dated witness excerpts, with Miriam reading the eastern-works account aloud": {
+              "count": 1,
+              "share": 0.2
+            },
+            "Compare the engine epoch setting with the recorded 1890A departure entry and reason through a return calibration under the moving gate": {
+              "count": 1,
+              "share": 0.2
+            },
+            "Draft and submit a limited, Wren-signed caveat citing E/17 required independent ground-stability survey and Wren western-only survey, without witness words or claim that required survey is absent": {
+              "count": 1,
+              "share": 0.2
+            },
+            "Study drive teeth and water feed, then ease the manual brake into the moving gear without diverting water into the gallery": {
+              "count": 1,
+              "share": 0.2
+            }
+          }
+        },
+        "gideon_vale": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 10,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 0,
+          "luck_recovered": 0,
+          "luck_spent_by_source": {},
+          "luck_recovered_by_source": {},
+          "pc_rolls": 3,
+          "acting_rolls": 3,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 3,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "REF": {
+              "count": 3,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_method": {
+            "Lead Wren, Ada, and Miriam beneath the moving service shutter toward the secured engine, watching its pace while the others help Wren and track the mechanism": {
+              "count": 1,
+              "share": 0.3333333333333333
+            },
+            "Run to the descending service-stack grille, duck beneath its bars, and brace the opening for companions": {
+              "count": 1,
+              "share": 0.3333333333333333
+            },
+            "Sprint low over the moving archive footbridge toward Ivo, holding a rope looped around the near rail": {
+              "count": 1,
+              "share": 0.3333333333333333
+            }
+          }
+        },
+        "miriam_ash": {
+          "initial_luck": 10,
+          "initially_low": false,
+          "minimum_luck_first_half": 10,
+          "reached_one_or_less_by_midpoint": false,
+          "newly_reached_one_or_less_by_midpoint": false,
+          "luck_spent": 0,
+          "luck_recovered": 0,
+          "luck_spent_by_source": {},
+          "luck_recovered_by_source": {},
+          "pc_rolls": 1,
+          "acting_rolls": 1,
+          "roll_share_by_role": {
+            "attacker": {
+              "count": 1,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_attribute": {
+            "REF": {
+              "count": 1,
+              "share": 1.0
+            }
+          },
+          "roll_share_by_method": {
+            "Follow the narrow moving bridge low and test each foothold while calling to Ivo about the worker behind the gallery door": {
+              "count": 1,
+              "share": 1.0
+            }
+          }
+        }
+      },
+      "pc_rolls": 9,
+      "npc_rolls_excluded": 0,
+      "roll_share_by_attribute": {
+        "INT": {
+          "count": 5,
+          "share": 0.5555555555555556
+        },
+        "REF": {
+          "count": 4,
+          "share": 0.4444444444444444
+        }
+      },
+      "roll_share_by_method": {
+        "Compare E. Wren access strip with transfer entries at the public index, recording names and times in her journal": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Compare Wren survey map, dated 1890A journal entry, and Miriam dated witness excerpts, with Miriam reading the eastern-works account aloud": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Compare the engine epoch setting with the recorded 1890A departure entry and reason through a return calibration under the moving gate": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Draft and submit a limited, Wren-signed caveat citing E/17 required independent ground-stability survey and Wren western-only survey, without witness words or claim that required survey is absent": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Follow the narrow moving bridge low and test each foothold while calling to Ivo about the worker behind the gallery door": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Lead Wren, Ada, and Miriam beneath the moving service shutter toward the secured engine, watching its pace while the others help Wren and track the mechanism": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Run to the descending service-stack grille, duck beneath its bars, and brace the opening for companions": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Sprint low over the moving archive footbridge toward Ivo, holding a rope looped around the near rail": {
+          "count": 1,
+          "share": 0.1111111111111111
+        },
+        "Study drive teeth and water feed, then ease the manual brake into the moving gear without diverting water into the gallery": {
+          "count": 1,
+          "share": 0.1111111111111111
+        }
+      },
+      "red_line": {
+        "scope": "party",
+        "roll_threshold": 3,
+        "affected_pc_rolls": 4,
+        "missing_pressure_snapshot_rolls": 0,
+        "unassigned_high_pressure_rolls": 0,
+        "windows": [
+          {
+            "track": "party",
+            "actor": null,
+            "start_sequence": 24,
+            "start_beat": 3,
+            "start_reason": "threshold_crossing",
+            "left_censored": false,
+            "end_sequence": null,
+            "end_beat": null,
+            "end_reason": null,
+            "affected_pc_rolls": 4,
+            "scenes": 7,
+            "rolls_by_actor": {
+              "gideon_vale": 1,
+              "ada_mercer": 3
+            },
+            "right_censored": true,
+            "exceeds_roll_threshold": true
+          }
+        ],
+        "ongoing_censored_windows": 1,
+        "windows_above_threshold": 1
+      }
+    }
+  ]
+}
