@@ -1,0 +1,27 @@
+{
+  "planned_case": "AME-M2",
+  "executed_case": "AME-M2",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 141012,
+  "draws": [
+    {
+      "index": 1,
+      "seed": 141012001,
+      "tool": "play"
+    }
+  ],
+  "GM_replies": 3,
+  "deliveries": 8,
+  "source_run": "playtests/runs/AME/M2",
+  "source_collection": "playtests/runs/AME/M2/collection_v2",
+  "input_freeze_sha256": "6b590d6afa21c98a5151de2a4436f898dc6ef89f3788c551164f8ceede8134f8",
+  "transcript_sha256": "e3c7dc17101261b954843fb7bd5633ae2bb3042e78e6fbfc7b9fcb8fbcec5bb2",
+  "summary_sha256": "0d29ef58e3b7f1ddb5da3a3c577aed3a786535cdbc1b932dbadf93113f21990e",
+  "scripted_turns": [],
+  "administrative_intervention_phases": [
+    "transport_recovery"
+  ],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

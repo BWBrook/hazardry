@@ -1,0 +1,25 @@
+{
+  "planned_case": "C4-lantern",
+  "executed_case": "C4-lantern",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 81414,
+  "draws": [
+    {
+      "index": 1,
+      "seed": 81414001,
+      "tool": "play"
+    }
+  ],
+  "GM_replies": 3,
+  "deliveries": 3,
+  "source_run": "playtests/runs/AFT/cases/C4/lantern",
+  "source_collection": "playtests/runs/AFT/cases/C4/lantern/collection_v2",
+  "input_freeze_sha256": "9a31c11f5cd4cabe981a9fda34f1755b3fb777423e469de31f8fc1ad976328b7",
+  "transcript_sha256": "d099d670531bc4412ffefdabfffeaa97e48f1f1c0350f5a7df58fe2924876cfe",
+  "summary_sha256": "630f1cdcf54b29a8d52b5ed8141e6d460ab0624c087a30bf0221988757cef7f5",
+  "scripted_turns": [],
+  "administrative_intervention_phases": [],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

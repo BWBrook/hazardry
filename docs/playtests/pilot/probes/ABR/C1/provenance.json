@@ -1,0 +1,27 @@
+{
+  "planned_case": "ABR-C1",
+  "executed_case": "ABR-C1",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 141023,
+  "draws": [
+    {
+      "index": 1,
+      "seed": 141023001,
+      "tool": "roll"
+    }
+  ],
+  "GM_replies": 2,
+  "deliveries": 2,
+  "source_run": "playtests/runs/ABR/C1",
+  "source_collection": "playtests/runs/ABR/C1/collection_v2",
+  "input_freeze_sha256": "1f1c9d1a6533239194afe7827a13fbfbb0143c6100d3cb760060d483d5c45a7d",
+  "transcript_sha256": "7b0d0ee8d72ca91e0ff5f1755fd05bea89a454e2128a063ed433040dcf836756",
+  "summary_sha256": "6f7df4d65575896b9e13466afcb58e1f32a27fabe158f6128de7e6fed8a3b98e",
+  "scripted_turns": [],
+  "administrative_intervention_phases": [
+    "pre_open"
+  ],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

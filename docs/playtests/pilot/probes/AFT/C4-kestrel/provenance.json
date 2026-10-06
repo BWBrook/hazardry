@@ -1,0 +1,25 @@
+{
+  "planned_case": "C4-kestrel",
+  "executed_case": "C4-kestrel",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 81414,
+  "draws": [
+    {
+      "index": 1,
+      "seed": 81414001,
+      "tool": "play"
+    }
+  ],
+  "GM_replies": 2,
+  "deliveries": 2,
+  "source_run": "playtests/runs/AFT/cases/C4/kestrel",
+  "source_collection": "playtests/runs/AFT/cases/C4/kestrel/collection_v2",
+  "input_freeze_sha256": "a398cd3fe08f936bc9fc0487e5265bb21d78c11c535ac54e2ccaf81804e2bcee",
+  "transcript_sha256": "b4643bcc8064f295cbd552faf112f3d513a3ff0d36743c29cd5e60acbf3cc8bb",
+  "summary_sha256": "e43e9c5187739ca5cb40f8af6818d9c003915fdb5ea5e344d9d6268a94a8dddc",
+  "scripted_turns": [],
+  "administrative_intervention_phases": [],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

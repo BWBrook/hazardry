@@ -1,0 +1,704 @@
+{
+  "utc": "2026-10-06T01:26:30.852767+00:00",
+  "checks": {
+    "28_primary_endpoints": true,
+    "23_unique_revised_jobs": true,
+    "revised_jobs_without_errors": true,
+    "canonical_120_unchanged": true,
+    "original_runner_unchanged": true,
+    "revised_runner_unchanged": true,
+    "revised_inputs_unchanged": true,
+    "policies_unchanged": true,
+    "public_copy_28": true,
+    "all_public_copies_identical": true,
+    "all_collector_public_checks_pass": true,
+    "all_final_snapshots_equal_live": true,
+    "no_unsettled_action_or_crisis": true,
+    "head_unchanged": true,
+    "all_original_input_freezes_preserved": true,
+    "17_unopened_refreezes_only_readiness_format": true,
+    "retained_collection_errors_only_documented_C0": true,
+    "all_sessions_deliberately_open": true
+  },
+  "all_pass": true,
+  "per_case": [
+    {
+      "case": "AME-M0",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 22,
+      "session_closed": false
+    },
+    {
+      "case": "AME-M1",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 29,
+      "session_closed": false
+    },
+    {
+      "case": "AME-M2",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 24,
+      "session_closed": false
+    },
+    {
+      "case": "AME-M3",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 25,
+      "session_closed": false
+    },
+    {
+      "case": "ABR-A",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 26,
+      "session_closed": false
+    },
+    {
+      "case": "ABR-B",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 28,
+      "session_closed": false
+    },
+    {
+      "case": "ABR-C1",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 20,
+      "session_closed": false
+    },
+    {
+      "case": "ABR-C2",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 17,
+      "session_closed": false
+    },
+    {
+      "case": "C0-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 15,
+      "session_closed": false
+    },
+    {
+      "case": "C0-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 15,
+      "session_closed": false
+    },
+    {
+      "case": "C1-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 18,
+      "session_closed": false
+    },
+    {
+      "case": "C1-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 18,
+      "session_closed": false
+    },
+    {
+      "case": "C2-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 19,
+      "session_closed": false
+    },
+    {
+      "case": "C2-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 19,
+      "session_closed": false
+    },
+    {
+      "case": "C3-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 19,
+      "session_closed": false
+    },
+    {
+      "case": "C3-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 16,
+      "session_closed": false
+    },
+    {
+      "case": "C4-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 18,
+      "session_closed": false
+    },
+    {
+      "case": "C4-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 19,
+      "session_closed": false
+    },
+    {
+      "case": "C5-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 18,
+      "session_closed": false
+    },
+    {
+      "case": "C5-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 16,
+      "session_closed": false
+    },
+    {
+      "case": "C6-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 21,
+      "session_closed": false
+    },
+    {
+      "case": "C6-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 20,
+      "session_closed": false
+    },
+    {
+      "case": "C7-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 19,
+      "session_closed": false
+    },
+    {
+      "case": "C7-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 19,
+      "session_closed": false
+    },
+    {
+      "case": "C8-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 21,
+      "session_closed": false
+    },
+    {
+      "case": "C8-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 21,
+      "session_closed": false
+    },
+    {
+      "case": "C9-kestrel",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 17,
+      "session_closed": false
+    },
+    {
+      "case": "C9-lantern",
+      "public_bytes_identical": true,
+      "public_checkpoint_delivery_checks": true,
+      "final_snapshot_equal_live": true,
+      "game_pending_action": false,
+      "game_pending_crisis": false,
+      "session_status": "open",
+      "final_files": 17,
+      "session_closed": false
+    }
+  ],
+  "v2_controller_exit_code": 0,
+  "controller_session": 13489,
+  "original_freeze_checks": [
+    {
+      "case": "AME-M0",
+      "original_freeze_path": "playtests/runs/AME/M0/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "AME-M1",
+      "original_freeze_path": "playtests/runs/AME/M1/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "AME-M2",
+      "original_freeze_path": "playtests/runs/AME/M2/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "AME-M3",
+      "original_freeze_path": "playtests/runs/AME/M3/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "ABR-A",
+      "original_freeze_path": "playtests/runs/ABR/A/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "ABR-B",
+      "original_freeze_path": "playtests/runs/ABR/B/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "ABR-C1",
+      "original_freeze_path": "playtests/runs/ABR/C1/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "ABR-C2",
+      "original_freeze_path": "playtests/runs/ABR/C2/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "C0-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C0/kestrel/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "C0-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C0/lantern/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "C1-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C1/kestrel/execution_freeze.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": null
+    },
+    {
+      "case": "C1-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C1/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C2-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C2/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C2-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C2/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C3-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C3/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C3-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C3/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C4-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C4/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C4-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C4/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C5-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C5/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C5-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C5/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C6-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C6/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C6-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C6/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C7-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C7/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C7-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C7/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C8-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C8/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C8-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C8/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C9-kestrel",
+      "original_freeze_path": "playtests/runs/AFT/cases/C9/kestrel/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    },
+    {
+      "case": "C9-lantern",
+      "original_freeze_path": "playtests/runs/AFT/cases/C9/lantern/execution_freeze_v1.json",
+      "original_freeze_hash_equal": true,
+      "readiness_only_refreeze": true
+    }
+  ],
+  "retained_prior_progress_errors": [
+    {
+      "case": "C0-kestrel",
+      "error": "Summary failed: error: no session JSONL files found\n",
+      "primary_collection": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C0/kestrel/collection_v2"
+    },
+    {
+      "case": "C0-lantern",
+      "error": "Summary failed: error: no session JSONL files found\n",
+      "primary_collection": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C0/lantern/collection_v2"
+    }
+  ],
+  "supersedes": {
+    "path": "playtests/runs/astra_probe_runner/final_verification_first_root_check.json",
+    "sha256": "0f998b27fb80d79c00f072d54b0d104e03e19034a32f179ab9f733b0075e9349",
+    "explanation": "The first root check incorrectly treated preserved original C0 collection errors as current errors and tested archived V1 freezes only at their active V2 paths. The saved V1 hashes and exact readiness-only differences are now checked explicitly; no execution data or game state changed."
+  },
+  "collection_checks": [
+    {
+      "case": "AME-M0",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "AME-M1",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "AME-M2",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "AME-M3",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "ABR-A",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "ABR-B",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "ABR-C1",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "ABR-C2",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C0-kestrel",
+      "disposition": "complete",
+      "has_retained_error": true,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C0-lantern",
+      "disposition": "complete",
+      "has_retained_error": true,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C1-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C1-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C2-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C2-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C3-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C3-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C4-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C4-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C5-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C5-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C6-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C6-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C7-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C7-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C8-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C8-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C9-kestrel",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    },
+    {
+      "case": "C9-lantern",
+      "disposition": "complete",
+      "has_retained_error": false,
+      "retained_error_explained": true
+    }
+  ],
+  "root_verification_lineage": [
+    {
+      "path": "playtests/runs/astra_probe_runner/final_verification_first_root_check.json",
+      "sha256": "0f998b27fb80d79c00f072d54b0d104e03e19034a32f179ab9f733b0075e9349"
+    },
+    {
+      "path": "playtests/runs/astra_probe_runner/final_verification_second_root_check.json",
+      "sha256": "c8b771e91064e9b20530341938a3edd84ee4dc61d1051db2be85e14259088e0b"
+    }
+  ],
+  "root_verification_corrections": "Both failed root checks remain preserved. The first confused active V2 freezes with preserved V1 freezes. Both initially required historical C0 collection errors to be null. Final predicates distinguish case endpoints from retained collection history, verify actual tracker fields and explicitly confine exception acceptance to two guarded mechanics-free C0 summaries. No game data changed."
+}

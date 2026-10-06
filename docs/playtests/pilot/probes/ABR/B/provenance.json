@@ -1,0 +1,36 @@
+{
+  "planned_case": "ABR-B",
+  "executed_case": "ABR-B",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 141022,
+  "draws": [
+    {
+      "index": 1,
+      "seed": 141022001,
+      "tool": "play"
+    }
+  ],
+  "GM_replies": 5,
+  "deliveries": 5,
+  "source_run": "playtests/runs/ABR/B",
+  "source_collection": "playtests/runs/ABR/B",
+  "input_freeze_sha256": "7c48eb0e4b41be20fe730d72c024b07e5c240f2476a7fedf96520a1ee09a8b8b",
+  "transcript_sha256": "e2abbde96f5022efbe75c193e7cf65fc9d1293d040f2b4aca13fc980be064f99",
+  "summary_sha256": "99aa708f69c6960afcc4556221d65734c6a7ec36d99ecd2ec93b765a598ada42",
+  "scripted_turns": [
+    {
+      "id": "B-question",
+      "player": "brother_cadoc",
+      "text": "Would knowingly lying under this oath violate my vow and mark Sin, even if the Abbot orders it and I mean to save the novice?"
+    },
+    {
+      "id": "B-lie",
+      "player": "brother_cadoc",
+      "text": "No. I did not see Novice Mara carry the sealed royal writ from the archive at dusk."
+    }
+  ],
+  "administrative_intervention_phases": [],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

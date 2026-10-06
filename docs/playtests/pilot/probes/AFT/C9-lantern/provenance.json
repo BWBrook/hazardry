@@ -1,0 +1,19 @@
+{
+  "planned_case": "C9-lantern",
+  "executed_case": "C9-lantern",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 81419,
+  "draws": [],
+  "GM_replies": 2,
+  "deliveries": 2,
+  "source_run": "playtests/runs/AFT/cases/C9/lantern",
+  "source_collection": "playtests/runs/AFT/cases/C9/lantern/collection_v2",
+  "input_freeze_sha256": "7bb582e02b0fb5a4b73be4ab359e37f9de7600a10e519b0018c9b1ffe1531118",
+  "transcript_sha256": "c67738fbe5547f40d303c797c33e83b854d00a265484badd823b52b9f9478b68",
+  "summary_sha256": "a761c51919e9852bb69089832963fbb97615730daf8810160edc5cd71e955e5e",
+  "scripted_turns": [],
+  "administrative_intervention_phases": [],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

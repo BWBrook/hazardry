@@ -1,0 +1,157 @@
+{
+  "frozen_utc": "2026-10-06T00:45:41.421619+00:00",
+  "controller_revision": 2,
+  "max_concurrent_cases": 3,
+  "model": "gpt-6-sol",
+  "effort": "medium",
+  "original_manifest_sha256": "0d67f2faf37fa544c49ef503da39bd37abbbc067c59849bca9b3c468aa063db1",
+  "changes": "Exact administrative tokens accept zero or one period; fresh setup asks standalone Ready; separate V2 collection with complete-ledger and unchanged-state N/A guard. M1 fresh replacement only; original M2 transport recovery preserves its exposed test and recorded Fortune decision. Code, input-freeze and policy hashes enforced before role calls. No game rule, seed or case-policy change. Full pre-open campaign identity is checked; controller exits nonzero if any job records an error.",
+  "code_sha256": {
+    "run_case_v2.py": "3dbf4d2bf80ec8b5f7690bf0b1f75796911175b286768a8a2e69688de59572be",
+    "run_revised_queue.py": "2b89f491772388b4d90b4592b3c2b1bfca4da2555d3af754e5f5b0449ea86b82",
+    "record_cli.py": "643baadcf3bd2a145dc62da1a2f3fc5bd3549014bcf2f446c836ca5cf5b3c2ad"
+  },
+  "queue": [
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/M0",
+      "mode": "preopen",
+      "case": "AME-M0",
+      "input_freeze_sha256": "9ae2421f93d114eb1ef3153158182b21b7b713f941eb07f887fcd4c40e765d70"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/ABR/A",
+      "mode": "preopen",
+      "case": "ABR-A",
+      "input_freeze_sha256": "1657ee17e457eda0a966ea8c75be3195bb789f60b64814eaac920fbcd0cc293b"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/replacements/M1_R2",
+      "mode": "fresh",
+      "case": "AME-M1-R2",
+      "input_freeze_sha256": "96ea414cf75bfbb2503086b17d5646a9f42c89a36f3f48e9d0c546767b05682a"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/M2",
+      "mode": "transport_recovery",
+      "case": "AME-M2",
+      "input_freeze_sha256": "6b590d6afa21c98a5151de2a4436f898dc6ef89f3788c551164f8ceede8134f8",
+      "recovery_sha256": "468295770d3617a36f11216d4433d412a2698d3e6645c5f2f55fefff395650c2"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/M3",
+      "mode": "preopen",
+      "case": "AME-M3",
+      "input_freeze_sha256": "f4848861a948d9a32c8858993934e3f60664164db82bcf08484d9d976fac0d08"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/ABR/C1",
+      "mode": "preopen",
+      "case": "ABR-C1",
+      "input_freeze_sha256": "1f1c9d1a6533239194afe7827a13fbfbb0143c6100d3cb760060d483d5c45a7d"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C1/lantern",
+      "mode": "fresh",
+      "case": "C1-lantern",
+      "input_freeze_sha256": "c564c248e9cc7066b954f7f90997eb13048d14350f67a30ef4b3f42eb3b9f24d"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C2/kestrel",
+      "mode": "fresh",
+      "case": "C2-kestrel",
+      "input_freeze_sha256": "e2e4d321f8a289d368cd504fbc198cc7139b1db009c5310ad4192cdf517a185b"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C2/lantern",
+      "mode": "fresh",
+      "case": "C2-lantern",
+      "input_freeze_sha256": "6378f93bc936d4b6dbdc320b647815d04e09cca0fda318e4ee17e5998419e7cd"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C3/kestrel",
+      "mode": "fresh",
+      "case": "C3-kestrel",
+      "input_freeze_sha256": "462fe4452474b90f8338f982f2289f14e0d54bb422a0643dae85eb91f1597b5b"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C3/lantern",
+      "mode": "fresh",
+      "case": "C3-lantern",
+      "input_freeze_sha256": "97c9053ad2669426dac166f558ff6d8c7620cef9ba328879000d7c5c22b596d7"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C4/kestrel",
+      "mode": "fresh",
+      "case": "C4-kestrel",
+      "input_freeze_sha256": "a398cd3fe08f936bc9fc0487e5265bb21d78c11c535ac54e2ccaf81804e2bcee"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C4/lantern",
+      "mode": "fresh",
+      "case": "C4-lantern",
+      "input_freeze_sha256": "9a31c11f5cd4cabe981a9fda34f1755b3fb777423e469de31f8fc1ad976328b7"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C5/kestrel",
+      "mode": "fresh",
+      "case": "C5-kestrel",
+      "input_freeze_sha256": "7d6ff9c38be845f879751d8e640f57e0629ff3ea0e34719725a21648ff50f932"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C5/lantern",
+      "mode": "fresh",
+      "case": "C5-lantern",
+      "input_freeze_sha256": "016e29b5f38fcc0eac20fee87311ef403c4afcd7d8cede776fd9ae05d902bb75"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C6/kestrel",
+      "mode": "fresh",
+      "case": "C6-kestrel",
+      "input_freeze_sha256": "08f836e6b5700840fa4691657469ac083a4be2b92b92a22934991b5a0a6ab162"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C6/lantern",
+      "mode": "fresh",
+      "case": "C6-lantern",
+      "input_freeze_sha256": "8e1e759241f4a44f04cbecb3be93bde4bd1a24c59ae149faed3f335c8e41c2ee"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C7/kestrel",
+      "mode": "fresh",
+      "case": "C7-kestrel",
+      "input_freeze_sha256": "66decf5ecae1dcec53d58937a45dad71354b2d15810795f1562471e6766ccda5"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C7/lantern",
+      "mode": "fresh",
+      "case": "C7-lantern",
+      "input_freeze_sha256": "1c87b69519e57876bafe8dd150d291a732be616b661b04dd7a77f9504d22ad2c"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C8/kestrel",
+      "mode": "fresh",
+      "case": "C8-kestrel",
+      "input_freeze_sha256": "5f926983e36fc1ab39d25ca786482a4279046e79126d4fb35f06aaedbe74c19e"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C8/lantern",
+      "mode": "fresh",
+      "case": "C8-lantern",
+      "input_freeze_sha256": "73d1137aae80ba64424b8aa0de52577a25fe0e0508dd8e2a6ab5e714702a4b15"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C9/kestrel",
+      "mode": "fresh",
+      "case": "C9-kestrel",
+      "input_freeze_sha256": "27f4efb5eeb1cc48915949187b5bacddb89e770b7aabe12ecd59190b3b31e1af"
+    },
+    {
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C9/lantern",
+      "mode": "fresh",
+      "case": "C9-lantern",
+      "input_freeze_sha256": "7bb582e02b0fb5a4b73be4ab359e37f9de7600a10e519b0018c9b1ffe1531118"
+    }
+  ],
+  "replacement_policy_sha256": "a18c0a49c11ffdf2cc77c4493ddfb33b3f43e2595c72fde119fe204e65102873",
+  "prelaunch_path_repair": "Versioned _r2_r2 assignment typo corrected before all replacement role calls; canonical build/validate and exact input/recipe target checks rerun."
+}

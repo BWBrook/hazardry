@@ -1,0 +1,63 @@
+{
+  "saved_utc": "2026-10-06T01:36:35.619365+00:00",
+  "status": "all three mechanical audits and the native audit complete; content-addressed archive receipt saved separately",
+  "files": [
+    {
+      "source": "playtests/runs/AFT/mechanics_audit_astra.md",
+      "saved_review_copy": "AFT/mechanics-audit.md",
+      "sha256": "15870b9bce1ac688d76bb0c490833e2c809f1c50288f5fa0121427d39bdb74da"
+    },
+    {
+      "source": "playtests/runs/ABR/mechanics_audit_astra.md",
+      "saved_review_copy": "ABR/mechanics-audit.md",
+      "sha256": "d360fb2a282d61c58e65c2166acceaafcc95381726ffc25130347f2610657ccc"
+    },
+    {
+      "source": "playtests/runs/AME/mechanics_audit_astra.md",
+      "saved_review_copy": "AME/mechanics-audit.md",
+      "sha256": "e4d3285c4dc461564f65313818b00ce126e1b8c73aa4c2f564d436057b4c5bb4"
+    },
+    {
+      "source": "playtests/runs/astra_probe_runner/pre_execution_manifest.json",
+      "saved_review_copy": "evidence/pre-execution-manifest.json",
+      "sha256": "0d67f2faf37fa544c49ef503da39bd37abbbc067c59849bca9b3c468aa063db1"
+    },
+    {
+      "source": "playtests/runs/astra_probe_runner/execution_v2_manifest.json",
+      "saved_review_copy": "evidence/execution-v2-manifest.json",
+      "sha256": "0f1cc6b664f31d1c914f8177407e24bde9cfb15b677da333842b7b88c4324047"
+    },
+    {
+      "source": "playtests/runs/astra_probe_runner/final_verification.json",
+      "saved_review_copy": "evidence/final-verification.json",
+      "sha256": "d5dff78a4d1200d20be3b5e7d3130a70ffa9180e732deadd9d50fdbb0aa2dd56"
+    },
+    {
+      "source": "playtests/runs/astra_probe_runner/runtime_receipt_review.md",
+      "saved_review_copy": "evidence/runtime-receipt-review.md",
+      "sha256": "de518eca0231958191aefcf4f9bb702722d0da3e5d0891e4a9c0d07d05b51f8b"
+    },
+    {
+      "source": "playtests/runs/astra_probe_runner/native_delivery_audit.md",
+      "saved_review_copy": "evidence/native-delivery-audit.md",
+      "sha256": "b80dc1ea4402f76720e1d64653206b0730597b59d195edfef75f3417604cc2f4"
+    },
+    {
+      "source": "docs/playtests/pilot/probes/free-traders-expertise.md",
+      "saved_review_copy": "evidence/protocols/free-traders-expertise.md",
+      "sha256": "a1ff6948a29f926ab1bbf12d1644e17e7885b575cfd3317f9f8b89eaa60cba15"
+    },
+    {
+      "source": "docs/playtests/pilot/probes/briar-doctrinal-sin.md",
+      "saved_review_copy": "evidence/protocols/briar-doctrinal-sin.md",
+      "sha256": "6c8b63c6869f081f4ad4602d2bf0a10925830a140c7cdf44df03fcbcaacc30dc"
+    },
+    {
+      "source": "docs/playtests/pilot/probes/mapped-exposure.md",
+      "saved_review_copy": "evidence/protocols/mapped-exposure.md",
+      "sha256": "b91f770a6a3a681207394d20afde5158846b56c98daf3adb2bb0022c50c8743d"
+    }
+  ],
+  "archive_receipt": "evidence/archive-receipt.json",
+  "full_file_manifest": "evidence/full-run-file-manifest.json"
+}

@@ -1,0 +1,25 @@
+{
+  "planned_case": "ABR-C2",
+  "executed_case": "ABR-C2",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 141024,
+  "draws": [],
+  "GM_replies": 2,
+  "deliveries": 2,
+  "source_run": "playtests/runs/ABR/C2",
+  "source_collection": "playtests/runs/ABR/C2",
+  "input_freeze_sha256": "402e3d5d181cb9539bde1449958a921698511941d9ba5be5d48f6f131eeea490",
+  "transcript_sha256": "e71a7a99480e50b45be9537f40820c85a9e6d2c53da89c54551ef0cec70fa830",
+  "summary_sha256": "e06052ef6b3f9a247672e797de29bbce5061ce39b838617415eea8465228ea27",
+  "scripted_turns": [
+    {
+      "id": "C2-exam",
+      "player": "brother_cadoc",
+      "text": "With the family's and steward's consent, I examine the ordinary patient's body in this unconsecrated infirmary and make truthful notes in my notebook, to establish the cause of death."
+    }
+  ],
+  "administrative_intervention_phases": [],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

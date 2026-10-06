@@ -1,0 +1,27 @@
+{
+  "planned_case": "AME-M0",
+  "executed_case": "AME-M0",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 141010,
+  "draws": [
+    {
+      "index": 1,
+      "seed": 141010001,
+      "tool": "roll"
+    }
+  ],
+  "GM_replies": 5,
+  "deliveries": 12,
+  "source_run": "playtests/runs/AME/M0",
+  "source_collection": "playtests/runs/AME/M0/collection_v2",
+  "input_freeze_sha256": "9ae2421f93d114eb1ef3153158182b21b7b713f941eb07f887fcd4c40e765d70",
+  "transcript_sha256": "d3357debd8e86195542a7273a869889302fad737544808f360ab9d650c2f8f22",
+  "summary_sha256": "35cb65f35564951f6aadb45dff186b5592c581bfd3417c0b5f59a044b715daf0",
+  "scripted_turns": [],
+  "administrative_intervention_phases": [
+    "pre_open"
+  ],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

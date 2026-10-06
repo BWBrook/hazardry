@@ -1,0 +1,772 @@
+{
+  "saved_utc": "2026-10-06T01:23:42.435906+00:00",
+  "rule_commit": "b12135ec1fa3d89e266ca15c7768b423b72a1b27",
+  "original_manifest_sha256": "0d67f2faf37fa544c49ef503da39bd37abbbc067c59849bca9b3c468aa063db1",
+  "v2_manifest_sha256": "0f1cc6b664f31d1c914f8177407e24bde9cfb15b677da333842b7b88c4324047",
+  "claim_boundary": "Labelled fixture observations; no ordinary-play or pooled rate inference.",
+  "primary_cases": [
+    {
+      "suite": "AME",
+      "label": "M0",
+      "planned_case": "AME-M0",
+      "executed_case": "AME-M0",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141010,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 141010001,
+          "tool": "roll"
+        }
+      ],
+      "GM_replies": 5,
+      "deliveries": 12,
+      "source_run": "playtests/runs/AME/M0",
+      "source_collection": "playtests/runs/AME/M0/collection_v2",
+      "input_freeze_sha256": "9ae2421f93d114eb1ef3153158182b21b7b713f941eb07f887fcd4c40e765d70",
+      "transcript_sha256": "d3357debd8e86195542a7273a869889302fad737544808f360ab9d650c2f8f22",
+      "summary_sha256": "35cb65f35564951f6aadb45dff186b5592c581bfd3417c0b5f59a044b715daf0",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [
+        "pre_open"
+      ],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AME",
+      "label": "M1",
+      "planned_case": "AME-M1",
+      "executed_case": "AME-M1-R2",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141011,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 141011001,
+          "tool": "play"
+        },
+        {
+          "index": 2,
+          "seed": 141011002,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 6,
+      "deliveries": 14,
+      "source_run": "playtests/runs/AME/replacements/M1_R2",
+      "source_collection": "playtests/runs/AME/replacements/M1_R2/collection_v2",
+      "input_freeze_sha256": "96ea414cf75bfbb2503086b17d5646a9f42c89a36f3f48e9d0c546767b05682a",
+      "transcript_sha256": "ad6b0e7776c689c787ae2271dd635ed9f7ebd81b9acc027e61b363b50504216b",
+      "summary_sha256": "cb698b91bafa7bb1385883467ff8e2cb9da02eef96873140bd88ee7a8b47b7e6",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AME",
+      "label": "M2",
+      "planned_case": "AME-M2",
+      "executed_case": "AME-M2",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141012,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 141012001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 8,
+      "source_run": "playtests/runs/AME/M2",
+      "source_collection": "playtests/runs/AME/M2/collection_v2",
+      "input_freeze_sha256": "6b590d6afa21c98a5151de2a4436f898dc6ef89f3788c551164f8ceede8134f8",
+      "transcript_sha256": "e3c7dc17101261b954843fb7bd5633ae2bb3042e78e6fbfc7b9fcb8fbcec5bb2",
+      "summary_sha256": "0d29ef58e3b7f1ddb5da3a3c577aed3a786535cdbc1b932dbadf93113f21990e",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [
+        "transport_recovery"
+      ],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AME",
+      "label": "M3",
+      "planned_case": "AME-M3",
+      "executed_case": "AME-M3",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141013,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 141013001,
+          "tool": "roll"
+        },
+        {
+          "index": 2,
+          "seed": 141013002,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 6,
+      "source_run": "playtests/runs/AME/M3",
+      "source_collection": "playtests/runs/AME/M3/collection_v2",
+      "input_freeze_sha256": "f4848861a948d9a32c8858993934e3f60664164db82bcf08484d9d976fac0d08",
+      "transcript_sha256": "28eb9fc73b936809240b88897e00b7029a6fa918141f1f7611be26d1ff1406e1",
+      "summary_sha256": "6fbfd87759169f698cf4bdf2f2ccdb1030528bc16a45cf6456b56be75e27d636",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [
+        "pre_open"
+      ],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "ABR",
+      "label": "A",
+      "planned_case": "ABR-A",
+      "executed_case": "ABR-A",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141021,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 141021001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 5,
+      "deliveries": 12,
+      "source_run": "playtests/runs/ABR/A",
+      "source_collection": "playtests/runs/ABR/A/collection_v2",
+      "input_freeze_sha256": "1657ee17e457eda0a966ea8c75be3195bb789f60b64814eaac920fbcd0cc293b",
+      "transcript_sha256": "30c99dccc075adb4b6d684b5ec92454f5985c717c298b306b12e70b8bc297112",
+      "summary_sha256": "d416ee2b02229d6f1f52acb1320f34e192aa5f4d626226f717a10f4a646af294",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [
+        "pre_open"
+      ],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "ABR",
+      "label": "B",
+      "planned_case": "ABR-B",
+      "executed_case": "ABR-B",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141022,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 141022001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 5,
+      "deliveries": 5,
+      "source_run": "playtests/runs/ABR/B",
+      "source_collection": "playtests/runs/ABR/B",
+      "input_freeze_sha256": "7c48eb0e4b41be20fe730d72c024b07e5c240f2476a7fedf96520a1ee09a8b8b",
+      "transcript_sha256": "e2abbde96f5022efbe75c193e7cf65fc9d1293d040f2b4aca13fc980be064f99",
+      "summary_sha256": "99aa708f69c6960afcc4556221d65734c6a7ec36d99ecd2ec93b765a598ada42",
+      "scripted_turns": [
+        {
+          "id": "B-question",
+          "player": "brother_cadoc",
+          "text": "Would knowingly lying under this oath violate my vow and mark Sin, even if the Abbot orders it and I mean to save the novice?"
+        },
+        {
+          "id": "B-lie",
+          "player": "brother_cadoc",
+          "text": "No. I did not see Novice Mara carry the sealed royal writ from the archive at dusk."
+        }
+      ],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "ABR",
+      "label": "C1",
+      "planned_case": "ABR-C1",
+      "executed_case": "ABR-C1",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141023,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 141023001,
+          "tool": "roll"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/ABR/C1",
+      "source_collection": "playtests/runs/ABR/C1/collection_v2",
+      "input_freeze_sha256": "1f1c9d1a6533239194afe7827a13fbfbb0143c6100d3cb760060d483d5c45a7d",
+      "transcript_sha256": "7b0d0ee8d72ca91e0ff5f1755fd05bea89a454e2128a063ed433040dcf836756",
+      "summary_sha256": "6f7df4d65575896b9e13466afcb58e1f32a27fabe158f6128de7e6fed8a3b98e",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [
+        "pre_open"
+      ],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "ABR",
+      "label": "C2",
+      "planned_case": "ABR-C2",
+      "executed_case": "ABR-C2",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 141024,
+      "draws": [],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/ABR/C2",
+      "source_collection": "playtests/runs/ABR/C2",
+      "input_freeze_sha256": "402e3d5d181cb9539bde1449958a921698511941d9ba5be5d48f6f131eeea490",
+      "transcript_sha256": "e71a7a99480e50b45be9537f40820c85a9e6d2c53da89c54551ef0cec70fa830",
+      "summary_sha256": "e06052ef6b3f9a247672e797de29bbce5061ce39b838617415eea8465228ea27",
+      "scripted_turns": [
+        {
+          "id": "C2-exam",
+          "player": "brother_cadoc",
+          "text": "With the family's and steward's consent, I examine the ordinary patient's body in this unconsecrated infirmary and make truthful notes in my notebook, to establish the cause of death."
+        }
+      ],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C0-kestrel",
+      "planned_case": "C0-kestrel",
+      "executed_case": "C0-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81410,
+      "draws": [],
+      "GM_replies": 2,
+      "deliveries": 9,
+      "source_run": "playtests/runs/AFT/cases/C0/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C0/kestrel/collection_v2",
+      "input_freeze_sha256": "fee73ec483104056d661b5a459ac0f057f277d221f1af501141c84c3643e9657",
+      "transcript_sha256": "1ab07fa26597479b5ad06039995cbc08a6856b5abe306b1627e8a7621af804a8",
+      "summary_sha256": "38b9737de338d861711deb54b3ba5c9c1104b450b5c15676c23f6b36eeab0b8c",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C0-lantern",
+      "planned_case": "C0-lantern",
+      "executed_case": "C0-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81410,
+      "draws": [],
+      "GM_replies": 2,
+      "deliveries": 9,
+      "source_run": "playtests/runs/AFT/cases/C0/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C0/lantern/collection_v2",
+      "input_freeze_sha256": "22a41d775670236ffa56272b89282a4893e215eb28e81e303de98acc142bee6a",
+      "transcript_sha256": "60357d537333fb06540892eb1cb81b0390db1e9d895200df68b5117acc07aceb",
+      "summary_sha256": "c5af462a8e3afd920be60661a876691bb3022108e9e5ecf1a80c0203502c538d",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C1-kestrel",
+      "planned_case": "C1-kestrel",
+      "executed_case": "C1-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81411,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81411001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C1/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C1/kestrel/collection_v2",
+      "input_freeze_sha256": "8254d425d6d313773a6dd99b13ffb068810ac5d264e5f3e7a90392687aa342ac",
+      "transcript_sha256": "d46e6998824b66dedb867c8ecbb68be0b67ae48af5c60aa978cfb4d394202e56",
+      "summary_sha256": "3624123265c816278ddaf2fc152d0aa0f3b139badaa177cc2ade170184975497",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C1-lantern",
+      "planned_case": "C1-lantern",
+      "executed_case": "C1-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81411,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81411001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C1/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C1/lantern/collection_v2",
+      "input_freeze_sha256": "c564c248e9cc7066b954f7f90997eb13048d14350f67a30ef4b3f42eb3b9f24d",
+      "transcript_sha256": "7010846022397f0bcb8c9c4b4b990ebac504c1abfb698dc98d514e9fe6d253f4",
+      "summary_sha256": "18b728dfd04b657bc385a4a9f026f16366da5b475a06b233993e63f2726d1564",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C2-kestrel",
+      "planned_case": "C2-kestrel",
+      "executed_case": "C2-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81412,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81412001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 3,
+      "source_run": "playtests/runs/AFT/cases/C2/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C2/kestrel/collection_v2",
+      "input_freeze_sha256": "e2e4d321f8a289d368cd504fbc198cc7139b1db009c5310ad4192cdf517a185b",
+      "transcript_sha256": "0eb51142cfe32d18f20a60e3b98f3453b6ee98fa77325a1bbd805a5e4a85cd3f",
+      "summary_sha256": "4aee712eec963bd91069ec32385ab8e8987df775c3dcfb787fb64d0755ec17ea",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C2-lantern",
+      "planned_case": "C2-lantern",
+      "executed_case": "C2-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81412,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81412001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 3,
+      "source_run": "playtests/runs/AFT/cases/C2/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C2/lantern/collection_v2",
+      "input_freeze_sha256": "6378f93bc936d4b6dbdc320b647815d04e09cca0fda318e4ee17e5998419e7cd",
+      "transcript_sha256": "16c02e68a68e0c5a5c2228ddadac168985c5bee3b8e664bedf1827b2e8deacdf",
+      "summary_sha256": "d2380f2c9057e7538ad2921ee2f039b49225ae79e8204e16b06c473d74e9eecb",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C3-kestrel",
+      "planned_case": "C3-kestrel",
+      "executed_case": "C3-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81413,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81413001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 3,
+      "source_run": "playtests/runs/AFT/cases/C3/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C3/kestrel/collection_v2",
+      "input_freeze_sha256": "462fe4452474b90f8338f982f2289f14e0d54bb422a0643dae85eb91f1597b5b",
+      "transcript_sha256": "525e322e2288d0128ba7832ee77d2e2cf71c9ac776e33315d0076c7617da1cc8",
+      "summary_sha256": "89e14fe700d853ab7edf82a12ca6b8562fd7f3b6267486587d0407890ca73d18",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C3-lantern",
+      "planned_case": "C3-lantern",
+      "executed_case": "C3-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81413,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81413001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 3,
+      "source_run": "playtests/runs/AFT/cases/C3/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C3/lantern/collection_v2",
+      "input_freeze_sha256": "97c9053ad2669426dac166f558ff6d8c7620cef9ba328879000d7c5c22b596d7",
+      "transcript_sha256": "397111a0e813b4f1fdc7d37116328855d5e10a48eb815baafa75eedb178d5bfe",
+      "summary_sha256": "060ff31a679a6f7cb48a788fbcbd72f21fe7cf27caeece7db3ac756b09d2ca84",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C4-kestrel",
+      "planned_case": "C4-kestrel",
+      "executed_case": "C4-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81414,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81414001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C4/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C4/kestrel/collection_v2",
+      "input_freeze_sha256": "a398cd3fe08f936bc9fc0487e5265bb21d78c11c535ac54e2ccaf81804e2bcee",
+      "transcript_sha256": "b4643bcc8064f295cbd552faf112f3d513a3ff0d36743c29cd5e60acbf3cc8bb",
+      "summary_sha256": "e43e9c5187739ca5cb40f8af6818d9c003915fdb5ea5e344d9d6268a94a8dddc",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C4-lantern",
+      "planned_case": "C4-lantern",
+      "executed_case": "C4-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81414,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81414001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 3,
+      "source_run": "playtests/runs/AFT/cases/C4/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C4/lantern/collection_v2",
+      "input_freeze_sha256": "9a31c11f5cd4cabe981a9fda34f1755b3fb777423e469de31f8fc1ad976328b7",
+      "transcript_sha256": "d099d670531bc4412ffefdabfffeaa97e48f1f1c0350f5a7df58fe2924876cfe",
+      "summary_sha256": "630f1cdcf54b29a8d52b5ed8141e6d460ab0624c087a30bf0221988757cef7f5",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C5-kestrel",
+      "planned_case": "C5-kestrel",
+      "executed_case": "C5-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81415,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81415001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C5/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C5/kestrel/collection_v2",
+      "input_freeze_sha256": "7d6ff9c38be845f879751d8e640f57e0629ff3ea0e34719725a21648ff50f932",
+      "transcript_sha256": "085c3ce6c0126e2e68e55b9de8ec6c667e1c18ba4966ebd026cfdfea576bdaef",
+      "summary_sha256": "01ebc7a7d517f935c28564cc4e39f10b2b5888f0208f8c0c4bb91197eb3c866e",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C5-lantern",
+      "planned_case": "C5-lantern",
+      "executed_case": "C5-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81415,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81415001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C5/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C5/lantern/collection_v2",
+      "input_freeze_sha256": "016e29b5f38fcc0eac20fee87311ef403c4afcd7d8cede776fd9ae05d902bb75",
+      "transcript_sha256": "613cef50b74fa5bc0f348dff4e422fc6a36a045879c6b9fecdae18b89679ad90",
+      "summary_sha256": "e7b0dd5df7bb5d19013220a9c0bdf3e102b397dc86bc00d6911306a1739c3a04",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C6-kestrel",
+      "planned_case": "C6-kestrel",
+      "executed_case": "C6-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81416,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81416001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 4,
+      "deliveries": 4,
+      "source_run": "playtests/runs/AFT/cases/C6/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C6/kestrel/collection_v2",
+      "input_freeze_sha256": "08f836e6b5700840fa4691657469ac083a4be2b92b92a22934991b5a0a6ab162",
+      "transcript_sha256": "318007baf7a01a586140680420268a493464c272b5d45ad90ed4b72b48b3d812",
+      "summary_sha256": "e3da40a316410ff9c01c0e530655e9421698e9295cf74f2bf086468a7e392903",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C6-lantern",
+      "planned_case": "C6-lantern",
+      "executed_case": "C6-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81416,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81416001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 4,
+      "deliveries": 4,
+      "source_run": "playtests/runs/AFT/cases/C6/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C6/lantern/collection_v2",
+      "input_freeze_sha256": "8e1e759241f4a44f04cbecb3be93bde4bd1a24c59ae149faed3f335c8e41c2ee",
+      "transcript_sha256": "3a68e37ca03088071965e47674246593658a4da510470fa72e9ad01529d6e202",
+      "summary_sha256": "3cde589aff0d22aea4f4cd93a4c9580d02ed1d8d07898525a077a2c1bfe79b8f",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C7-kestrel",
+      "planned_case": "C7-kestrel",
+      "executed_case": "C7-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81417,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81417001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C7/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C7/kestrel/collection_v2",
+      "input_freeze_sha256": "66decf5ecae1dcec53d58937a45dad71354b2d15810795f1562471e6766ccda5",
+      "transcript_sha256": "c414c34f9321716568ab71346a9e8df59363dbc49e34036c598aca8c326b80f1",
+      "summary_sha256": "ae3a79ff217a645c80c9569a2842a4182b0b677bd65957bc67a7e0ceca3e2da2",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C7-lantern",
+      "planned_case": "C7-lantern",
+      "executed_case": "C7-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81417,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81417001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C7/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C7/lantern/collection_v2",
+      "input_freeze_sha256": "1c87b69519e57876bafe8dd150d291a732be616b661b04dd7a77f9504d22ad2c",
+      "transcript_sha256": "fe3e6921e12306fb0c38877d76f0522af3cb1136634ee860b95eb8cedfb9da46",
+      "summary_sha256": "feb08a23a88258b1daf7cefcd3502953976eb1415cb9232c5799999fb38cfd22",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C8-kestrel",
+      "planned_case": "C8-kestrel",
+      "executed_case": "C8-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81418,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81418001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 3,
+      "source_run": "playtests/runs/AFT/cases/C8/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C8/kestrel/collection_v2",
+      "input_freeze_sha256": "5f926983e36fc1ab39d25ca786482a4279046e79126d4fb35f06aaedbe74c19e",
+      "transcript_sha256": "a365ba8005102e4dd31635d145ed1df9b036fc534089be7a419ab878655b6342",
+      "summary_sha256": "7bb6324b31641d1df24e27ac63097a96489c3a177deba038b6dd639f060f1c81",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C8-lantern",
+      "planned_case": "C8-lantern",
+      "executed_case": "C8-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81418,
+      "draws": [
+        {
+          "index": 1,
+          "seed": 81418001,
+          "tool": "play"
+        }
+      ],
+      "GM_replies": 3,
+      "deliveries": 3,
+      "source_run": "playtests/runs/AFT/cases/C8/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C8/lantern/collection_v2",
+      "input_freeze_sha256": "73d1137aae80ba64424b8aa0de52577a25fe0e0508dd8e2a6ab5e714702a4b15",
+      "transcript_sha256": "1e32c2cc686b8d0b83989022baa2d3053218a4cc30bf7fbe908fd2be1ec93931",
+      "summary_sha256": "6b3add440a848095058938823a315aa70fb7c2f13e4a3215af349f4aacd3ec71",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C9-kestrel",
+      "planned_case": "C9-kestrel",
+      "executed_case": "C9-kestrel",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81419,
+      "draws": [],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C9/kestrel",
+      "source_collection": "playtests/runs/AFT/cases/C9/kestrel/collection_v2",
+      "input_freeze_sha256": "27f4efb5eeb1cc48915949187b5bacddb89e770b7aabe12ecd59190b3b31e1af",
+      "transcript_sha256": "4a50c821fb3a53abe89eb6770ff96e56be3a720f40f6aa688a2646000e284d64",
+      "summary_sha256": "eb267ae575a95446d6e9c742476ee371eacad4082725c901e8b0390337d97f10",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    },
+    {
+      "suite": "AFT",
+      "label": "C9-lantern",
+      "planned_case": "C9-lantern",
+      "executed_case": "C9-lantern",
+      "disposition": "complete",
+      "configured_model": "gpt-6-sol",
+      "configured_effort": "medium",
+      "master": 81419,
+      "draws": [],
+      "GM_replies": 2,
+      "deliveries": 2,
+      "source_run": "playtests/runs/AFT/cases/C9/lantern",
+      "source_collection": "playtests/runs/AFT/cases/C9/lantern/collection_v2",
+      "input_freeze_sha256": "7bb582e02b0fb5a4b73be4ab359e37f9de7600a10e519b0018c9b1ffe1531118",
+      "transcript_sha256": "c67738fbe5547f40d303c797c33e83b854d00a265484badd823b52b9f9478b68",
+      "summary_sha256": "a761c51919e9852bb69089832963fbb97615730daf8810160edc5cd71e955e5e",
+      "scripted_turns": [],
+      "administrative_intervention_phases": [],
+      "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+    }
+  ]
+}

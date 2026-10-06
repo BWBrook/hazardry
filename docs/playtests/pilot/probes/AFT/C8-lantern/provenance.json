@@ -1,0 +1,25 @@
+{
+  "planned_case": "C8-lantern",
+  "executed_case": "C8-lantern",
+  "disposition": "complete",
+  "configured_model": "gpt-6-sol",
+  "configured_effort": "medium",
+  "master": 81418,
+  "draws": [
+    {
+      "index": 1,
+      "seed": 81418001,
+      "tool": "play"
+    }
+  ],
+  "GM_replies": 3,
+  "deliveries": 3,
+  "source_run": "playtests/runs/AFT/cases/C8/lantern",
+  "source_collection": "playtests/runs/AFT/cases/C8/lantern/collection_v2",
+  "input_freeze_sha256": "73d1137aae80ba64424b8aa0de52577a25fe0e0508dd8e2a6ab5e714702a4b15",
+  "transcript_sha256": "1e32c2cc686b8d0b83989022baa2d3053218a4cc30bf7fbe908fd2be1ec93931",
+  "summary_sha256": "6b3add440a848095058938823a315aa70fb7c2f13e4a3215af349f4aacd3ec71",
+  "scripted_turns": [],
+  "administrative_intervention_phases": [],
+  "assessment": "Execution disposition only; see suite mechanical audit and main results for correctness and coverage."
+}

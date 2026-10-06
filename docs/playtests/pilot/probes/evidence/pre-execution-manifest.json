@@ -1,0 +1,280 @@
+{
+  "prepared_utc": "2026-10-06T00:07:03.253205+00:00",
+  "status": "frozen_for_execution",
+  "rules_commit": "b12135ec1fa3d89e266ca15c7768b423b72a1b27",
+  "model": "gpt-6-sol",
+  "effort": "medium",
+  "cases": [
+    {
+      "case": "AME-M0",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/M0",
+      "freeze_sha256": "9ae2421f93d114eb1ef3153158182b21b7b713f941eb07f887fcd4c40e765d70"
+    },
+    {
+      "case": "AME-M1",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/M1",
+      "freeze_sha256": "8d30d60023d22f6dc747415ef65f0c934c0fa933146fcd337d615f9ed364b9c1"
+    },
+    {
+      "case": "AME-M2",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/M2",
+      "freeze_sha256": "6b590d6afa21c98a5151de2a4436f898dc6ef89f3788c551164f8ceede8134f8"
+    },
+    {
+      "case": "AME-M3",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AME/M3",
+      "freeze_sha256": "f4848861a948d9a32c8858993934e3f60664164db82bcf08484d9d976fac0d08"
+    },
+    {
+      "case": "ABR-A",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/ABR/A",
+      "freeze_sha256": "1657ee17e457eda0a966ea8c75be3195bb789f60b64814eaac920fbcd0cc293b"
+    },
+    {
+      "case": "ABR-B",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/ABR/B",
+      "freeze_sha256": "7c48eb0e4b41be20fe730d72c024b07e5c240f2476a7fedf96520a1ee09a8b8b"
+    },
+    {
+      "case": "ABR-C1",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/ABR/C1",
+      "freeze_sha256": "1f1c9d1a6533239194afe7827a13fbfbb0143c6100d3cb760060d483d5c45a7d"
+    },
+    {
+      "case": "ABR-C2",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/ABR/C2",
+      "freeze_sha256": "402e3d5d181cb9539bde1449958a921698511941d9ba5be5d48f6f131eeea490"
+    },
+    {
+      "case": "C0-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C0/kestrel",
+      "freeze_sha256": "fee73ec483104056d661b5a459ac0f057f277d221f1af501141c84c3643e9657"
+    },
+    {
+      "case": "C0-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C0/lantern",
+      "freeze_sha256": "22a41d775670236ffa56272b89282a4893e215eb28e81e303de98acc142bee6a"
+    },
+    {
+      "case": "C1-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C1/kestrel",
+      "freeze_sha256": "8254d425d6d313773a6dd99b13ffb068810ac5d264e5f3e7a90392687aa342ac"
+    },
+    {
+      "case": "C1-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C1/lantern",
+      "freeze_sha256": "80f34fdca3408c3ce802f88050167bab72f3a1b7d0a31fd4a0b8b8b685f9b3d8"
+    },
+    {
+      "case": "C2-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C2/kestrel",
+      "freeze_sha256": "0d4d47148833960ba3666dab6661f383625d4db24f37f88daf55ba99a9b55518"
+    },
+    {
+      "case": "C2-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C2/lantern",
+      "freeze_sha256": "4314527c32a273a3a60b7956f1335e202ba931eb46a4dc613148a43527db07fb"
+    },
+    {
+      "case": "C3-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C3/kestrel",
+      "freeze_sha256": "98a672a512f0e527938d497f8d788b5017f05c62e5b8b70dd5725dbf5608e54d"
+    },
+    {
+      "case": "C3-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C3/lantern",
+      "freeze_sha256": "f4c7d88a5eb4f5570437ae99c57a3b4165c7361d19072cbb144b3609a49ff5bf"
+    },
+    {
+      "case": "C4-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C4/kestrel",
+      "freeze_sha256": "0fd64d652bce87be8b70bf902dc68e84bff321a941df5d875ad69a2b25c6c20d"
+    },
+    {
+      "case": "C4-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C4/lantern",
+      "freeze_sha256": "d224c83cc79363ce45e1eda0909ae2a3e226455d8ca0e91462948f48017ef26b"
+    },
+    {
+      "case": "C5-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C5/kestrel",
+      "freeze_sha256": "d489c3748b33949c79e0ef80af32a2b15a83f806c8f63786f51e2ac91d6fd4ef"
+    },
+    {
+      "case": "C5-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C5/lantern",
+      "freeze_sha256": "b31807b52913196d2c84160aaa7fd6f7d5118ab7b8082c1a79ddbb0c2be6bdb2"
+    },
+    {
+      "case": "C6-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C6/kestrel",
+      "freeze_sha256": "866060383d8e58d702128390a28322f2467dc8dceb1628aedb71fd85e3b6929a"
+    },
+    {
+      "case": "C6-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C6/lantern",
+      "freeze_sha256": "2e0c7dc22f727891bdd7668bea5ad3670837fcae44c3c036f84f280465302c43"
+    },
+    {
+      "case": "C7-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C7/kestrel",
+      "freeze_sha256": "0ecbb7473cd20fbf217304d55d05e985ae006c3dd04ce1704052185efd2be00d"
+    },
+    {
+      "case": "C7-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C7/lantern",
+      "freeze_sha256": "61a83cbbf6294f67a59281e31e49e2db1f6e60ce24123650fcbb810a5d3f7830"
+    },
+    {
+      "case": "C8-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C8/kestrel",
+      "freeze_sha256": "8503770aff5833703757e6905e1a7f7428f6d5245141860be6d3e8cd2c0d27e3"
+    },
+    {
+      "case": "C8-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C8/lantern",
+      "freeze_sha256": "d0453389815459c583ef2f3f1f61f37f412480b04fbc5987c433969a2fdedade"
+    },
+    {
+      "case": "C9-kestrel",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C9/kestrel",
+      "freeze_sha256": "f320256bff624d323190e03a5ecd440e376c102d9557c7e90db329050d233b15"
+    },
+    {
+      "case": "C9-lantern",
+      "directory": "/Users/bwbrook/games/sinew-and-steel/playtests/runs/AFT/cases/C9/lantern",
+      "freeze_sha256": "e053ce03cc2036e1f68e624a58a0e91b06aa6a4c255220682246716ada63d888"
+    }
+  ],
+  "canonical_sha256": {
+    "rules/.DS_Store": "50704889049fbd20da5265cc52d5b10576a062d53eca3ef7264da4ecccb20945",
+    "rules/appendices/ai_play.md": "31bacc1917e99d80602a3bec8848b1d67d46680c75a7be0fc3eab9442357fad4",
+    "rules/appendices/candlelight_delvekit_quickref.md": "4f3e40b2fa525c5062a8883f901908d937afa15b07f7a061f736dde32bcecc25",
+    "rules/book/ai_as_custodian.md": "4f2c965d7137b59508bc3c5d4241d756f14ed07bba4e15ffd7b617f8539d02cb",
+    "rules/book/back_cover_blurb.md": "85aeb34485263d34ab2522a409d7ea2e964932eef6f11f8a7750a9e66af7e191",
+    "rules/book/customisation.md": "d218890dfec0e865fc0911bf69ff651e6e041634dcec2aac19dfe9b4d4f48ed9",
+    "rules/book/preface.md": "be759c841618bd96fa79b33d6f802a8f2a339517843646d22baa7abb9f8a6486",
+    "rules/book/the_adventurer.md": "f15dfc03c9282f2f1c1cb4cfab26c5e68af660a23ac707c36ada26a1670ee6d5",
+    "rules/book/the_custodian.md": "50df70c5b1dbb0534ecf1640fa72bc481b2beb6b7b8b9b440044f523fabacc16",
+    "rules/core/adventurers_manual.md": "bfef79b1bd61f112165b153eb0c3ba95e0ab8e0e1b66e26d62b99600c4d90d14",
+    "rules/core/custodians_almanac.md": "18db28138617b2a13db56da77a5f6ca8660e35552aeaf39764cb533524e24be6",
+    "rules/quickstart.md": "ba47682af0a4d7de2e4ff69d8538a9dfd8d07b9113779c84e2ea653fe3f3b8f1",
+    "rules/scenarios/README.md": "8ded2d9d61572bf0c869336ef62086b5a0d2f1cb043956670b355982f5516e95",
+    "rules/scenarios/clanfire_emberfall.md": "8a88cb572553f84df627bbedaaddf91b1f6e8e330c278ac862b8c2d18ba5f0db",
+    "rules/scenarios/clanfire_emberfall_custodian_notes.md": "8cf64b6b25ecedca7c72d5df95515714dcec500a34cd57799a13660ccf238e30",
+    "rules/scenarios/clanfire_emberfall_hidden.md": "c57dca65ad0e494211ececae27235d94f9e0ae2c49991c97393b8eb9bda3fe07",
+    "rules/scenarios/clanfire_emberfall_player_handout.md": "b8976418c8c986dd2ddb2aa1125ad02dbf7c28604324aee0078c71b256c17c1c",
+    "skins/briar_benedictine.md": "1ff2484191a1f5c87052de97a9e6feee69527b1f38fbab839537aed6b744911d",
+    "skins/candlelight_delvekit.md": "9b550d3c8b3382580b0a38bc0e4d9b64439c83a66cd0361a98fbf9f87318eb72",
+    "skins/candlelight_dungeons.md": "7bd1ac69316eb58225737d9663a58dadaa251820cf2ea53b8261a0d257444fc7",
+    "skins/clanfire.md": "629c4efccc7506fc53a87f4fffae1c117c30e7664e63c4ab9c772904f6294563",
+    "skins/core.md": "3ed2adc847607c572d5fa472a0c0aaac0831666f450bfcf58be24c1e7d68fcde",
+    "skins/free_traders_of_the_drift_marches.md": "f0a92242e16c37557a6790b6593477b3333316d016111a6bb4ddf33b94f0b54b",
+    "skins/iron_and_ruin.md": "bbabe6dd20db6695e2674f74b254b85045e2856d9a90c39f96c7437e52b25548",
+    "skins/rust_and_domes.md": "a81a39514ed261f911ef3d73bcf723bdcf4f4e77030b901b4786990b759ba44d",
+    "skins/service_duct_blues.md": "076b71cb7bb5d86b389e21882063498d2cc56fb85070672457cb9c2877a8a6d4",
+    "skins/time_odyssey.md": "4f211ef7c7de7a4118c7fbf78358cfe59208bb378edb3773d6d67cf0a87d5b48",
+    "skins/twilight_of_the_northlands.md": "3bbb1a6139b847c123b28d500cbc38476b79628f4075c37f059a020dc1e51079",
+    "skins/whispers_in_the_fog.md": "d09e45c403cc5f5107455913353c686475d68afad4727bb2ab548738a49fec26",
+    "tools/README.md": "d30df5ea8b93c7797b14111c4f718e44af4172324e3edfaeab27a7a4a59fc4d3",
+    "tools/_characters.py": "288c4b2ddf9e0c17f45df6e7ff624efaf5bf0972af29aefa27a18f46d18f8e43",
+    "tools/_delvekit.py": "b0db4cfa90b114ecc1489fca7974c9c98a5a22f4268e5821e3d8dac2b78c63dc",
+    "tools/_delvekit_output.py": "b672c74ddb6370b126f09809617da34637a2534583f5e2bd96822dd6df261aaa",
+    "tools/_delvekit_prose.py": "fe13edb6d19989aeac87d85bda5539d53e335c4be0a3aab0d3bb5cb27ab8eac4",
+    "tools/_dice.py": "50a401b942c9ad8dac8dd4ba573d620d715e788be8878dc3c93edf46da34a603",
+    "tools/_pdf_common.py": "c0fdfc805341dabf5ffeec14554fe9eaaf068c6d54c3799484745fa131d47954",
+    "tools/_pdf_render.py": "72358222997467d170ae76862eb67fd14a97129f92a850df2fa79618c87aa3b8",
+    "tools/_play.py": "af15e393ac8a9fe42200d2cca2abf56e2d120fe92df72ec8a4924d1277cbbb5b",
+    "tools/_pressure.py": "a9f8d2ef819fc40151a72404d932f5a10ba4a685fa1309d955fd9635ca4fc3fa",
+    "tools/_release_content.py": "99b16e3ed0d2e47a73b9c943a47772f97f2ca459a16eac7d62a5592d50afc13c",
+    "tools/_resources.py": "f5c1051f54952c0dc5473ce62359b3fa86ddbfa5fe609a347b929b1c3e4a805e",
+    "tools/_rules.py": "45933488f6ac4ad13f7e033c9544e7e56200ce4bdafba1197d48a838854c8444",
+    "tools/_runtime.py": "5af6383606ecceb929285d8e12b5cbdeb1c0edd887958ccc0299145ca3190f7b",
+    "tools/_sslib.py": "3789a911e9763c0bccc14eb21312f2f8f34c28e62859c0f7d1067f446f9a532d",
+    "tools/advance.py": "de385272de45add19c9bf0a272e5649cf5e4150a8db62360de7196bf192dbdfb",
+    "tools/analysis/README.md": "65bfd5a081a09b8d5b9167824323a398131c024e8770005162d442a3c76fdcc7",
+    "tools/analysis/a1_tables.py": "e5f5af38db6ed9d43c9ce0015e8e1d2d3b7247b2bea9b80e6d4de2a216de12f6",
+    "tools/analysis/a2_combat.py": "4001fc70ef28d6b84b15a3a74987e9b584f8e2beef60ee4e4b403722a53de5ad",
+    "tools/analysis/a3_penetration.py": "bcfe4000a05ca5e54c6f0eadb4604a2a3bdf56a7f1600f9a713157aa35b4825d",
+    "tools/analysis/a4_luck.py": "7a4003ab5282c267ce0f8e5d4706adb383cc2be2589ac3edfc1d0497654d5287",
+    "tools/analysis/a5_ledger.py": "8c68e9b39be5c97ddbe622eaed82dad8e6de83571f09a371d02fe84bd6bd5e7f",
+    "tools/analysis/a6_verify.py": "cc425e97cf00848190f685d00fe60b3fa97ceeee1062de48ef43126c28e142d7",
+    "tools/analysis/atlas.py": "c0a4f90500e9abf7e9a67b2c69a2f7042067f2fd222bc35db93aa360be01b4f8",
+    "tools/analysis/engine.py": "7ab4680210279a92e96b5449d5168dce0585343ae2f7da6885678c519ac590aa",
+    "tools/analysis/independent_combat.py": "4fc7e13450ea0dfa7ab5a37b58623f432fd5d1f9325be0f8b19a9d40ec741f61",
+    "tools/analysis/independent_economy.py": "b15412e17b4ebe57c7f0f706d2a37de624b738324c9304f4c3b56963e09f2b65",
+    "tools/analysis/independent_figures.py": "ba6e2762b6f15e50be254b15e4b94fc46c170d173571c8f9fb63458a598301d1",
+    "tools/analysis/independent_skins.py": "eb7a51e8aaecd729333c96aba04592053993551c1e09299f8159800e3075def8",
+    "tools/build_prompt.py": "add5f69ba492226cb26f14573b1ea22bc068a0bc1a38fffd2d1d890f43ecd5a9",
+    "tools/campaign_init.py": "f2f9d161df41188d6f416256734c3a9d5b8aac4bff1ceccb8f75c9b922fc9965",
+    "tools/char_builder.py": "59c3fa63f4180402af5fad90ca4a3cad51a9bdac83d8eeecd24b3b98d75df783",
+    "tools/checkpoint.py": "601ca5866a6d383ba12d6bd084d492e18648a4e62748cab4df43f720b0452714",
+    "tools/delvekit_adventure.py": "d00b65d8750d7a5e6399c4df82ad82add326799cabcd0b5f327a791af17b10c1",
+    "tools/delvekit_map.py": "4972487db87bb13df9870552fb0d56a873b303dab153c88617852aa4d4dc834d",
+    "tools/delvekit_pitch.py": "9580d5acfd95c72a3e5239744cc6ebf957b1617631eff0ba718a7e521f81e7de",
+    "tools/delvekit_seed.py": "5012a14d15ef436947108fdc1f8998b8a247e2fbb54a64e4479b087904cd7fa2",
+    "tools/doctor.py": "ff5f17595988648f470f0815a609fbe2c32833c9e1e2b0a71256a21fa463f82e",
+    "tools/gen_character.py": "717fcd22fa443696162a4133e975c82a5689a60730757f2310011934c4f7ed07",
+    "tools/hz.py": "866529270eefb1fd52c34d27fae3325cde045b6a97970344d0e5bafc339e7eee",
+    "tools/layout_lab.py": "a30dcfae155966695b592aa590d1d0cbfe297f808d69b7ee40db50eda2b5963c",
+    "tools/md_pdf.py": "39cbce3158e3781c9829e087a3e376a12de142222f115a5a7f31aad55b06b0b1",
+    "tools/migrate_campaign.py": "db8b5b0c48b03ff9865af313843774150a54a1a40fae1268eaeeaa63e0f9d1ad",
+    "tools/new_session.py": "cf96326bc4d0f1835b42b8da3daff3f0113d59c3bb890f10fc54ccb9c41bf374",
+    "tools/new_skin.py": "293c3085fa8a17a896cfca59db78b7b6b55ea2abe07a8f99eacacc02465987c3",
+    "tools/play.py": "ff4a74dadf456943084ec609478997e62988e6a0d44b018960891a9ae0e4bd6a",
+    "tools/playtest_summary.py": "a0cba2d2e09bac256be6e2380115cd5d9b6b89865bcae95cc6fd29cabb8c4f91",
+    "tools/recalc_sheet.py": "14aa5dae963ac48c5e62cfbac4462cfe151379419497a4f0d512e3310a0db0ab",
+    "tools/recap.py": "a763e9fa26f27b1c2218e81011fc09d0f8bc13d23c9e03c5361ff1e06aa63e06",
+    "tools/release_build.py": "0c621aac8ebdee5a67fa0e1ffcafe59efaf623570e476a8a15a1b7578682ae14",
+    "tools/resume_pack.py": "6a2aa1846eda119bef1967c540dd15100e054babecc8257cda135fa1ed03b15f",
+    "tools/roll.py": "906a82b83ba74f3017eca93d1fc10970d2558cdb3e07a9770102ab5912da1c9f",
+    "tools/session_log.py": "554925d0b1b297f1873a551736f5ea04e541e97967740eb0762b19335e002926",
+    "tools/summary.py": "8f6763bb19eb07f269a2e1c28cc516514d165316601290e70fb35b67ed4ca547",
+    "tools/trackers.py": "8a4a3ec12dd3be315a4c822f941c7a05d30e89e8bf213c915aa8d3f6cd954367",
+    "tools/update_sheet.py": "48164a5f1e61a6be8ae809b67d294d836343ec2052666705e24057d836bde5ee",
+    "tools/validate_campaign.py": "8abb59bbf4a06ed123652be277f17d210a6434e88a9ae161058f3b37137472e3",
+    "tools/validate_examples.py": "2f06479095525ed3929bd109bac6c34ef000c83801a685c15821bafdcf69a480",
+    "tools/validate_repo.py": "13cf163639ed0cb9c39c1a4ad75740779722f1f8baa7adfdb4d2d63b529c8d0b",
+    "tools/validate_sheet.py": "d9cbbb8f8d4cd3a018cf2f773c76a925375b88d634a75e8a5158019a28cef308",
+    "prompts/agent/public_resume_example.md": "47996cb2a08e7efa46581a7477ec15e5ef30936c1e81919552ebf0350939302c",
+    "prompts/agent/starter_prompt.md": "a328faa9527b0fecd98b128e97ccf4d8e48283b019b271d9ba871db894d29881",
+    "prompts/chat/candlelight_delvekit_adventure_polish.md": "da9ad832402150c530a4038512d242fffe7d831588f69a9663e4bddf011c8542",
+    "prompts/chat/candlelight_delvekit_pitch_polish.md": "f95c311c287386a3545aae78b53a1530312a606cfb847174b1e4f4829587d639",
+    "prompts/chat/hidden_scenario_prompt.md": "a9c3820a7fbe31c1430edc673382428714f47f62023d65a698326c6926e8eaa4",
+    "prompts/chat/how_to_use_chinese_room.md": "8fa49a73f576ec3f6a77c78bba00defb5ec531cc18ace987111feddcf18e01fe",
+    "prompts/chat/starter_prompt.md": "12ff2058ee6c1b2133c060234eb823456664f513eabb6a185f4e80ccefb98443",
+    "skills/README.md": "5ff2b38acd38f316ba91e4855ea2d2c3307522f9a57fd0e0acb226ceb72532a1",
+    "skills/agent_bootstrap.md": "11cb04e7ccf3a0b5f3ccdda156d9c0579e0ada8cfc0285252412a3e73dd20927",
+    "skills/agent_dm_handbook.md": "ac174aa7db42658cb38f905d6fbbd98c461c7d15cf6a07f872ec1bb5d3c8a0e5",
+    "skills/build_prompt.md": "dcdfc883f7246c8e6d46466598ae2cdfa2bb66e101e29e1017576d91d5c8f08c",
+    "skills/campaign_setup.md": "eeb63f18b1e220b0546cf9513c92e3c714bafc742a4c4e9d787a895832205dc3",
+    "skills/character_build.md": "722f51bf491755576796b99320917e744863ca14a3fe3b7b04e4e2e7165c5a70",
+    "skills/dice_resolution.md": "62ec0f0689f2c6874937b990250c81fddf561a834a317179ce98b3d43a17f514",
+    "skills/editor_notes.md": "a7f9b5563847ea875958e1d47998f2262456f29ace06bdca8e3b77c3ff206fc1",
+    "skills/manage_state.md": "4a0fa5b5a55b458dcea42dc8c2cf61a68236fbcfe8590c5be49a63f74ba241e7",
+    "skills/random_character.md": "c99bf8099fa01333e8e45c5fdb99b14ac77aa9914d20ae3948022b44d1113e9c",
+    "skills/run_session.md": "9baecde7a4ccb45f58e737845329e1cdefe42cb84d59f21144faedb4b3524eae",
+    "skills/session_recap.md": "b9fcb0dae19b2c9248e84b58f543bcb0b964a237f74b1b4c930e18bcefb104fc",
+    "templates/campaign.yaml": "2d23a1cbb7e3f615325d1eeb7d7194b8c6a32469ec3b852c07eb835114d101c3",
+    "templates/candlelight_delvekit_dungeon.yaml": "46930a113f9ba098b0b5801778298a09072aa796ead0fabcacbb907c05cd0cab",
+    "templates/character_sheet.yaml": "97dd01c007e62cfdd5341a3152735f23d55f45b8f18869f5f52500656fd4bed5",
+    "templates/html/bookish.css": "5c8acb681fe63c6b7ea840d9071398e1aba0066a313ff44005a6bb948b1946a3",
+    "templates/html/default.css": "6f603efc117307c9191ffe8c7e54535a38a8a4d749d03bd867b95e78604a6163",
+    "templates/pandoc/html_pagebreak.lua": "95677fd20880de5edaa46f4241a570441f00b788bf5dbe27d5ff53379b222f4c",
+    "templates/session_notes.md": "eeca7aff8751c9e2628481fe78db01deea4714b0e11d997a9da7f7c42d9d81af",
+    "templates/skin_template.md": "eb10763f8bb9965348e71ec567815f49af1011078d6d96a68075f5b4474f6135",
+    "templates/tracker.yaml": "2821209917ae3f215f18f3ae33ec7c42e71d3f1385ca22a77e80d9a803affd6a",
+    "AGENTS.md": "631d944dbb587aac95bb8b44b27a8942970730833e885c6ee276e88f9c53fe46",
+    "manifest.yaml": "d5310d8d68082aee2867c32751add18d45bc3501e78460030352aaea9fef7b54",
+    "pyproject.toml": "a9f487d7c67255ad6796b5f234356d0ccfdce198552fe2b6ea781beb0b68b4d8"
+  },
+  "runner_sha256": {
+    "run_case.py": "1090a3c00d26aa4fdf6529d387079c0ac04d323122a3b6afebe75817f740b1f2",
+    "record_cli.py": "643baadcf3bd2a145dc62da1a2f3fc5bd3549014bcf2f446c836ca5cf5b3c2ad",
+    "run_batch.py": "d9f31451678eade73d49910568c7cccc8338c58c96bb3a74894196075b17fd78",
+    "run_suite.py": "ffe198dca7548c2ee187c311031df787c9b48a8e905a8b9efda0f9682e167485"
+  },
+  "frozen_utc": "2026-10-06T00:09:23.327041+00:00",
+  "independent_preflight": "All repaired gates pass; empty order now rejected; final hashes refreshed.",
+  "max_concurrent_cases": 3
+}

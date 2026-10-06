@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-10-06T01:37:38.560602+00:00",
+  "archive": "playtests/runs/astra_probe_archives/astra-probes-20261006.348897e686339bdd90d987c41bc6d8eaf0db1e2ff3e1ce957ec21f967f07c3fd.tar.gz",
+  "archive_sha256": "348897e686339bdd90d987c41bc6d8eaf0db1e2ff3e1ce957ec21f967f07c3fd",
+  "archive_bytes": 19683298,
+  "file_manifest": "docs/playtests/pilot/probes/evidence/full-run-file-manifest.json",
+  "file_manifest_sha256": "2a431e8b0e6e892d26cef8e7e1a48201c578d73a438c14da836eb580d9dad4ed",
+  "evidence_files": 4309,
+  "verified_members_including_manifest": 4310,
+  "archive_readback_all_hashes_equal": true,
+  "sources_unchanged_after_archival": true,
+  "storage": "Local content-addressed archive; off-machine backup not verified.",
+  "external_anchor": "Correspondence handoff digest; receipt stays outside archive."
+}
