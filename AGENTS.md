@@ -14,6 +14,8 @@ Use the files and tools below to keep play consistent, reproducible, and private
 - campaigns/: untracked per-campaign workspaces. A campaign's live state is in campaigns/<slug>/state/ (characters/, trackers/, memory/, logs/, checkpoints/).
 
 ## Operating rules
+- Use `gpt-6.1-sol` for every subagent in this project, including nested delegates. Never use Astra or inherit an Astra primary model for delegated work.
+- Choose each delegate's reasoning effort to suit its task. Pass the model explicitly; use a fresh or limited-history fork when a full-history fork would inherit the primary model.
 - Keep private notes in campaigns/<slug>/state/memory/. Do not reveal them to players unless explicitly requested.
 - Do not roll by default. Roll only when the outcome is uncertain *and* it matters; many choices can be resolved narratively.
 - Use tools/play.py for campaign rolls, costs, damage, Pressure and resource changes. Use tools/roll.py for standalone dice only.
