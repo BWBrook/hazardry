@@ -1,6 +1,8 @@
 # AFT: saved public case records
 
-28-case programme, 6 October 2026. See [the results report](../astra-probe-results.md) for mechanical assessments, coverage, procedure concerns and harness lineage. The transcripts and engine summaries below are byte-identical copies of the collected sources. A complete disposition describes the endpoint; it does not imply that every assertion passed. Engine summary quantities are fixture observations and cannot be pooled as ordinary-play rates.
+28-case programme, 6 October 2026. See [the results report](../astra-probe-results.md) for mechanical assessments, coverage, procedure failures and harness lineage. The transcripts and engine summaries below are byte-identical copies of the collected sources. A complete disposition describes the endpoint; it does not imply that every assertion passed. Engine summary quantities are fixture observations and cannot be pooled as ordinary-play rates.
+
+**Cross-audit note, 6 October:** all four observed Broker offers followed success, with a cost and no stated improvement in payout. The recipes allowed a failure-to-Broker route after declining a primary nudge; players did not select it. C0 is a scripted no-roll fixture and C8 manually supplies Watch Advantage. Additional read, parse-error, environment and scratch-write incidents, plus the exact opaque-assignment byte convention, are documented in the [response addendum](../astra-probes-response-1065.md). Read the preserved original audit with those qualifications.
 
 | Planned case | Executed case | Disposition | GM replies | Draw seeds | Public record |
 |---|---|---|---:|---|---|
