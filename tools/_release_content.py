@@ -348,20 +348,21 @@ def bundle_definitions(manifest: dict, version: str) -> dict[str, Bundle]:
                     BookChapter("4. Adventurers Manual", adv),
                     BookChapter("5. The Custodian", ROOT / "rules" / "book" / "the_custodian.md"),
                     BookChapter("6. Custodian’s Almanac", cust),
-                    BookChapter("7. Customisation", ROOT / "rules" / "book" / "customisation.md"),
-                    BookChapter("8. Clanfire (exemplar skin)", skin_path("clanfire")),
+                    BookChapter("7. Custodian Craft", ROOT / "rules" / "book" / "custodian_craft.md"),
+                    BookChapter("8. Customisation", ROOT / "rules" / "book" / "customisation.md"),
+                    BookChapter("9. Clanfire (exemplar skin)", skin_path("clanfire")),
                 ),
             ),
             BookPart(
                 title="STARTER SCENARIO",
                 chapters=(
-                    BookChapter("9. Clanfire: Emberfall", ROOT / "rules" / "scenarios" / "clanfire_emberfall.md"),
+                    BookChapter("10. Clanfire: Emberfall", ROOT / "rules" / "scenarios" / "clanfire_emberfall.md"),
                     BookChapter(
-                        "10. Clanfire Player Handout",
+                        "11. Clanfire Player Handout",
                         ROOT / "rules" / "scenarios" / "clanfire_emberfall_player_handout.md",
                     ),
                     BookChapter(
-                        "11. Clanfire Custodian Notes",
+                        "12. Clanfire Custodian Notes",
                         ROOT / "rules" / "scenarios" / "clanfire_emberfall_custodian_notes.md",
                     ),
                 ),
@@ -369,25 +370,25 @@ def bundle_definitions(manifest: dict, version: str) -> dict[str, Bundle]:
             BookPart(
                 title="EXPANSION SKINS",
                 chapters=(
-                    BookChapter("12. Iron and Ruin", skin_path("iron_and_ruin")),
-                    BookChapter("13. Time Odyssey", skin_path("time_odyssey")),
-                    BookChapter("14. Briar and Benedictine", skin_path("briar_benedictine")),
-                    BookChapter("15. Rust and Domes", skin_path("rust_and_domes")),
-                    BookChapter("16. Candlelight Dungeons", skin_path("candlelight_dungeons")),
-                    BookChapter("17. Service Duct Blues", skin_path("service_duct_blues")),
-                    BookChapter("18. Mournful Shores", skin_path("whispers_in_the_fog")),
+                    BookChapter("13. Iron and Ruin", skin_path("iron_and_ruin")),
+                    BookChapter("14. Time Odyssey", skin_path("time_odyssey")),
+                    BookChapter("15. Briar and Benedictine", skin_path("briar_benedictine")),
+                    BookChapter("16. Rust and Domes", skin_path("rust_and_domes")),
+                    BookChapter("17. Candlelight Dungeons", skin_path("candlelight_dungeons")),
+                    BookChapter("18. Service Duct Blues", skin_path("service_duct_blues")),
+                    BookChapter("19. Mournful Shores", skin_path("whispers_in_the_fog")),
                     BookChapter(
-                        "19. Free Traders of the Drift Marches",
+                        "20. Free Traders of the Drift Marches",
                         skin_path("free_traders_of_the_drift_marches"),
                     ),
-                    BookChapter("20. Twilight of the Northlands", skin_path("twilight_of_the_northlands")),
+                    BookChapter("21. Twilight of the Northlands", skin_path("twilight_of_the_northlands")),
                 ),
             ),
             BookPart(
                 title="AI FOR SOLO PLAY",
                 chapters=(
-                    BookChapter("21. AI as Custodian", ROOT / "rules" / "book" / "ai_as_custodian.md"),
-                    BookChapter("22. AI Play Notes", ROOT / "rules" / "appendices" / "ai_play.md"),
+                    BookChapter("22. AI as Custodian", ROOT / "rules" / "book" / "ai_as_custodian.md"),
+                    BookChapter("23. AI Play Notes", ROOT / "rules" / "appendices" / "ai_play.md"),
                 ),
             ),
         )

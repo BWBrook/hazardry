@@ -7,7 +7,8 @@ description: Custodian operating discipline for the campaign engine, source rule
 
 Read the selected skin before play. `manifest.yaml` indexes the canonical books,
 skins, and mechanical metadata. Use [the harness workflow](../docs/ai_play_harness.md)
-for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume.
+for commands and [agent bootstrap](agent_bootstrap.md) for a quick resume. [Custodian craft](../docs/custodian_craft_reference.md)
+shows these habits, and their failures, in short examples from the simulated pilot.
 
 ## Table discipline
 

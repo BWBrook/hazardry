@@ -25,12 +25,16 @@ If you want the experience Hazardry is built for, bring the same social contract
 
 ## Where AI drifts
 
-Four failure modes recur:
+Six failure modes recur, most of them confirmed by the simulated sessions behind this book. Custodian Craft shows each one at the table.
 
 - **Over-rolling.** Left alone, an AI may gamify everything into checks. Apply Hazardry's stance: ask for intent, method, and stakes, then roll only when the outcome is uncertain and matters.
-- **Accidental railroading.** An AI may try to help by pulling everything back to a tidy plot. Correct it the same way you would with a human Custodian: restate intent, restate what is true, and ask for options that split in different directions.
+- **Taking choices from the players.** Trying to be helpful, an AI may pick who rolls by the best odds, settle a collision by vote, judge a costly spend "not meaningful" and skip it, or tidy everything back to a neat plot. Insist that it sets out the options and the prices, and leaves the choosing to the players.
+- **Late stakes and late rulings.** Stakes, help and modifiers that first appear in the reply showing the dice leave the player committed blind. Ask for them before the roll.
+- **Leaky summaries.** A helpful recap is where secrets slip: an NPC's private line or a hidden clock stated as fact. A summary should report only what a character said or did on screen.
 - **Context drift.** Even strong models forget details. Give the AI a spine of memory: a current sheet, a short recap, and a last checkpoint. It will become far more consistent.
-- **Dice integrity.** Treat dice as external truth: roll physically or with a trusted roller, and tell the AI the results.
+- **Dice integrity and repairs.** Treat dice as external truth: roll physically or with a trusted roller, and tell the AI the results. When the AI makes a mistake, it should say so and keep the dice, not invent a compensating rule.
+
+AI players drift too. In testing they routed around Pressure whenever the fiction allowed, so give the fuse a declared price on the way forward, not only on temptations.
 
 ## Pacing without sessions
 
