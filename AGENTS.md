@@ -1,6 +1,6 @@
 # Agent Harness Instructions (Hazardry)
 
-This repo is structured for AI coding agents (Codex CLI, Claude Code) to run RPG sessions.
+This repository provides AI agents with the rules and tools to run RPG sessions.
 Use the files and tools below to keep play consistent, reproducible, and private.
 
 ## Sources of truth
